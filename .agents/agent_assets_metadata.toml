@@ -42,3 +42,17 @@ mtime_ms = 1787365984817
 storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:873a67e7-f07a-4136-be37-050a093ec352/2299fe26-4c2f-4774-960a-3b728799d40f/f7aac8dd-0ee1-4eab-8a64-30cb086e3f7e"
 storage_version_token = "1787365999638168"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "6D1Z_NYlBVbumcFhXX53d"
+uri = "file://cinenova-crashfix.apk"
+type = "unspecified"
+title = "CINENOVA — logo y corrección de crash"
+description = "APK actualizada con el logo CINENOVA en el encabezado y con la comprobación en segundo plano que provocaba el cierre desactivada. Instala esta versión nueva; si actualizas desde otra firma, puede ser necesario desinstalar primero la versión anterior, lo que podría borrar datos locales."
+logical_id = "863725ca-af39-4011-be5c-d811f7b6e016"
+content_hash = "sha256:af32bdecf4152d6965cbb4819ae85e15ee9cf68a5bd6b59426f507808ebe10c2"
+size = 47397789
+mtime_ms = 1787366674637
+storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:873a67e7-f07a-4136-be37-050a093ec352/863725ca-af39-4011-be5c-d811f7b6e016/8c9704af-b2a3-4871-9a0e-3d0833c7c9e5"
+storage_version_token = "1787366705115750"
+content_type = "application/octet-stream"
