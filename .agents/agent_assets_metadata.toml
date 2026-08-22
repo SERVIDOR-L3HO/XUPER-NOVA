@@ -14,3 +14,17 @@ mtime_ms = 1787365318418
 storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:873a67e7-f07a-4136-be37-050a093ec352/4136c31d-4817-4596-9a27-643fc632f3d0/15bfa80e-55a4-4c9a-98c8-9f6c22f85b66"
 storage_version_token = "1787365341202047"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "uehL9G4oYnBDsIK4U68_r"
+uri = "file://cinenova.apk"
+type = "unspecified"
+title = "CINENOVA — APK editada"
+description = "Versión modificada con el nombre CINENOVA y la restricción de bloqueo de integridad desactivada. Conserva el splash y el icono nuevos. Puede ser necesario desinstalar la APK anterior antes de instalarla porque está firmada con un certificado diferente."
+logical_id = "ac464264-18b9-48f8-a261-4c4254cb7f8f"
+content_hash = "sha256:59ceeca91e28bb5a9dad2c5835c1c392a4c2cb331c2b57f34fb6e337e1369bca"
+size = 47872925
+mtime_ms = 1787365619473
+storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:873a67e7-f07a-4136-be37-050a093ec352/ac464264-18b9-48f8-a261-4c4254cb7f8f/4d5d7a3e-971a-483c-967b-73be9d79add5"
+storage_version_token = "1787365645354234"
+content_type = "application/octet-stream"
