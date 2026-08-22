@@ -1,0 +1,16 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "ETUC8dDi0N-eXAwSt3BAH"
+uri = "file://recovered-ultragol.apk"
+type = "unspecified"
+title = "APK Ultragol con splash e icono nuevos"
+description = "APK modificada a partir de tu archivo original. Incluye el JPG como splash y el PNG como icono principal y de launcher. Está alineada y firmada para instalación; puede requerir desinstalar la versión anterior por usar una firma nueva."
+logical_id = "4136c31d-4817-4596-9a27-643fc632f3d0"
+content_hash = "sha256:590950ee03cb533beae89509a6611452dfc9c4b467c99593bd7326ce99bf4b3d"
+size = 47872925
+mtime_ms = 1787365318418
+storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:873a67e7-f07a-4136-be37-050a093ec352/4136c31d-4817-4596-9a27-643fc632f3d0/15bfa80e-55a4-4c9a-98c8-9f6c22f85b66"
+storage_version_token = "1787365341202047"
+content_type = "application/octet-stream"
