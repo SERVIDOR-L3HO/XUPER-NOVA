@@ -28,3 +28,17 @@ mtime_ms = 1787365619473
 storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:873a67e7-f07a-4136-be37-050a093ec352/ac464264-18b9-48f8-a261-4c4254cb7f8f/4d5d7a3e-971a-483c-967b-73be9d79add5"
 storage_version_token = "1787365645354234"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "t3nanABK43WGs628LEaoD"
+uri = "file://cinenova-final.apk"
+type = "unspecified"
+title = "CINENOVA — corrección del bloqueo"
+description = "Versión final con el nombre CINENOVA, splash e icono nuevos, y todas las rutas detectadas del bloqueo de integridad desactivadas. Instala este archivo, no la versión anterior. Puede ser necesario desinstalar primero la app anterior; eso puede borrar sus datos locales."
+logical_id = "2299fe26-4c2f-4774-960a-3b728799d40f"
+content_hash = "sha256:980f9ead1660699c583a33548fcef11139260506ac6c665826b9857e43560b94"
+size = 47872925
+mtime_ms = 1787365984817
+storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:873a67e7-f07a-4136-be37-050a093ec352/2299fe26-4c2f-4774-960a-3b728799d40f/f7aac8dd-0ee1-4eab-8a64-30cb086e3f7e"
+storage_version_token = "1787365999638168"
+content_type = "application/octet-stream"
