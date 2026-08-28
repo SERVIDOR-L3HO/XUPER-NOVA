@@ -1,0 +1,848 @@
+.class public Lcom/titan/ranger/bean/report/SwitchPlayer;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field app:Ljava/lang/String;
+
+.field app_ver:Ljava/lang/String;
+
+.field buss:Ljava/lang/String;
+
+.field err:J
+
+.field format:Ljava/lang/String;
+
+.field from:Ljava/lang/String;
+
+.field ip:Ljava/lang/String;
+
+.field media:Ljava/lang/String;
+
+.field model:Ljava/lang/String;
+
+.field program:Ljava/lang/String;
+
+.field sn:Ljava/lang/String;
+
+.field sys_ver:Ljava/lang/String;
+
+.field titan_ver:Ljava/lang/String;
+
+.field title:Ljava/lang/String;
+
+.field to:Ljava/lang/String;
+
+.field uid:Ljava/lang/String;
+
+.field vcodec:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getApp()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->app:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getApp_ver()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->app_ver:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getBuss()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->buss:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getErr()J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->err:J
+
+    .line 2
+    .line 3
+    return-wide v0
+.end method
+
+.method public getFormat()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->format:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getFrom()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->from:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getIp()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->ip:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getMedia()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->media:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getModel()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->model:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getProgram()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->program:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getSn()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->sn:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getSys_ver()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->sys_ver:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getTitan_ver()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->titan_ver:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getTitle()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->title:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getTo()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->to:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getUid()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->uid:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getVcodec()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->vcodec:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public setApp(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->app:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setApp_ver(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->app_ver:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setBuss(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->buss:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setErr(J)V
+    .locals 0
+
+    .line 1
+    iput-wide p1, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->err:J
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setFormat(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->format:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setFrom(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->from:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setIp(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->ip:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setMedia(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->media:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setModel(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->model:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setProgram(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->program:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setSn(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->sn:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setSys_ver(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->sys_ver:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setTitan_ver(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->titan_ver:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setTitle(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->title:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setTo(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->to:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setUid(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->uid:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setVcodec(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->vcodec:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v1, "SwitchPlayer{app=\'"
+
+    .line 7
+    .line 8
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 9
+    .line 10
+    .line 11
+    iget-object v1, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->app:Ljava/lang/String;
+
+    .line 12
+    .line 13
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 14
+    .line 15
+    .line 16
+    const/16 v1, 0x27
+
+    .line 17
+    .line 18
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 19
+    .line 20
+    .line 21
+    const-string v2, ", app_ver=\'"
+
+    .line 22
+    .line 23
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 24
+    .line 25
+    .line 26
+    iget-object v2, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->app_ver:Ljava/lang/String;
+
+    .line 27
+    .line 28
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 32
+    .line 33
+    .line 34
+    const-string v2, ", titan_ver=\'"
+
+    .line 35
+    .line 36
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 37
+    .line 38
+    .line 39
+    iget-object v2, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->titan_ver:Ljava/lang/String;
+
+    .line 40
+    .line 41
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 42
+    .line 43
+    .line 44
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 45
+    .line 46
+    .line 47
+    const-string v2, ", uid=\'"
+
+    .line 48
+    .line 49
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 50
+    .line 51
+    .line 52
+    iget-object v2, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->uid:Ljava/lang/String;
+
+    .line 53
+    .line 54
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 55
+    .line 56
+    .line 57
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 58
+    .line 59
+    .line 60
+    const-string v2, ", sn=\'"
+
+    .line 61
+    .line 62
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 63
+    .line 64
+    .line 65
+    iget-object v2, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->sn:Ljava/lang/String;
+
+    .line 66
+    .line 67
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 68
+    .line 69
+    .line 70
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 71
+    .line 72
+    .line 73
+    const-string v2, ", model=\'"
+
+    .line 74
+    .line 75
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 76
+    .line 77
+    .line 78
+    iget-object v2, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->model:Ljava/lang/String;
+
+    .line 79
+    .line 80
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 81
+    .line 82
+    .line 83
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 84
+    .line 85
+    .line 86
+    const-string v2, ", sys_ver=\'"
+
+    .line 87
+    .line 88
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 89
+    .line 90
+    .line 91
+    iget-object v2, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->sys_ver:Ljava/lang/String;
+
+    .line 92
+    .line 93
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 94
+    .line 95
+    .line 96
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 97
+    .line 98
+    .line 99
+    const-string v2, ", ip=\'"
+
+    .line 100
+    .line 101
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 102
+    .line 103
+    .line 104
+    iget-object v2, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->ip:Ljava/lang/String;
+
+    .line 105
+    .line 106
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 107
+    .line 108
+    .line 109
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 110
+    .line 111
+    .line 112
+    const-string v2, ", program=\'"
+
+    .line 113
+    .line 114
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 115
+    .line 116
+    .line 117
+    iget-object v2, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->program:Ljava/lang/String;
+
+    .line 118
+    .line 119
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 120
+    .line 121
+    .line 122
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 123
+    .line 124
+    .line 125
+    const-string v2, ", media=\'"
+
+    .line 126
+    .line 127
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 128
+    .line 129
+    .line 130
+    iget-object v2, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->media:Ljava/lang/String;
+
+    .line 131
+    .line 132
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 133
+    .line 134
+    .line 135
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 136
+    .line 137
+    .line 138
+    const-string v2, ", title=\'"
+
+    .line 139
+    .line 140
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 141
+    .line 142
+    .line 143
+    iget-object v2, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->title:Ljava/lang/String;
+
+    .line 144
+    .line 145
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 146
+    .line 147
+    .line 148
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 149
+    .line 150
+    .line 151
+    const-string v2, ", buss=\'"
+
+    .line 152
+    .line 153
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 154
+    .line 155
+    .line 156
+    iget-object v2, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->buss:Ljava/lang/String;
+
+    .line 157
+    .line 158
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 159
+    .line 160
+    .line 161
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 162
+    .line 163
+    .line 164
+    const-string v2, ", from=\'"
+
+    .line 165
+    .line 166
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 167
+    .line 168
+    .line 169
+    iget-object v2, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->from:Ljava/lang/String;
+
+    .line 170
+    .line 171
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 172
+    .line 173
+    .line 174
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 175
+    .line 176
+    .line 177
+    const-string v2, ", to=\'"
+
+    .line 178
+    .line 179
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 180
+    .line 181
+    .line 182
+    iget-object v2, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->to:Ljava/lang/String;
+
+    .line 183
+    .line 184
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 185
+    .line 186
+    .line 187
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 188
+    .line 189
+    .line 190
+    const-string v2, ", format=\'"
+
+    .line 191
+    .line 192
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 193
+    .line 194
+    .line 195
+    iget-object v2, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->format:Ljava/lang/String;
+
+    .line 196
+    .line 197
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 198
+    .line 199
+    .line 200
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 201
+    .line 202
+    .line 203
+    const-string v2, ", vcodec=\'"
+
+    .line 204
+    .line 205
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 206
+    .line 207
+    .line 208
+    iget-object v2, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->vcodec:Ljava/lang/String;
+
+    .line 209
+    .line 210
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 211
+    .line 212
+    .line 213
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 214
+    .line 215
+    .line 216
+    const-string v1, ", err="
+
+    .line 217
+    .line 218
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 219
+    .line 220
+    .line 221
+    iget-wide v1, p0, Lcom/titan/ranger/bean/report/SwitchPlayer;->err:J
+
+    .line 222
+    .line 223
+    invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 224
+    .line 225
+    .line 226
+    const/16 v1, 0x7d
+
+    .line 227
+    .line 228
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 229
+    .line 230
+    .line 231
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 232
+    .line 233
+    .line 234
+    move-result-object v0
+
+    .line 235
+    return-object v0
+.end method

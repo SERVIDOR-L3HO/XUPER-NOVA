@@ -1,0 +1,946 @@
+.class public Lb4/j;
+.super Lb4/l;
+.source "SourceFile"
+
+
+# instance fields
+.field public final l:Lj3/j;
+
+.field public final m:Lj3/j;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/Class;Lb4/n;Lj3/j;[Lj3/j;Lj3/j;Lj3/j;Ljava/lang/Object;Ljava/lang/Object;Z)V
+    .locals 10
+
+    .line 1
+    move-object v9, p0
+
+    .line 2
+    invoke-virtual {p5}, Lj3/j;->hashCode()I
+
+    .line 5
+    move-result v5
+
+    .line 6
+    move-object v0, p0
+
+    .line 7
+    move-object v1, p1
+
+    .line 8
+    move-object v2, p2
+
+    .line 9
+    move-object v3, p3
+
+    .line 10
+    move-object v4, p4
+
+    .line 11
+    move-object/from16 v6, p7
+
+    .line 13
+    move-object/from16 v7, p8
+
+    .line 15
+    move/from16 v8, p9
+
+    .line 17
+    invoke-direct/range {v0 .. v8}, Lb4/l;-><init>(Ljava/lang/Class;Lb4/n;Lj3/j;[Lj3/j;ILjava/lang/Object;Ljava/lang/Object;Z)V
+
+    .line 20
+    move-object v0, p5
+
+    .line 21
+    iput-object v0, v9, Lb4/j;->l:Lj3/j;
+
+    .line 23
+    if-nez p6, :cond_0
+
+    .line 25
+    move-object v0, v9
+
+    .line 26
+    goto :goto_0
+
+    .line 27
+    :cond_0
+    move-object/from16 v0, p6
+
+    .line 29
+    :goto_0
+    iput-object v0, v9, Lb4/j;->m:Lj3/j;
+
+    .line 31
+    return-void
+.end method
+
+.method public static g0(Ljava/lang/Class;Lb4/n;Lj3/j;[Lj3/j;Lj3/j;)Lb4/j;
+    .locals 11
+
+    .line 1
+    new-instance v10, Lb4/j;
+
+    .line 3
+    const/4 v6, 0x0
+
+    .line 4
+    const/4 v7, 0x0
+
+    .line 5
+    const/4 v8, 0x0
+
+    .line 6
+    const/4 v9, 0x0
+
+    .line 7
+    move-object v0, v10
+
+    .line 8
+    move-object v1, p0
+
+    .line 9
+    move-object v2, p1
+
+    .line 10
+    move-object v3, p2
+
+    .line 11
+    move-object v4, p3
+
+    .line 12
+    move-object v5, p4
+
+    .line 13
+    invoke-direct/range {v0 .. v9}, Lb4/j;-><init>(Ljava/lang/Class;Lb4/n;Lj3/j;[Lj3/j;Lj3/j;Lj3/j;Ljava/lang/Object;Ljava/lang/Object;Z)V
+
+    .line 16
+    return-object v10
+.end method
+
+
+# virtual methods
+.method public P(Ljava/lang/Class;Lb4/n;Lj3/j;[Lj3/j;)Lj3/j;
+    .locals 10
+
+    .line 1
+    new-instance p2, Lb4/j;
+
+    .line 3
+    iget-object v2, p0, Lb4/m;->h:Lb4/n;
+
+    .line 5
+    iget-object v5, p0, Lb4/j;->l:Lj3/j;
+
+    .line 7
+    iget-object v6, p0, Lb4/j;->m:Lj3/j;
+
+    .line 9
+    iget-object v7, p0, Lj3/j;->c:Ljava/lang/Object;
+
+    .line 11
+    iget-object v8, p0, Lj3/j;->d:Ljava/lang/Object;
+
+    .line 13
+    iget-boolean v9, p0, Lj3/j;->e:Z
+
+    .line 15
+    move-object v0, p2
+
+    .line 16
+    move-object v1, p1
+
+    .line 17
+    move-object v3, p3
+
+    .line 18
+    move-object v4, p4
+
+    .line 19
+    invoke-direct/range {v0 .. v9}, Lb4/j;-><init>(Ljava/lang/Class;Lb4/n;Lj3/j;[Lj3/j;Lj3/j;Lj3/j;Ljava/lang/Object;Ljava/lang/Object;Z)V
+
+    .line 22
+    return-object p2
+.end method
+
+.method public R(Lj3/j;)Lj3/j;
+    .locals 11
+
+    .line 1
+    iget-object v0, p0, Lb4/j;->l:Lj3/j;
+
+    .line 3
+    if-ne v0, p1, :cond_0
+
+    .line 5
+    return-object p0
+
+    .line 6
+    :cond_0
+    new-instance v0, Lb4/j;
+
+    .line 8
+    iget-object v2, p0, Lj3/j;->a:Ljava/lang/Class;
+
+    .line 10
+    iget-object v3, p0, Lb4/m;->h:Lb4/n;
+
+    .line 12
+    iget-object v4, p0, Lb4/m;->f:Lj3/j;
+
+    .line 14
+    iget-object v5, p0, Lb4/m;->g:[Lj3/j;
+
+    .line 16
+    iget-object v7, p0, Lb4/j;->m:Lj3/j;
+
+    .line 18
+    iget-object v8, p0, Lj3/j;->c:Ljava/lang/Object;
+
+    .line 20
+    iget-object v9, p0, Lj3/j;->d:Ljava/lang/Object;
+
+    .line 22
+    iget-boolean v10, p0, Lj3/j;->e:Z
+
+    .line 24
+    move-object v1, v0
+
+    .line 25
+    move-object v6, p1
+
+    .line 26
+    invoke-direct/range {v1 .. v10}, Lb4/j;-><init>(Ljava/lang/Class;Lb4/n;Lj3/j;[Lj3/j;Lj3/j;Lj3/j;Ljava/lang/Object;Ljava/lang/Object;Z)V
+
+    .line 29
+    return-object v0
+.end method
+
+.method public bridge synthetic S(Ljava/lang/Object;)Lj3/j;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lb4/j;->h0(Ljava/lang/Object;)Lb4/j;
+
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public bridge synthetic T(Ljava/lang/Object;)Lj3/j;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lb4/j;->i0(Ljava/lang/Object;)Lb4/j;
+
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public bridge synthetic V()Lj3/j;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lb4/j;->j0()Lb4/j;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public bridge synthetic W(Ljava/lang/Object;)Lj3/j;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lb4/j;->k0(Ljava/lang/Object;)Lb4/j;
+
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public bridge synthetic X(Ljava/lang/Object;)Lj3/j;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lb4/j;->l0(Ljava/lang/Object;)Lb4/j;
+
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public bridge synthetic a()Lh3/a;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lb4/j;->r()Lj3/j;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public a0()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 3
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 6
+    iget-object v1, p0, Lj3/j;->a:Ljava/lang/Class;
+
+    .line 8
+    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 11
+    move-result-object v1
+
+    .line 12
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 15
+    iget-object v1, p0, Lb4/j;->l:Lj3/j;
+
+    .line 17
+    if-eqz v1, :cond_0
+
+    .line 19
+    const/4 v1, 0x1
+
+    .line 20
+    invoke-virtual {p0, v1}, Lb4/m;->Z(I)Z
+
+    .line 23
+    move-result v1
+
+    .line 24
+    if-eqz v1, :cond_0
+
+    .line 26
+    const/16 v1, 0x3c
+
+    .line 28
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 31
+    iget-object v1, p0, Lb4/j;->l:Lj3/j;
+
+    .line 33
+    invoke-virtual {v1}, Lh3/a;->c()Ljava/lang/String;
+
+    .line 36
+    move-result-object v1
+
+    .line 37
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 40
+    const/16 v1, 0x3e
+
+    .line 42
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 45
+    :cond_0
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 48
+    move-result-object v0
+
+    .line 49
+    return-object v0
+.end method
+
+.method public b()Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public bridge synthetic c0(Ljava/lang/Object;)Lb4/l;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lb4/j;->i0(Ljava/lang/Object;)Lb4/j;
+
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public bridge synthetic d0()Lb4/l;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lb4/j;->j0()Lb4/j;
+
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method
+
+.method public bridge synthetic e0(Ljava/lang/Object;)Lb4/l;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lb4/j;->k0(Ljava/lang/Object;)Lb4/j;
+
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 3
+
+    .line 1
+    if-ne p1, p0, :cond_0
+
+    .line 3
+    const/4 p1, 0x1
+
+    .line 4
+    return p1
+
+    .line 5
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 6
+    if-nez p1, :cond_1
+
+    .line 8
+    return v0
+
+    .line 9
+    :cond_1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 12
+    move-result-object v1
+
+    .line 13
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 16
+    move-result-object v2
+
+    .line 17
+    if-eq v1, v2, :cond_2
+
+    .line 19
+    return v0
+
+    .line 20
+    :cond_2
+    check-cast p1, Lb4/j;
+
+    .line 22
+    iget-object v1, p1, Lj3/j;->a:Ljava/lang/Class;
+
+    .line 24
+    iget-object v2, p0, Lj3/j;->a:Ljava/lang/Class;
+
+    .line 26
+    if-eq v1, v2, :cond_3
+
+    .line 28
+    return v0
+
+    .line 29
+    :cond_3
+    iget-object v0, p0, Lb4/j;->l:Lj3/j;
+
+    .line 31
+    iget-object p1, p1, Lb4/j;->l:Lj3/j;
+
+    .line 33
+    invoke-virtual {v0, p1}, Lj3/j;->equals(Ljava/lang/Object;)Z
+
+    .line 36
+    move-result p1
+
+    .line 37
+    return p1
+.end method
+
+.method public bridge synthetic f0(Ljava/lang/Object;)Lb4/l;
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Lb4/j;->l0(Ljava/lang/Object;)Lb4/j;
+
+    .line 4
+    move-result-object p1
+
+    .line 5
+    return-object p1
+.end method
+
+.method public h0(Ljava/lang/Object;)Lb4/j;
+    .locals 11
+
+    .line 1
+    iget-object v0, p0, Lb4/j;->l:Lj3/j;
+
+    .line 3
+    invoke-virtual {v0}, Lj3/j;->t()Ljava/lang/Object;
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    if-ne p1, v0, :cond_0
+
+    .line 9
+    return-object p0
+
+    .line 10
+    :cond_0
+    new-instance v0, Lb4/j;
+
+    .line 12
+    iget-object v2, p0, Lj3/j;->a:Ljava/lang/Class;
+
+    .line 14
+    iget-object v3, p0, Lb4/m;->h:Lb4/n;
+
+    .line 16
+    iget-object v4, p0, Lb4/m;->f:Lj3/j;
+
+    .line 18
+    iget-object v5, p0, Lb4/m;->g:[Lj3/j;
+
+    .line 20
+    iget-object v1, p0, Lb4/j;->l:Lj3/j;
+
+    .line 22
+    invoke-virtual {v1, p1}, Lj3/j;->W(Ljava/lang/Object;)Lj3/j;
+
+    .line 25
+    move-result-object v6
+
+    .line 26
+    iget-object v7, p0, Lb4/j;->m:Lj3/j;
+
+    .line 28
+    iget-object v8, p0, Lj3/j;->c:Ljava/lang/Object;
+
+    .line 30
+    iget-object v9, p0, Lj3/j;->d:Ljava/lang/Object;
+
+    .line 32
+    iget-boolean v10, p0, Lj3/j;->e:Z
+
+    .line 34
+    move-object v1, v0
+
+    .line 35
+    invoke-direct/range {v1 .. v10}, Lb4/j;-><init>(Ljava/lang/Class;Lb4/n;Lj3/j;[Lj3/j;Lj3/j;Lj3/j;Ljava/lang/Object;Ljava/lang/Object;Z)V
+
+    .line 38
+    return-object v0
+.end method
+
+.method public i0(Ljava/lang/Object;)Lb4/j;
+    .locals 11
+
+    .line 1
+    iget-object v0, p0, Lb4/j;->l:Lj3/j;
+
+    .line 3
+    invoke-virtual {v0}, Lj3/j;->u()Ljava/lang/Object;
+
+    .line 6
+    move-result-object v0
+
+    .line 7
+    if-ne p1, v0, :cond_0
+
+    .line 9
+    return-object p0
+
+    .line 10
+    :cond_0
+    iget-object v0, p0, Lb4/j;->l:Lj3/j;
+
+    .line 12
+    invoke-virtual {v0, p1}, Lj3/j;->X(Ljava/lang/Object;)Lj3/j;
+
+    .line 15
+    move-result-object v6
+
+    .line 16
+    new-instance p1, Lb4/j;
+
+    .line 18
+    iget-object v2, p0, Lj3/j;->a:Ljava/lang/Class;
+
+    .line 20
+    iget-object v3, p0, Lb4/m;->h:Lb4/n;
+
+    .line 22
+    iget-object v4, p0, Lb4/m;->f:Lj3/j;
+
+    .line 24
+    iget-object v5, p0, Lb4/m;->g:[Lj3/j;
+
+    .line 26
+    iget-object v7, p0, Lb4/j;->m:Lj3/j;
+
+    .line 28
+    iget-object v8, p0, Lj3/j;->c:Ljava/lang/Object;
+
+    .line 30
+    iget-object v9, p0, Lj3/j;->d:Ljava/lang/Object;
+
+    .line 32
+    iget-boolean v10, p0, Lj3/j;->e:Z
+
+    .line 34
+    move-object v1, p1
+
+    .line 35
+    invoke-direct/range {v1 .. v10}, Lb4/j;-><init>(Ljava/lang/Class;Lb4/n;Lj3/j;[Lj3/j;Lj3/j;Lj3/j;Ljava/lang/Object;Ljava/lang/Object;Z)V
+
+    .line 38
+    return-object p1
+.end method
+
+.method public j0()Lb4/j;
+    .locals 11
+
+    .line 1
+    iget-boolean v0, p0, Lj3/j;->e:Z
+
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 5
+    return-object p0
+
+    .line 6
+    :cond_0
+    new-instance v0, Lb4/j;
+
+    .line 8
+    iget-object v2, p0, Lj3/j;->a:Ljava/lang/Class;
+
+    .line 10
+    iget-object v3, p0, Lb4/m;->h:Lb4/n;
+
+    .line 12
+    iget-object v4, p0, Lb4/m;->f:Lj3/j;
+
+    .line 14
+    iget-object v5, p0, Lb4/m;->g:[Lj3/j;
+
+    .line 16
+    iget-object v1, p0, Lb4/j;->l:Lj3/j;
+
+    .line 18
+    invoke-virtual {v1}, Lj3/j;->V()Lj3/j;
+
+    .line 21
+    move-result-object v6
+
+    .line 22
+    iget-object v7, p0, Lb4/j;->m:Lj3/j;
+
+    .line 24
+    iget-object v8, p0, Lj3/j;->c:Ljava/lang/Object;
+
+    .line 26
+    iget-object v9, p0, Lj3/j;->d:Ljava/lang/Object;
+
+    .line 28
+    const/4 v10, 0x1
+
+    .line 29
+    move-object v1, v0
+
+    .line 30
+    invoke-direct/range {v1 .. v10}, Lb4/j;-><init>(Ljava/lang/Class;Lb4/n;Lj3/j;[Lj3/j;Lj3/j;Lj3/j;Ljava/lang/Object;Ljava/lang/Object;Z)V
+
+    .line 33
+    return-object v0
+.end method
+
+.method public k()Lj3/j;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lb4/j;->l:Lj3/j;
+
+    .line 3
+    return-object v0
+.end method
+
+.method public k0(Ljava/lang/Object;)Lb4/j;
+    .locals 11
+
+    .line 1
+    iget-object v0, p0, Lj3/j;->d:Ljava/lang/Object;
+
+    .line 3
+    if-ne p1, v0, :cond_0
+
+    .line 5
+    return-object p0
+
+    .line 6
+    :cond_0
+    new-instance v0, Lb4/j;
+
+    .line 8
+    iget-object v2, p0, Lj3/j;->a:Ljava/lang/Class;
+
+    .line 10
+    iget-object v3, p0, Lb4/m;->h:Lb4/n;
+
+    .line 12
+    iget-object v4, p0, Lb4/m;->f:Lj3/j;
+
+    .line 14
+    iget-object v5, p0, Lb4/m;->g:[Lj3/j;
+
+    .line 16
+    iget-object v6, p0, Lb4/j;->l:Lj3/j;
+
+    .line 18
+    iget-object v7, p0, Lb4/j;->m:Lj3/j;
+
+    .line 20
+    iget-object v8, p0, Lj3/j;->c:Ljava/lang/Object;
+
+    .line 22
+    iget-boolean v10, p0, Lj3/j;->e:Z
+
+    .line 24
+    move-object v1, v0
+
+    .line 25
+    move-object v9, p1
+
+    .line 26
+    invoke-direct/range {v1 .. v10}, Lb4/j;-><init>(Ljava/lang/Class;Lb4/n;Lj3/j;[Lj3/j;Lj3/j;Lj3/j;Ljava/lang/Object;Ljava/lang/Object;Z)V
+
+    .line 29
+    return-object v0
+.end method
+
+.method public l(Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lj3/j;->a:Ljava/lang/Class;
+
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    invoke-static {v0, p1, v1}, Lb4/m;->Y(Ljava/lang/Class;Ljava/lang/StringBuilder;Z)Ljava/lang/StringBuilder;
+
+    .line 7
+    move-result-object p1
+
+    .line 8
+    return-object p1
+.end method
+
+.method public l0(Ljava/lang/Object;)Lb4/j;
+    .locals 11
+
+    .line 1
+    iget-object v0, p0, Lj3/j;->c:Ljava/lang/Object;
+
+    .line 3
+    if-ne p1, v0, :cond_0
+
+    .line 5
+    return-object p0
+
+    .line 6
+    :cond_0
+    new-instance v0, Lb4/j;
+
+    .line 8
+    iget-object v2, p0, Lj3/j;->a:Ljava/lang/Class;
+
+    .line 10
+    iget-object v3, p0, Lb4/m;->h:Lb4/n;
+
+    .line 12
+    iget-object v4, p0, Lb4/m;->f:Lj3/j;
+
+    .line 14
+    iget-object v5, p0, Lb4/m;->g:[Lj3/j;
+
+    .line 16
+    iget-object v6, p0, Lb4/j;->l:Lj3/j;
+
+    .line 18
+    iget-object v7, p0, Lb4/j;->m:Lj3/j;
+
+    .line 20
+    iget-object v9, p0, Lj3/j;->d:Ljava/lang/Object;
+
+    .line 22
+    iget-boolean v10, p0, Lj3/j;->e:Z
+
+    .line 24
+    move-object v1, v0
+
+    .line 25
+    move-object v8, p1
+
+    .line 26
+    invoke-direct/range {v1 .. v10}, Lb4/j;-><init>(Ljava/lang/Class;Lb4/n;Lj3/j;[Lj3/j;Lj3/j;Lj3/j;Ljava/lang/Object;Ljava/lang/Object;Z)V
+
+    .line 29
+    return-object v0
+.end method
+
+.method public n(Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lj3/j;->a:Ljava/lang/Class;
+
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    invoke-static {v0, p1, v1}, Lb4/m;->Y(Ljava/lang/Class;Ljava/lang/StringBuilder;Z)Ljava/lang/StringBuilder;
+
+    .line 7
+    const/16 v0, 0x3c
+
+    .line 9
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 12
+    iget-object v0, p0, Lb4/j;->l:Lj3/j;
+
+    .line 14
+    invoke-virtual {v0, p1}, Lj3/j;->n(Ljava/lang/StringBuilder;)Ljava/lang/StringBuilder;
+
+    .line 17
+    move-result-object p1
+
+    .line 18
+    const-string v0, ">;"
+
+    .line 20
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 23
+    return-object p1
+.end method
+
+.method public r()Lj3/j;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lb4/j;->l:Lj3/j;
+
+    .line 3
+    return-object v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 3
+    const/16 v1, 0x28
+
+    .line 5
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    .line 8
+    const-string v1, "[reference type, class "
+
+    .line 10
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 13
+    invoke-virtual {p0}, Lb4/j;->a0()Ljava/lang/String;
+
+    .line 16
+    move-result-object v1
+
+    .line 17
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 20
+    const/16 v1, 0x3c
+
+    .line 22
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 25
+    iget-object v1, p0, Lb4/j;->l:Lj3/j;
+
+    .line 27
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 30
+    const/16 v1, 0x3e
+
+    .line 32
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 35
+    const/16 v1, 0x5d
+
+    .line 37
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    .line 40
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 43
+    move-result-object v0
+
+    .line 44
+    return-object v0
+.end method
+
+.method public v()Z
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x1
+
+    return v0
+.end method

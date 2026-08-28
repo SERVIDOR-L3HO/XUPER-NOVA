@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_white_radus" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right" android:id="@id/mIvClose" android:padding="15.0px" android:layout_width="80.0px" android:layout_height="80.0px" android:src="@drawable/icon_close" />
+    <TextView android:textSize="28.0px" android:textColor="@color/color_333333" android:gravity="center" android:id="@id/mTvContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="37.0px" android:layout_marginTop="20.0px" android:layout_marginRight="37.0px" android:text="@string/google_email_has_registered" />
+    <com.mobile.brasiltv.view.KoocanButton android:textSize="32.0px" android:textStyle="bold" android:textColor="@color/color_ffffff" android:id="@id/mKbOk" android:background="@drawable/shape_green_radius_solid" android:layout_width="fill_parent" android:layout_height="80.0px" android:layout_marginLeft="60.0px" android:layout_marginTop="50.0px" android:layout_marginRight="60.0px" android:layout_marginBottom="40.0px" android:text="@string/common_ok" />
+</com.zhy.autolayout.AutoLinearLayout>

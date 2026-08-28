@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:id="@id/mLayoutDevice" android:background="@drawable/bg_dm_device_list" android:clickable="true" android:layout_width="fill_parent" android:layout_height="128.0px" android:layout_marginTop="48.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/mIvDeviceType" android:layout_width="74.0px" android:layout_height="74.0px" android:layout_marginLeft="24.0px" android:src="@drawable/ic_device_mob" />
+    <com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="445.0px" android:layout_height="fill_parent" android:layout_marginLeft="108.0px">
+        <TextView android:textSize="28.0px" android:textColor="@color/white" android:ellipsize="end" android:gravity="left" android:id="@id/mTvDeviceName" android:layout_width="384.0px" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" />
+        <TextView android:textSize="20.0px" android:textColor="@color/color_b3ffffff" android:ellipsize="end" android:id="@id/mTvLoginArea" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0px" android:singleLine="true" android:includeFontPadding="false" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <ImageView android:layout_gravity="center|right" android:id="@id/mIvSelect" android:layout_width="40.0px" android:layout_height="40.0px" android:layout_marginRight="24.0px" android:src="@drawable/bg_single_select" />
+</com.zhy.autolayout.AutoFrameLayout>

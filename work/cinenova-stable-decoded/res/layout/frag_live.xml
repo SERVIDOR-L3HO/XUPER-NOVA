@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhy.autolayout.AutoRelativeLayout android:gravity="center_vertical" android:id="@id/mLayoutTitle" android:background="@color/color_191a23" android:layout_width="fill_parent" android:layout_height="130.0px">
+        <TextView android:textSize="36.0px" android:textStyle="bold|italic" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/mTextTitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/mVodImageLogo" android:background="@drawable/icon_live_home_logo" android:layout_width="96.0px" android:layout_height="58.0px" android:layout_marginLeft="30.0px" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/mImageSearch" android:background="@drawable/icon_live_home_search" android:layout_width="42.0px" android:layout_height="42.0px" android:layout_marginRight="30.0px" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.mobile.brasiltv.view.RatioFrameLayout android:id="@id/livePlayFrg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0px" android:layout_below="@id/mLayoutTitle" app:enable="true" app:ratio="1.78" />
+    <com.mobile.brasiltv.view.LiveFragmentTabLayout android:id="@id/liveFragmentTab" android:background="@color/color_191a23" android:layout_width="fill_parent" android:layout_height="85.0px" android:layout_below="@id/livePlayFrg" app:leftTextColor="@color/white" app:leftTextSize="20.0px" app:rightTextColor="@color/white" app:rightTextSize="20.0px" app:selectIndexColor="@color/color_important" app:selectTextColor="@color/color_important" />
+    <com.zhy.autolayout.AutoRelativeLayout android:id="@id/channelAndFavoriteContent" android:background="@color/color_191a23" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/liveFragmentTab">
+        <com.zhy.autolayout.AutoFrameLayout android:id="@id/channelAndFavoriteFrg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:id="@id/mLayoutEPGTitle" android:background="@color/color_191a23" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="80.0px" android:layout_below="@id/livePlayFrg">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="16.0px" android:layout_height="30.0px" android:layout_marginLeft="28.0px" android:src="@drawable/icon_epg_arrow" android:scaleType="fitXY" />
+        <TextView android:textSize="30.0px" android:textColor="@color/ffffff" android:gravity="center_vertical" android:id="@id/mTextEpgChannel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="19.0px" android:text="TNT HD" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.zhy.autolayout.AutoRelativeLayout android:id="@id/mLayoutEpgContent" android:background="@color/color_191a23" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/mLayoutEPGTitle">
+        <com.zhy.autolayout.AutoFrameLayout android:id="@id/mLayoutEPGFragment" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,1 @@
+- [APK repair validation](apk-repair-validation.md) — distinguish structural APK checks from runtime testing when no Android device is attached.

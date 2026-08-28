@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_dialog_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="36.0px" android:textStyle="bold" android:textColor="@color/color_1a1a1a" android:layout_gravity="center_horizontal" android:id="@id/mTvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0px" android:text="@string/dialog_title_notify" android:includeFontPadding="false" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_595959" android:gravity="center" android:id="@id/mTvHint" android:paddingLeft="20.0px" android:paddingRight="20.0px" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/login_hint_login_tp_fail" android:layout_weight="1.0" />
+    <com.mobile.brasiltv.view.KoocanButton android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/color_ffffff" android:id="@id/mKbOk" android:background="@drawable/shape_green_radius_solid" android:layout_width="fill_parent" android:layout_height="90.0px" android:layout_marginLeft="76.0px" android:layout_marginRight="76.0px" android:layout_marginBottom="60.0px" android:text="@string/confirm" />
+</com.zhy.autolayout.AutoLinearLayout>

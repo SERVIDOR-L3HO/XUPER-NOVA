@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/tabRecyclerView" android:layout_width="fill_parent" android:layout_height="80.0px" />
+    <com.zhy.autolayout.AutoRelativeLayout android:id="@id/mLayoutViewPager" android:background="@color/color_191a23" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.viewpager.widget.ViewPager android:id="@id/liveViewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

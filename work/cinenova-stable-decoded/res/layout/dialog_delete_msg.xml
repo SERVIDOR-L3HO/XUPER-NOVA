@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mobile.brasiltv.view.AutoCardView android:id="@id/mAcvRoot" android:layout_width="fill_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/color_important_white"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="26.0px" android:textColor="@color/color_1a1a1a" android:layout_gravity="center_horizontal" android:id="@id/mTvContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0px" android:layout_marginTop="65.0px" android:layout_marginRight="40.0px" />
+        <TextView android:textSize="32.0px" android:textColor="@color/color_secondary_text" android:gravity="center" android:id="@id/mTvCancel" android:background="@drawable/bg_btn_medium_gray" android:layout_width="fill_parent" android:layout_height="90.0px" android:layout_marginLeft="60.0px" android:layout_marginTop="60.0px" android:layout_marginRight="60.0px" android:text="@string/cancel" />
+        <TextView android:textSize="32.0px" android:textColor="@color/color_important_white" android:gravity="center" android:id="@id/mTvConfirm" android:background="@drawable/bg_btn_medium_green" android:layout_width="fill_parent" android:layout_height="90.0px" android:layout_marginLeft="60.0px" android:layout_marginTop="20.0px" android:layout_marginRight="60.0px" android:layout_marginBottom="40.0px" android:text="@string/confirm" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.mobile.brasiltv.view.AutoCardView>

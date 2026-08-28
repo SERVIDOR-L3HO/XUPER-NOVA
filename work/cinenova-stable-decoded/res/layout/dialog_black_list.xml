@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_dialog_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/color_important" android:gravity="center" android:layout_width="fill_parent" android:layout_height="76.0px" android:text="@string/attention" />
+    <View android:background="@color/color_dddddd" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_666666" android:gravity="center" android:paddingLeft="50.0px" android:paddingTop="26.0px" android:paddingRight="50.0px" android:paddingBottom="49.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/black_list_hint" />
+    <com.mobile.brasiltv.view.KoocanButton android:textSize="12.0sp" android:textColor="@color/color_ffffff" android:id="@id/kb_login_other" android:background="@drawable/bg_upgrade_confirm" android:layout_width="fill_parent" android:layout_height="60.0px" android:layout_marginLeft="80.0px" android:layout_marginRight="80.0px" android:layout_marginBottom="36.0px" android:text="@string/black_list_login_other" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_999999" android:layout_gravity="right" android:id="@id/tv_id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="53.0px" android:layout_marginBottom="22.0px" android:text="@string/black_list_id" />
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:id="@id/mLinearLayout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mobile.brasiltv.view.AutoCardView android:orientation="vertical" android:id="@id/mLayout" android:layout_width="268.0px" android:layout_height="377.0px" android:layout_marginLeft="17.0px" android:layout_marginRight="17.0px" android:foreground="?android:selectableItemBackground" app:cardCornerRadius="5.0px">
+        <ImageView android:id="@id/mIvPoster" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/special_cloumn_img_placeholder" android:scaleType="fitXY" />
+        <ImageView android:layout_gravity="right" android:id="@id/mIvTs" android:layout_width="36.0px" android:layout_height="42.0px" android:src="@drawable/image_ts" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/mIvCovered" android:background="@drawable/bg_home_program_shadow" android:layout_width="fill_parent" android:layout_height="100.0px" />
+        <TextView android:textSize="20.0px" android:textColor="@color/color_fffefe" android:gravity="center" android:layout_gravity="bottom" android:id="@id/mTvEpisodeInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="11.0px" android:text="Updated until the 8" />
+    </com.mobile.brasiltv.view.AutoCardView>
+    <TextView android:textSize="28.0px" android:textColor="@color/color_ffffff" android:ellipsize="end" android:gravity="center" android:id="@id/mTvProgramName" android:layout_width="268.0px" android:layout_height="wrap_content" android:layout_marginLeft="17.0px" android:layout_marginTop="19.0px" android:layout_marginRight="17.0px" android:text="The Call of the Wild series 10" android:maxLines="2" />
+</com.zhy.autolayout.AutoLinearLayout>

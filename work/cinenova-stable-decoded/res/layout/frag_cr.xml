@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@color/color_191a23" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:layout_gravity="center_horizontal" android:id="@id/mIncludePassword" android:visibility="gone" android:layout_width="520.0px" android:layout_height="400.0px" android:layout_marginTop="200.0px" layout="@layout/dialog_input_password" />
+    <include android:layout_gravity="center_horizontal" android:id="@id/mIncludeBindNotication" android:visibility="gone" android:layout_width="600.0px" android:layout_height="460.0px" android:layout_marginTop="200.0px" layout="@layout/dialog_notification_bind_email_or_phone" />
+    <com.mobile.brasiltv.view.KoocanEmptyView android:id="@id/mLoadingView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:emptyShowType="loading" />
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/mRefreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/mRvCr" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="15.0px" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</com.zhy.autolayout.AutoLinearLayout>

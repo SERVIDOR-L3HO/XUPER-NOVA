@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@drawable/shape_dialog_subtitle_options_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="28.0px" android:textColor="@color/color_666666" android:layout_gravity="center_horizontal" android:id="@id/mTvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="49.0px" android:text="@string/subtitle_language" />
+    <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/mRvOptions" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0px" android:layout_marginTop="72.0px" />
+</com.zhy.autolayout.AutoLinearLayout>

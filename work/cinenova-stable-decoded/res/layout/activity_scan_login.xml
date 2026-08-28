@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SurfaceView android:id="@id/scanner_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.mobile.brasiltv.utils.zxing.view.ViewfinderView android:layout_gravity="center" android:id="@id/viewfinder_content" android:layout_width="fill_parent" android:layout_height="fill_parent" app:corner_color="@color/color_important" app:frame_color="@color/transparent" app:label_text_color="@color/color_important" app:laser_color="@color/color_important" app:mask_color="@color/color_99000000" app:result_point_color="@android:color/transparent" />
+    <com.mobile.brasiltv.view.TitleView android:id="@id/mTitleTop" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleViewTitle="@string/qr_code" />
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="197.0px">
+        <TextView android:visibility="gone" android:text="@string/hint_scan_login_to_login" style="@style/ScanLoginHint" />
+        <TextView android:layout_marginTop="15.0px" android:text="@string/hint_scan_login_to_renew" style="@style/ScanLoginHint" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoFrameLayout>

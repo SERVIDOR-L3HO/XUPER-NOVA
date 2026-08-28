@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:id="@id/content" android:background="@color/color_141414" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mobile.brasiltv.view.NoScrollViewPager android:id="@id/mainViewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/mainAtyTab" />
+    <com.mobile.brasiltv.view.KoocanEmptyView android:id="@id/loadingView" android:layout_width="fill_parent" android:layout_height="fill_parent" app:emptyShowType="loading" />
+    <com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:id="@id/mLayoutNotice" android:background="@color/color_fdf4ca" android:paddingLeft="24.0px" android:paddingRight="24.0px" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0px" android:animateLayoutChanges="true">
+        <ImageView android:layout_width="29.0px" android:layout_height="25.0px" android:src="@drawable/ic_notice" />
+        <com.mobile.brasiltv.view.AutoText android:textSize="24.0px" android:textColor="@color/color_fb521d" android:id="@id/mTvNotice" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_marginRight="5.0px" android:layout_weight="1.0" />
+        <ImageView android:id="@id/mIvCloseNotice" android:layout_width="24.0px" android:layout_height="24.0px" android:src="@drawable/ic_notice_close" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <com.mobile.brasiltv.view.KoocanNetTabLayout android:id="@id/mainAtyTab" android:background="@color/color_1d1d1d" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_alignParentBottom="true" app:tl_iconHeight="25.0dip" app:tl_iconWidth="25.0dip" app:tl_textSelectColor="@color/color_important" app:tl_textUnselectColor="@color/color_bfbfbf" app:tl_textsize="13.0sp" />
+    <ImageView android:id="@id/ivCastFloat" android:visibility="gone" android:layout_width="136.0px" android:layout_height="136.0px" android:layout_marginRight="10.0px" android:layout_marginBottom="10.0px" android:src="@mipmap/icon_cast_float" android:layout_above="@id/mainAtyTab" android:layout_alignParentRight="true" />
+</com.zhy.autolayout.AutoRelativeLayout>

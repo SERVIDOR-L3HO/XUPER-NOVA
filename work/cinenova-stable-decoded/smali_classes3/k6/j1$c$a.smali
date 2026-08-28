@@ -1,0 +1,85 @@
+.class public final Lk6/j1$c$a;
+.super Ls9/j;
+.source "SourceFile"
+
+# interfaces
+.implements Lr9/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lk6/j1$c;->f(Lmobile/com/requestframe/utils/response/GetAuthInfoResult;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+
+# instance fields
+.field public final synthetic a:Lmobile/com/requestframe/utils/response/GetAuthInfoResult;
+
+
+# direct methods
+.method public constructor <init>(Lmobile/com/requestframe/utils/response/GetAuthInfoResult;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lk6/j1$c$a;->a:Lmobile/com/requestframe/utils/response/GetAuthInfoResult;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Ls9/j;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    .line 1
+    check-cast p1, Ljava/lang/String;
+
+    invoke-virtual {p0, p1}, Lk6/j1$c$a;->invoke(Ljava/lang/String;)V
+
+    sget-object p1, Lg9/t;->a:Lg9/t;
+
+    return-object p1
+.end method
+
+.method public final invoke(Ljava/lang/String;)V
+    .locals 6
+
+    .line 2
+    sget-object v0, Lcom/mobile/brasiltv/utils/y;->a:Lcom/mobile/brasiltv/utils/y;
+
+    iget-object p1, p0, Lk6/j1$c$a;->a:Lmobile/com/requestframe/utils/response/GetAuthInfoResult;
+
+    invoke-virtual {p1}, Lmobile/com/requestframe/utils/response/GetAuthInfoResult;->getReturnCode()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Ls9/i;->d(Ljava/lang/Object;)V
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x6
+
+    const/4 v5, 0x0
+
+    invoke-static/range {v0 .. v5}, Lcom/mobile/brasiltv/utils/y;->p(Lcom/mobile/brasiltv/utils/y;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 3
+    sget-object v0, Lcom/mobile/brasiltv/utils/g1;->a:Lcom/mobile/brasiltv/utils/g1$a;
+
+    invoke-virtual {v0, p1}, Lcom/mobile/brasiltv/utils/g1$a;->x(Ljava/lang/String;)V
+
+    return-void
+.end method

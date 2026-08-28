@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mIvThumb" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <ImageView android:id="@id/mIvTopShadow" android:background="@drawable/bg_shortvideo_shadow_top" android:layout_width="fill_parent" android:layout_height="420.0px" />
+    <TextView android:textSize="32.0px" android:textColor="@color/color_ffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/mTvError" android:background="@color/color_e6000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="110.0px" android:layout_marginLeft="55.0px" android:layout_marginRight="55.0px" android:text="@string/short_video_fail_play" />
+    <ImageView android:layout_gravity="center" android:id="@id/mIvPlay" android:visibility="gone" android:layout_width="160.0px" android:layout_height="160.0px" android:src="@drawable/ic_shortvideo_pause" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/mProgressBar" android:visibility="gone" android:layout_width="80.0px" android:layout_height="80.0px" style="?android:progressBarStyleSmall" />
+    <View android:layout_gravity="bottom" android:background="@drawable/bg_shortvideo_shadow_bottom" android:layout_width="fill_parent" android:layout_height="420.0px" />
+    <com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:layout_gravity="end|bottom|center" android:orientation="horizontal" android:id="@id/mLayoutFullVideo" android:background="@drawable/bg_shortvideo_full_play" android:visibility="gone" android:layout_width="200.0px" android:layout_height="100.0px" android:layout_marginRight="24.0px" android:layout_marginBottom="345.0px">
+        <ImageView android:visibility="visible" android:layout_width="43.0px" android:layout_height="55.0px" android:layout_marginLeft="30.0px" android:src="@drawable/ic_shortvideo_full_play" />
+        <TextView android:textSize="24.0px" android:textColor="@color/color_ffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginRight="10.0px" android:text="@string/short_video_full" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <TextView android:textSize="36.0px" android:textColor="@color/color_ffffff" android:layout_gravity="bottom" android:id="@id/mTvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0px" android:layout_marginRight="23.0px" android:layout_marginBottom="91.0px" android:lineSpacingExtra="4.0dip" />
+    <TextView android:textSize="24.0px" android:textColor="@color/color_cccccc" android:layout_gravity="bottom" android:id="@id/mTvAuthor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0px" android:layout_marginRight="23.0px" android:layout_marginBottom="35.0px" android:singleLine="true" />
+    <com.mobile.brasiltv.view.shortvideo.ShortVideoSeekBar android:layout_gravity="bottom" android:id="@id/mShortVideoSeekBar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.zhy.autolayout.AutoFrameLayout>

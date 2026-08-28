@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:background="@color/color_9f2f2f" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="25.0px" android:layout_marginTop="15.0px" android:layout_marginRight="25.0px" android:layout_marginBottom="15.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoFrameLayout android:duplicateParentState="true" android:layout_width="190.0px" android:layout_height="fill_parent">
+        <TextView android:textSize="70.0px" android:textColor="@color/color_ffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/tvPrice" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="100" />
+    </com.zhy.autolayout.AutoFrameLayout>
+    <com.zhy.autolayout.AutoRelativeLayout android:background="@mipmap/icon_coupons_right_select" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="160.0px">
+        <TextView android:textSize="30.0px" android:textColor="@color/color_ffe3ac" android:id="@id/tvCouponsTitle" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0px" android:layout_marginTop="21.0px" android:layout_marginRight="11.0px" android:text="Coupon for mounthly plan R$10.0" />
+        <TextView android:textSize="24.0px" android:textColor="@color/color_ffe3ac" android:id="@id/tvUseOn" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0px" android:text="Can be used on : XXX+XXX" android:layout_below="@id/tvCouponsTitle" android:layout_alignLeft="@id/tvCouponsTitle" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

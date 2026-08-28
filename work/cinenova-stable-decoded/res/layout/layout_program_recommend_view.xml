@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoFrameLayout android:paddingLeft="22.0px" android:layout_width="fill_parent" android:layout_height="80.0px">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/color_important_white" android:layout_gravity="center|left" android:id="@id/mTextTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/you_might_also_like" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/mImgRefresh" android:visibility="gone" android:layout_width="40.0px" android:layout_height="40.0px" android:layout_marginRight="15.0px" android:src="@drawable/home_icon_refurbish" android:scaleType="centerInside" />
+    </com.zhy.autolayout.AutoFrameLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/mRecyclerChange" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

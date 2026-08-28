@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.formats.UnifiedNativeAdView android:background="@color/color_ffffff" android:layout_width="fill_parent" android:layout_height="180.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0px" android:layout_marginBottom="20.0px" android:layout_marginStart="20.0px" android:layout_marginEnd="20.0px">
+        <ImageView android:id="@id/mIvAdIcon" android:layout_width="140.0px" android:layout_height="140.0px" android:layout_marginEnd="20.0px" />
+        <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="140.0px" android:layout_weight="1.0" android:layout_marginEnd="20.0px">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/color_808080" android:id="@id/mTvAdPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+            <com.zhy.autolayout.AutoLinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mLlAdBody" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="8.0sp" android:textStyle="bold" android:textColor="@color/color_3a6728" android:gravity="center" android:id="@id/mTvAdFlag" android:background="@drawable/bg_admob_native_ad" android:layout_width="60.0px" android:layout_height="wrap_content" android:text="Ad" />
+                <RatingBar android:textSize="12.0sp" android:textColor="@color/color_808080" android:id="@id/mAdRatingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:numStars="0" android:isIndicator="false" android:lines="1" style="?android:ratingBarStyleSmall" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/color_808080" android:gravity="top" android:id="@id/mAdStore" android:layout_width="fill_parent" android:layout_height="fill_parent" android:lines="1" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <TextView android:textSize="12.0sp" android:typeface="normal" android:textColor="@color/color_808080" android:ellipsize="end" android:id="@id/mTvAdTertiary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:lines="2" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <Button android:textColor="@color/color_ffffff" android:gravity="center" android:layout_gravity="bottom" android:id="@id/mBtnCallToAction" android:background="@color/color_5c84f0" android:layout_width="160.0px" android:layout_height="70.0px" android:lines="1" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_fefefe" android:gravity="center" android:layout_gravity="end" android:id="@id/mTvAdIdenti" android:background="@color/color_99000000" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="120.0px" android:text="@string/ads" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+    <ImageView android:layout_gravity="right" android:id="@id/mIvCloseAd" android:background="@color/color_99000000" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/app_icon_whiteoff" android:scaleType="fitXY" />
+</com.google.android.gms.ads.formats.UnifiedNativeAdView>

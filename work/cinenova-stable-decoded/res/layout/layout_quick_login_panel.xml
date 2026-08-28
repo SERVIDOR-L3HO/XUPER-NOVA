@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mobile.brasiltv.view.DropDownListView android:id="@id/mDropView" android:layout_width="fill_parent" android:layout_height="110.0px" android:layout_marginLeft="45.0px" android:layout_marginTop="548.0px" android:layout_marginRight="45.0px" />
+    <TextView android:enabled="false" android:textSize="32.0px" android:textStyle="bold" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/mTvQuickLogin" android:background="@drawable/selector_btn_login" android:layout_width="fill_parent" android:layout_height="100.0px" android:layout_marginLeft="45.0px" android:layout_marginTop="40.0px" android:layout_marginRight="45.0px" android:text="@string/login" />
+    <TextView android:textSize="28.0px" android:textColor="@color/color_1a1a1a" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/mTvError" android:background="@drawable/bg_radius_white" android:visibility="gone" android:layout_width="680.0px" android:layout_height="wrap_content" android:layout_marginTop="300.0px" android:minHeight="100.0px" android:text="@string/switch_account_expired" />
+</merge>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:id="@id/mLinearLayout" android:background="@drawable/bg_skip_radius_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mobile.brasiltv.view.AutoCardView android:orientation="vertical" android:id="@id/mLayout" android:layout_width="180.0px" android:layout_height="253.0px" android:foreground="?android:selectableItemBackground" app:cardCornerRadius="8.0px">
+        <ImageView android:id="@id/posterImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/special_cloumn_img_placeholder" android:scaleType="fitXY" />
+        <ImageView android:layout_gravity="right" android:id="@id/mImageTs" android:layout_width="36.0px" android:layout_height="42.0px" android:src="@drawable/image_ts" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/mImageCovered" android:background="@drawable/bg_home_program_shadow" android:layout_width="fill_parent" android:layout_height="100.0px" />
+        <TextView android:textSize="20.0px" android:textColor="@color/color_fffefe" android:gravity="center" android:layout_gravity="bottom" android:id="@id/mTvEpisodeInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="11.0px" android:text="Updated until the 8" />
+    </com.mobile.brasiltv.view.AutoCardView>
+    <TextView android:textSize="20.0px" android:textColor="@color/color_ffffff" android:ellipsize="end" android:gravity="center" android:id="@id/mPosterName" android:layout_width="180.0px" android:layout_height="wrap_content" android:layout_marginTop="12.0px" android:text="The Call of the Wild series 10" android:maxLines="1" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_333333" android:ellipsize="end" android:id="@id/mPosterNameSpecial" android:paddingTop="4.0px" android:paddingBottom="6.0px" android:visibility="gone" android:layout_width="172.0px" android:layout_height="wrap_content" android:text="Special Name" android:singleLine="true" />
+</com.zhy.autolayout.AutoLinearLayout>

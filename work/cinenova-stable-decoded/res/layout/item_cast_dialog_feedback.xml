@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/slItemContent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0px">
+        <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="55.0px" android:layout_marginTop="15.0px" android:layout_marginRight="55.0px">
+            <com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0px">
+                <TextView android:textSize="30.0px" android:textColor="@color/color_e62e2e" android:paddingTop="5.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" />
+                <TextView android:textSize="32.0px" android:textColor="@color/ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0px" android:layout_marginRight="12.0px" android:text="@string/description" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <EditText android:textSize="26.0px" android:textColor="@color/color_333333" android:gravity="left" android:id="@id/etDes" android:background="@drawable/shape_edit_withe_comment" android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0px" android:minHeight="200.0px" android:maxLength="2000" />
+            <com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0px">
+                <TextView android:textSize="30.0px" android:textColor="@color/color_e62e2e" android:paddingTop="5.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*" />
+                <TextView android:textSize="32.0px" android:textColor="@color/ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0px" android:layout_marginRight="12.0px" android:text="@string/email" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <EditText android:textSize="26.0px" android:textColor="@color/color_333333" android:id="@id/etEmail" android:background="@drawable/shape_edit_withe_comment" android:paddingLeft="10.0px" android:paddingRight="10.0px" android:layout_width="fill_parent" android:layout_height="80.0px" android:layout_marginTop="15.0px" android:inputType="textEmailAddress" />
+            <TextView android:textSize="24.0px" android:textColor="@color/color_ffaa00" android:layout_gravity="center_horizontal" android:id="@id/tvTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0px" android:text="@string/successful_submission" android:layout_below="@id/mLlEmailEdit" />
+            <TextView android:textSize="24.0px" android:textColor="@color/color_common_error" android:layout_gravity="center_horizontal" android:id="@id/tvError" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27.0px" />
+            <TextView android:enabled="false" android:textSize="32.0px" android:textStyle="bold" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/mTvSubmit" android:background="@drawable/selector_btn_login" android:layout_width="fill_parent" android:layout_height="90.0px" android:layout_marginTop="29.0px" android:layout_marginBottom="50.0px" android:text="@string/submit" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+</merge>

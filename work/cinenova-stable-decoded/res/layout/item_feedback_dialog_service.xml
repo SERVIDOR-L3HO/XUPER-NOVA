@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarSize="3.0dip" android:scrollbarThumbVertical="@drawable/shape_scrollbar_thumb" android:scrollbarTrackVertical="@drawable/shape_scrollbar_track" android:scrollbarStyle="outsideInset" android:id="@id/slItemService" android:visibility="gone" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0px" android:layout_marginRight="24.0px" android:layout_marginBottom="5.0px" android:scrollbarFadeDuration="0" />
+</merge>

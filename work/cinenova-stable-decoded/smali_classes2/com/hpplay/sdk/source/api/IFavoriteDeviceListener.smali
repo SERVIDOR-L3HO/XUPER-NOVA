@@ -1,0 +1,28 @@
+.class public interface abstract Lcom/hpplay/sdk/source/api/IFavoriteDeviceListener;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/hpplay/sdk/source/api/DeviceListenerConstant;
+
+
+# virtual methods
+.method public abstract onAddDevice(II)V
+.end method
+
+.method public abstract onGetDeviceList(IILjava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(II",
+            "Ljava/util/List<",
+            "Lcom/hpplay/sdk/source/browse/api/LelinkServiceInfo;",
+            ">;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract onRemoveDevice(II)V
+.end method
+
+.method public abstract onSetDeviceAlias(II)V
+.end method

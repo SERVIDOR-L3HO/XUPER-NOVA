@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:id="@id/mLayoutTop" android:layout_width="fill_parent" android:layout_height="645.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="36.0px" android:textStyle="bold" android:textColor="@color/color_fffefe" android:id="@id/mTvColumnName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0px" android:layout_marginTop="25.0px" android:text="Top10" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/mRvContent" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginLeft="15.0px" android:layout_marginTop="30.0px" android:layout_weight="1.0" />
+    <com.mobile.brasiltv.view.MarqueeTextView android:textSize="24.0px" android:textColor="@color/color_fffefe" android:ellipsize="marquee" android:id="@id/mTvProgramName" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="362.0px" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" android:layout_marginTop="12.0px" android:text="The Call of the Wild series 10" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+</com.zhy.autolayout.AutoLinearLayout>

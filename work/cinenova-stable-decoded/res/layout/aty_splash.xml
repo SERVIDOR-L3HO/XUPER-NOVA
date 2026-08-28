@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoRelativeLayout android:id="@id/mLayoutSplash" android:background="@drawable/bg_splash" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0px" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/ic_logo_magis" android:scaleType="fitXY" />
+            <TextView android:textSize="36.0px" android:textColor="@color/color_ffffff" android:layout_gravity="center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42.0px" android:text="@string/app_name" />
+            <TextView android:textSize="26.0px" android:textColor="@color/color_e6e6e6" android:layout_gravity="center" android:id="@id/mTextVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0px" android:text="V1.0.1" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <ImageView android:id="@id/mImageAdvert" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <Button android:textSize="24.0px" android:textColor="@color/color_ffffff" android:layout_gravity="right" android:id="@id/skipBtn" android:background="@drawable/shape_skip_ad_btn_bg" android:visibility="gone" android:layout_width="140.0px" android:layout_height="60.0px" android:layout_marginTop="30.0px" android:layout_marginRight="30.0px" android:text="5s skip" android:textAllCaps="false" />
+    <Button android:textSize="24.0px" android:textColor="@color/color_e6e6e6" android:layout_gravity="bottom|center|right" android:id="@id/btnVersion" android:background="@drawable/shape_splash_version_bg" android:visibility="gone" android:layout_width="120.0px" android:layout_height="32.0px" android:layout_marginRight="30.0px" android:layout_marginBottom="30.0px" android:text="v: 5.14.2" android:textAllCaps="false" />
+</com.zhy.autolayout.AutoFrameLayout>

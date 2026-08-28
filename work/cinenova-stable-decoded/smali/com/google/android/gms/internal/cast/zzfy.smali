@@ -1,0 +1,29 @@
+.class public final Lcom/google/android/gms/internal/cast/zzfy;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field private static final zza:Lcom/google/android/gms/internal/cast/zzqp;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/google/android/gms/internal/cast/zzfw;
+
+    invoke-direct {v0}, Lcom/google/android/gms/internal/cast/zzfw;-><init>()V
+
+    sput-object v0, Lcom/google/android/gms/internal/cast/zzfy;->zza:Lcom/google/android/gms/internal/cast/zzqp;
+
+    return-void
+.end method
+
+.method public static zza()Lcom/google/android/gms/internal/cast/zzqq;
+    .locals 1
+
+    sget-object v0, Lcom/google/android/gms/internal/cast/zzfx;->zza:Lcom/google/android/gms/internal/cast/zzqq;
+
+    return-object v0
+.end method

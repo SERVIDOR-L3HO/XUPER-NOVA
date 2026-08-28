@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@drawable/guide_up_right_arrow_bg" android:layout_width="520.0px" android:layout_height="wrap_content">
+        <TextView android:textSize="28.0px" android:textColor="@color/ffffff" android:tag="mTextContent" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="28.0px" android:textColor="@color/ffffff" android:layout_gravity="right" android:tag="mTvSure" android:background="@drawable/shape_guide_bnt_bg" android:paddingLeft="20.0px" android:paddingTop="10.0px" android:paddingRight="20.0px" android:paddingBottom="10.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0px" android:layout_marginRight="13.0px" android:layout_marginBottom="10.0px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoFrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_dialog_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right" android:id="@id/mIvClose" android:padding="26.0px" android:layout_width="82.0px" android:layout_height="82.0px" android:src="@drawable/icon_x_grey" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_595959" android:gravity="center" android:id="@id/mTvHint" android:paddingLeft="20.0px" android:paddingRight="20.0px" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/bind_google_account_with_device" android:layout_weight="1.0" />
+    <com.mobile.brasiltv.view.KoocanButton android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/color_ffffff" android:id="@id/mKbOk" android:background="@drawable/shape_green_radius_solid" android:layout_width="fill_parent" android:layout_height="80.0px" android:layout_marginLeft="56.0px" android:layout_marginRight="56.0px" android:layout_marginBottom="30.0px" android:text="@string/common_ok" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_595959" android:layout_gravity="center" android:id="@id/mTvCreateNewAccount" android:paddingBottom="25.0px" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/create_new_account" />
+</com.zhy.autolayout.AutoLinearLayout>

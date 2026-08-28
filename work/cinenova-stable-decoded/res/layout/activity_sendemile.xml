@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:background="@color/color_1f202a" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mobile.brasiltv.view.TitleView android:id="@id/titleView" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleViewTitle="@string/binding_prompt" />
+    <ImageView android:id="@id/img" android:layout_width="203.0px" android:layout_height="194.0px" android:layout_marginTop="213.0px" android:src="@mipmap/send_email" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0px" android:layout_marginTop="100.0px" android:layout_marginRight="30.0px" android:text="@string/email_send_success" android:layout_below="@id/img" />
+    <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/sendMsgBt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0px" android:text="@string/do_not_receive" android:layout_below="@id/content" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="@color/color_f23232" android:id="@id/tryAgain" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="141.0px" android:text="@string/frequent_operation" android:layout_below="@id/sendMsgBt" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="24.0px" android:textColor="@color/color_important" android:id="@id/resendEmail" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0px" android:text="@string/email_send_again" android:layout_below="@id/tryAgain" android:layout_centerHorizontal="true" />
+    <ProgressBar android:id="@id/mLoadingPbar" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_centerInParent="true" style="?android:progressBarStyleSmall" />
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/mBufferView" android:visibility="gone" android:layout_width="120.0dip" android:layout_height="120.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/mPlayerControllerLoadingPb" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_centerHorizontal="true" android:layout_centerVertical="true" style="?android:progressBarStyleSmall" />
+    <TextView android:textColor="@color/player_controller_buffer_text_color" android:id="@id/mPlayerControllerTvLoading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/player_buffering" android:singleLine="true" android:layout_below="@id/mPlayerControllerLoadingPb" android:layout_centerHorizontal="true" />
+</RelativeLayout>

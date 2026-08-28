@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="12.0sp" android:textColorHint="@color/color_999999" android:gravity="center|left" android:id="@id/mEtInput" android:background="@null" android:paddingLeft="38.0px" android:paddingRight="80.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+    <ImageView android:layout_gravity="center|right" android:id="@id/mIvClearInput" android:padding="22.0px" android:visibility="gone" android:layout_width="80.0px" android:layout_height="80.0px" android:scaleType="fitXY" />
+</merge>

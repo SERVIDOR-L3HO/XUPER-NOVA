@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/shape_dialog_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right" android:id="@id/mIvClose" android:layout_width="82.0px" android:layout_height="82.0px" android:src="@drawable/playdetail_popup_close" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@id/mTvHint" android:paddingLeft="20.0px" android:paddingRight="20.0px" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/please_bind_first" android:layout_weight="1.0" />
+    <com.mobile.brasiltv.view.KoocanButton android:textSize="16.0sp" android:textColor="@color/color_ffffff" android:id="@id/mKbBind" android:background="@drawable/shape_green_radius_solid" android:layout_width="fill_parent" android:layout_height="80.0px" android:layout_marginLeft="56.0px" android:layout_marginRight="56.0px" android:layout_marginBottom="40.0px" android:text="@string/binding_now" />
+</com.zhy.autolayout.AutoLinearLayout>

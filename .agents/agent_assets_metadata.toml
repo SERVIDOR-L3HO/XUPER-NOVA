@@ -56,3 +56,31 @@ mtime_ms = 1787366674637
 storage_uri = "gcs://replit-rams-assets-spock/rams/assets/repl:873a67e7-f07a-4136-be37-050a093ec352/863725ca-af39-4011-be5c-d811f7b6e016/8c9704af-b2a3-4871-9a0e-3d0833c7c9e5"
 storage_version_token = "1787366705115750"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "2Ya_27zmDvmKOnAiUfJTi"
+uri = "file://cinenova-repaired.apk"
+type = "unspecified"
+title = "CineNova reparada"
+description = "APK reconstruida y firmada después de desactivar las rutas residuales de protección que podían cerrar la aplicación durante el arranque."
+logical_id = "227ffec2-06b3-4da0-b1fc-6deb38cb0509"
+content_hash = "sha256:95cfbb51bf327ed10dd001ee8f97d44fad0c93706950010f0a8aa3b4fa12f0a9"
+size = 47409803
+mtime_ms = 1787875936508
+storage_uri = "gcs://replit-rams-assets-janeway/rams/assets/repl:bd95e208-1765-4434-97da-8a5ecb168cfa/227ffec2-06b3-4da0-b1fc-6deb38cb0509/74f6ec67-b448-4a06-a987-e91ed540b17c"
+storage_version_token = "1787875969865528"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "KrUgZ9c_HfO3dGGvUBiYg"
+uri = "file://cinenova-repaired-v2.apk"
+type = "unspecified"
+title = "CineNova reparada — firma compatible"
+description = "Versión corregida con firma APK v1, v2 y v3 verificada por apksigner. Usa este archivo en lugar de la entrega anterior."
+logical_id = "e8feb9d6-01a2-409b-828c-b20fd79e0c11"
+content_hash = "sha256:5cc5b6614f35d1ad47f2e97536578f3080ceb3c33f65d3def2acfb63e74e16c5"
+size = 47385501
+mtime_ms = 1787877103031
+storage_uri = "gcs://replit-rams-assets-janeway/rams/assets/repl:bd95e208-1765-4434-97da-8a5ecb168cfa/e8feb9d6-01a2-409b-828c-b20fd79e0c11/30fd871c-8d03-46c8-a12b-31d24dda7ba1"
+storage_version_token = "1787877115621476"
+content_type = "application/octet-stream"

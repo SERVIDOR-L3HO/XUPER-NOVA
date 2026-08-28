@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@drawable/bg_simple_dialog" android:layout_width="600.0px" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@id/mIvClose" android:padding="23.0px" android:layout_width="76.0px" android:layout_height="76.0px" android:layout_marginRight="5.0px" android:src="@drawable/icon_dialog_finish" />
+        <TextView android:textSize="36.0px" android:textStyle="bold" android:textColor="@color/color_333333" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0px" android:text="@string/mine_purchase_allmemeber_duration" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/mRecyPackage" android:paddingBottom="60.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" android:layout_marginTop="40.0px" android:layout_marginRight="20.0px" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

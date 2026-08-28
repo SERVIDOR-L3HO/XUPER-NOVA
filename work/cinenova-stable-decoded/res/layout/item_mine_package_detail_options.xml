@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mLayout" android:background="@drawable/shape_mine_to_purchase_item_bg" android:layout_width="fill_parent" android:layout_height="156.0px" android:layout_marginTop="24.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="28.0px" android:textColor="@color/color_1a1a1a" android:gravity="center" android:layout_gravity="center" android:id="@id/mTvPackage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0px" android:layout_marginRight="32.0px" />
+    <TextView android:textSize="28.0px" android:textColor="@color/color_important" android:gravity="center" android:layout_gravity="center" android:id="@id/mTvExpireTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0px" />
+</com.zhy.autolayout.AutoLinearLayout>

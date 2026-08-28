@@ -1,0 +1,13 @@
+.class public final Lcom/bigkoo/pickerview/R$layout;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final include_pickerview_topbar:I = 0x7f0d0100
+
+.field public static final layout_basepickerview:I = 0x7f0d0135
+
+.field public static final pickerview_options:I = 0x7f0d01b3
+
+.field public static final pickerview_time:I = 0x7f0d01b4

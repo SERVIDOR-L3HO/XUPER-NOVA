@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:id="@id/mLinearLayout" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mobile.brasiltv.view.AutoCardView android:orientation="vertical" android:id="@id/mLayout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="311.0px" android:foreground="?android:selectableItemBackground" app:cardCornerRadius="3.0dip">
+        <com.mobile.brasiltv.view.AutoCardView android:id="@id/mAcvScoreWrapper" android:layout_width="wrap_content" android:layout_height="30.0px" android:layout_marginLeft="6.0px" android:layout_marginTop="5.0px" app:cardBackgroundColor="@color/color_important" app:cardCornerRadius="2.0dip" app:cardElevation="0.0dip">
+            <TextView android:textSize="20.0px" android:textColor="@color/color_fffefe" android:gravity="center" android:id="@id/mScoreTv" android:paddingLeft="10.0px" android:paddingRight="10.0px" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </com.mobile.brasiltv.view.AutoCardView>
+        <ImageView android:id="@id/posterImageView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/column_image_placeholder" android:scaleType="centerCrop" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/mImageCovered" android:background="@drawable/bg_home_program_shadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0px" />
+        <TextView android:textSize="20.0px" android:textColor="@color/color_ffffff" android:gravity="center" android:layout_gravity="bottom" android:id="@id/mSetInfo" android:layout_width="fill_parent" android:layout_height="36.0px" />
+    </com.mobile.brasiltv.view.AutoCardView>
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_ffffff" android:ellipsize="end" android:id="@id/mPosterName" android:layout_width="228.0px" android:layout_height="wrap_content" android:layout_marginTop="14.0px" android:text="Pacifig rim" android:maxLines="2" />
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:orientation="vertical" android:id="@id/mLayoutSpecial" android:layout_width="fill_parent" android:layout_height="720.0px" android:layout_marginTop="44.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mIvSpecialBg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0px" android:layout_marginBottom="20.0px">
+        <TextView android:textSize="36.0px" android:textStyle="bold" android:textColor="@color/color_fffefe" android:id="@id/mTvColumnName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="29.0px" android:layout_marginTop="19.0px" android:text="Top10" />
+        <com.zhy.autolayout.AutoFrameLayout android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center" android:id="@id/mRvContent" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="21.0px" />
+        </com.zhy.autolayout.AutoFrameLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoFrameLayout>

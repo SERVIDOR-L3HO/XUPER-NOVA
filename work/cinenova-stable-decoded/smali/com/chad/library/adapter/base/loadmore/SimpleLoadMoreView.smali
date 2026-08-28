@@ -1,0 +1,57 @@
+.class public final Lcom/chad/library/adapter/base/loadmore/SimpleLoadMoreView;
+.super Lcom/chad/library/adapter/base/loadmore/LoadMoreView;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/chad/library/adapter/base/loadmore/LoadMoreView;-><init>()V
+
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public getLayoutId()I
+    .locals 1
+
+    .line 1
+    sget v0, Lcom/chad/library/R$layout;->brvah_quick_view_load_more:I
+
+    .line 3
+    return v0
+.end method
+
+.method public getLoadEndViewId()I
+    .locals 1
+
+    .line 1
+    sget v0, Lcom/chad/library/R$id;->load_more_load_end_view:I
+
+    .line 3
+    return v0
+.end method
+
+.method public getLoadFailViewId()I
+    .locals 1
+
+    .line 1
+    sget v0, Lcom/chad/library/R$id;->load_more_load_fail_view:I
+
+    .line 3
+    return v0
+.end method
+
+.method public getLoadingViewId()I
+    .locals 1
+
+    .line 1
+    sget v0, Lcom/chad/library/R$id;->load_more_loading_view:I
+
+    .line 3
+    return v0
+.end method

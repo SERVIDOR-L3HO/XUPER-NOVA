@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@drawable/shape_feedback_vertical_dialog_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right" android:id="@id/ivClose" android:padding="15.0px" android:layout_width="65.0px" android:layout_height="65.0px" android:src="@mipmap/close" />
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:paddingLeft="23.0px" android:paddingRight="23.0px" android:layout_width="fill_parent" android:layout_height="80.0px">
+        <com.zhy.autolayout.AutoFrameLayout android:id="@id/flFeedback" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="28.0px" android:textStyle="bold" android:textColor="@color/selector_color_white_green" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/feedback" />
+            <View android:layout_gravity="bottom" android:background="@drawable/selector_transparent_green" android:layout_width="fill_parent" android:layout_height="6.0px" android:layout_marginLeft="120.0px" android:layout_marginRight="120.0px" />
+        </com.zhy.autolayout.AutoFrameLayout>
+        <View android:background="@color/color_424242" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0px" android:layout_marginBottom="10.0px" />
+        <com.zhy.autolayout.AutoFrameLayout android:id="@id/flService" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="28.0px" android:textStyle="bold" android:textColor="@color/selector_color_white_green" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/customer_service_land" />
+            <View android:layout_gravity="bottom" android:background="@drawable/selector_transparent_green" android:layout_width="fill_parent" android:layout_height="6.0px" android:layout_marginLeft="120.0px" android:layout_marginRight="120.0px" />
+        </com.zhy.autolayout.AutoFrameLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <include layout="@layout/item_cast_dialog_feedback" />
+    <include layout="@layout/item_feedback_dialog_service" />
+</com.zhy.autolayout.AutoLinearLayout>

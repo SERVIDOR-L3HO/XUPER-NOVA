@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:id="@id/mLayoutEpgItem" android:background="@color/color_1f202a" android:layout_width="fill_parent" android:layout_height="101.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoFrameLayout android:id="@id/fl_wrapper" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23.0px" android:layout_marginRight="23.0px" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/color_cccccc" android:id="@id/tv_live" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Live" />
+        <ImageView android:id="@id/iv_live_sub" android:layout_width="44.0px" android:layout_height="44.0px" android:src="@drawable/ic_live_unsub" android:layout_centerVertical="true" />
+    </com.zhy.autolayout.AutoFrameLayout>
+    <TextView android:textSize="30.0px" android:textColor="@color/ffffff" android:ellipsize="marquee" android:gravity="center|left" android:id="@id/mTextTime" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0px" android:layout_marginTop="20.0px" android:text="00:00-00:45" android:singleLine="true" android:layout_toLeftOf="@id/fl_wrapper" android:marqueeRepeatLimit="marquee_forever" />
+    <TextView android:textSize="24.0px" android:textColor="@color/ffffff" android:ellipsize="end" android:gravity="center|left" android:id="@id/mTextEpgProgram" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0px" android:text="C.S.I" android:singleLine="true" android:layout_toLeftOf="@id/fl_wrapper" android:layout_alignLeft="@id/mTextTime" android:layout_alignParentBottom="true" />
+</com.zhy.autolayout.AutoRelativeLayout>

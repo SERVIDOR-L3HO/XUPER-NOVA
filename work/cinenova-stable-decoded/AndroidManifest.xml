@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" package="com.msandroid.mobileNF" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <package android:name="com.google.android.gms.policy_cast_dynamite"/>
+        <intent>
+            <action android:name="com.umeng.message.action.notify"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.vivo.notification.permission.BADGE_ICON"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:icon="@mipmap/ic_logo" android:label="@string/app_name" android:largeHeap="true" android:name="com.mobile.brasiltv.app.App" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:theme="@style/MobileAppTheme" android:usesCleartextTraffic="true">
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="zx.BanAct" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mobile.brasiltv.activity.MyFavListActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.mobile.brasiltv.activity.SplashAty" android:screenOrientation="portrait" android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="www.magis4K.com" android:scheme="sxl"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="true" android:launchMode="singleTask" android:name="com.mobile.brasiltv.activity.MainAty" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="brtvphone.page.link" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mobile.brasiltv.activity.RecordsAty" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mobile.brasiltv.activity.WebViewAty" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mobile.brasiltv.activity.ScanLoginActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.mobile.brasiltv.activity.PlayAty" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.mobile.brasiltv.mine.activity.OrderAty" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:label="NetService" android:name="com.mobile.brasiltv.service.NetService">
+            <intent-filter>
+                <action android:name="com.swl.amobile.service.netservice"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="firebase_analytics_collection_deactivated" android:value="true"/>
+        <meta-data android:name="google_analytics_adid_collection_enabled" android:value="false"/>
+        <meta-data android:name="google_analytics_ssaid_collection_enabled" android:value="false"/>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false"/>
+        <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="false"/>
+        <meta-data android:name="firebase_inapp_messaging_auto_init_enabled" android:value="false"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="68b903e0e563686f429a3a60"/>
+        <meta-data android:name="UMENG_MSG_SECRET" android:value="8cd8a8bfd892266a51cf9332e20381cd"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="Umeng"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-9843556922272883~3303824453"/>
+        <meta-data android:name="design_width" android:value="750"/>
+        <meta-data android:name="design_height" android:value="1334"/>
+        <meta-data android:name="LINK_VALUE" android:value=""/>
+        <meta-data android:name="LINK_ID" android:value=""/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/default_notification_channel_id"/>
+        <meta-data android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" android:value="com.mobile.brasiltv.cast.CastOptionsProvider"/>
+        <activity android:name="com.mobile.brasiltv.activity.SettingLanguageAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.TransitionLanguageAty" android:screenOrientation="portrait" android:theme="@style/TransitionLanguage"/>
+        <activity android:launchMode="singleTask" android:name="com.mobile.brasiltv.mine.activity.LoginAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.SelectNationAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.mine.activity.SettingAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.mine.activity.AboutAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.ExperienceCastPlayAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.mine.activity.FindPwdByPhoneAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.SearchAty" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mobile.brasiltv.activity.IntroduceAty" android:screenOrientation="portrait" android:theme="@style/ThemeIntroduce"/>
+        <activity android:name="com.mobile.brasiltv.activity.Search1Aty" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.mobile.brasiltv.activity.ColumnListAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.mine.activity.AccountAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.mine.activity.EmailAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.mine.activity.ChangePwdAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.mine.activity.ForgetPasswordAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.mine.activity.ScanLoginAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.RedemptionAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.PhoneBindAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.SetPassWordAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.PhoneBindSuccessAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.PhoneAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.SendEmailAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.ResetAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.mine.activity.VIPMemberActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.EmailManagerAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.mine.activity.AccountBindAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.BindEmailSucAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.SetPwdOnBeAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.SetPwdOnResetAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.ResetPwdSucAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.ChangeEmailAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.mine.activity.MyBenefitsAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.mine.activity.NotificationSettingAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.SingleColumnAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.CastModeAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.FreeGameCenterAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.mine.activity.AccountSwitchAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.SpecialAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.OrderConfirmAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.MsgBoxAty" android:screenOrientation="portrait" android:theme="@style/TranslucentTheme"/>
+        <activity android:name="com.mobile.brasiltv.activity.SubtitleAty" android:screenOrientation="portrait"/>
+        <provider android:authorities="com.msandroid.mobileNF.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_path"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.mobile.brasiltv.mine.activity.PlaylistActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.CastByNativeDeviceAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.TopTenActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.DeviceManageAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.PhoneManagerAty" android:screenOrientation="portrait"/>
+        <activity android:name="com.mobile.brasiltv.activity.ChangePhoneAty" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.mobile.brasiltv.mine.activity.ForceChangePwdAty" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.mobile.brasiltv.utils.image.MyOkHttpGlideModule" android:value="GlideModule"/>
+        <service android:exported="false" android:name="com.taobao.accs.ChannelService">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.START_SERVICE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.ELECTION"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.taobao.accs.data.MsgDistributeService">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name="com.taobao.accs.EventReceiver"/>
+        <receiver android:exported="false" android:name="com.taobao.accs.ServiceReceiver">
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.COMMAND"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.taobao.accs.intent.action.START_FROM_AGOO"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.ktx.FirebaseDynamicLinksKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="false" android:label="NetworkConnection" android:name="com.qiniu.android.dns.NetworkReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"/>
+        <service android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.google.android.gms.cast.framework.media.MediaNotificationService"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.ReconnectionService"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.msandroid.mobileNF.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.msandroid.mobileNF.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <service android:exported="false" android:name="com.hpplay.sdk.source.process.LelinkSdkService" android:process=":lelinkps">
+            <intent-filter>
+                <action android:name="com.hpplay.sdk.source.LelinkSdkService.ACTION"/>
+            </intent-filter>
+        </service>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.hpplay.sdk.source.permission.PermissionBridgeActivity" android:process=":lelinkps" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <receiver android:exported="false" android:name="com.hpplay.sdk.source.process.LelinkReceiver" android:process=":lelinkps">
+            <intent-filter>
+                <action android:name="com.hpplay.source.service.close"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.umeng.message.component.UmengIntentService">
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.umeng.message.component.UmengMessageReceiverService">
+            <intent-filter>
+                <action android:name="org.android.agoo.client.MessageReceiverService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.umeng.message.component.UmengMessageHandlerService" android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.umeng.message.action"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.msandroid.mobileNF.umeng.message" android:exported="false" android:name="com.umeng.message.component.UmengMessageProvider"/>
+        <receiver android:exported="false" android:name="com.umeng.message.component.UmengNotificationReceiver"/>
+        <activity android:exported="false" android:name="com.umeng.message.component.UmengNotificationClickActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.umeng.message.notify.UPushMessageNotifyActivity" android:screenOrientation="behind" android:taskAffinity="com.msandroid.mobileNF.u_push" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity-alias android:exported="true" android:name="com.umeng.message.UMessageNotifyActivity" android:targetActivity="com.umeng.message.notify.UPushMessageNotifyActivity">
+            <intent-filter>
+                <action android:name="com.umeng.message.action.notify"/>
+            </intent-filter>
+        </activity-alias>
+        <service android:exported="false" android:name="com.taobao.accs.ChannelService$KernelService"/>
+        <service android:exported="false" android:name="com.taobao.accs.internal.AccsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.core.脉.影" android:permission="android.permission.BIND_VPN_SERVICE">
+            <intent-filter>
+                <action android:name="android.net.VpnService"/>
+            </intent-filter>
+        </service>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.core.脉.触" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+    </application>
+</manifest>

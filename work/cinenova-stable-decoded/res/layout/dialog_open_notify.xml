@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoFrameLayout android:background="@drawable/bg_dialog_notification" android:layout_width="600.0px" android:layout_height="600.0px">
+        <ImageView android:layout_gravity="end" android:id="@id/mIvClose" android:padding="15.0px" android:layout_width="60.0px" android:layout_height="60.0px" android:layout_marginTop="62.0px" android:src="@mipmap/close_big" android:scaleType="fitXY" android:layout_marginEnd="10.0px" />
+        <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="220.0px">
+            <TextView android:textSize="36.0px" android:textStyle="bold" android:textColor="@color/color_333333" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/open_msg_notify_title" />
+            <TextView android:textSize="24.0px" android:textColor="@color/color_333333" android:gravity="center" android:paddingLeft="50.0px" android:paddingRight="50.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0px" android:text="@string/open_msg_notify_content" />
+            <com.mobile.brasiltv.view.KoocanButton android:textSize="28.0px" android:textColor="@color/color_ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/mKbTurnedOn" android:background="@drawable/bg_upgrade_confirm" android:layout_width="480.0px" android:layout_height="90.0px" android:layout_marginTop="75.0px" android:text="@string/go_to_setting" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoFrameLayout>
+</com.zhy.autolayout.AutoFrameLayout>
