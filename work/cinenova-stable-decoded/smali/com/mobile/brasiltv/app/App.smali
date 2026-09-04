@@ -554,22 +554,6 @@
     .line 1
     invoke-super {p0}, Lcom/mobile/brasiltv/base/BaseAPP;->onCreate()V
 
-    invoke-static {p0}, Lnf/Guard;->start(Landroid/content/Context;)V
-
-    new-instance v0, Lzx/LC;
-
-    invoke-direct {v0}, Lzx/LC;-><init>()V
-
-    invoke-virtual {p0, v0}, Landroid/app/Application;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
-
-    invoke-static {}, Lzx/w4;->check()V
-
-    invoke-static {p0}, Lzx/w7;->check(Landroid/content/Context;)V
-
-    invoke-static {p0}, Lzx/w2;->check(Landroid/content/Context;)V
-
-    invoke-static {p0}, Lzx/w1;->fetch(Landroid/content/Context;)V
-
     .line 4
     invoke-static {p0}, Ll7/f;->e(Landroid/content/Context;)V
 

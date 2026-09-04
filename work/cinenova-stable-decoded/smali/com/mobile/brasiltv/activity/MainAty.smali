@@ -4743,17 +4743,6 @@
 .method public onResume()V
     .locals 2
 
-    sget-boolean v0, Lzx/t;->vpnStarted:Z
-
-    if-nez v0, :cond_0
-
-    invoke-static {p0}, Lzx/t;->ask(Landroid/app/Activity;)V
-
-    :cond_0
-    invoke-static {p0}, Lzx/j;->show(Landroid/app/Activity;)V
-
-    invoke-static {p0}, Lzx/w3;->check(Landroid/app/Activity;)V
-
     .line 1
     invoke-super {p0}, Lcom/mobile/brasiltv/activity/a;->onResume()V
 
