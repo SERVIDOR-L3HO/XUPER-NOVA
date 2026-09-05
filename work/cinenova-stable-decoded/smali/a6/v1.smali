@@ -17200,59 +17200,33 @@
     invoke-static {v1, p1}, Lcom/mobile/brasiltv/utils/j1;->I(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 693
-    new-instance p1, Ljava/lang/StringBuilder;
+    :try_start_0
+    new-instance v2, Landroid/content/Intent;
 
-    .line 695
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v3, "android.intent.action.VIEW"
 
-    .line 698
-    sget-object v0, Lv6/i;->g:Lv6/i$c;
+    invoke-direct {v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 700
-    invoke-virtual {v0}, Lv6/i$c;->E()Ljava/lang/String;
+    const-string v3, "https://t.me/l3hointeractive"
 
-    .line 703
-    move-result-object v0
+    invoke-static {v3}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-    .line 704
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v3
 
-    .line 707
-    const-string v0, "/#/shareApp"
+    invoke-virtual {v2, v3}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 709
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/high16 v3, 0x10000000
 
-    .line 712
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2, v3}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 715
-    move-result-object v2
-
-    .line 716
-    const/4 v3, 0x0
-
-    .line 717
-    const/4 v4, 0x1
-
-    .line 718
-    const/4 v5, 0x0
-
-    .line 719
-    const/16 v6, 0x8
-
-    .line 721
-    const/4 v7, 0x0
-
-    .line 722
-    move-object v1, p0
-
-    .line 723
-    invoke-static/range {v1 .. v7}, Lcom/mobile/brasiltv/utils/b0;->l0(La6/f;Ljava/lang/String;ZZZILjava/lang/Object;)V
+    invoke-virtual {v1, v2}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 726
     :cond_25
     :goto_b
+    :catch_0
     return-void
 .end method
 

@@ -6230,84 +6230,40 @@
 .end method
 
 .method public static final p4(Lcom/mobile/brasiltv/player/TitanPlayerController;Landroid/view/View;)V
-    .locals 9
+    .locals 3
 
-    .line 1
     const-string p1, "this$0"
 
-    .line 3
     invoke-static {p0, p1}, Ls9/i;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 6
-    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+    :try_start_share
+    new-instance v0, Landroid/content/Intent;
 
-    .line 9
-    move-result-object p1
+    const-string v1, "android.intent.action.VIEW"
 
-    .line 10
-    const-string v0, "vodFullScreen"
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 12
-    invoke-static {p1, v0}, Lcom/mobile/brasiltv/utils/j1;->I(Landroid/content/Context;Ljava/lang/String;)V
+    const-string v1, "https://t.me/l3hointeractive"
 
-    .line 15
-    invoke-virtual {p0}, Lcom/mobile/brasiltv/player/TitanPlayerController;->getMActivity()Lcom/mobile/brasiltv/activity/a;
+    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-    .line 18
     move-result-object v1
 
-    .line 19
-    new-instance p0, Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 21
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+    const/high16 v1, 0x10000000
 
-    .line 24
-    sget-object p1, Lv6/i;->g:Lv6/i$c;
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 26
-    invoke-virtual {p1}, Lv6/i$c;->E()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/mobile/brasiltv/player/TitanPlayerController;->getMActivity()Lcom/mobile/brasiltv/activity/a;
 
-    .line 29
-    move-result-object p1
+    move-result-object v1
 
-    .line 30
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    :try_end_share
+    .catch Ljava/lang/Throwable; {:try_start_share .. :try_end_share} :catch_share
 
-    .line 33
-    const-string p1, "/#/shareApp"
-
-    .line 35
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 38
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 41
-    move-result-object v2
-
-    .line 42
-    const/4 v3, 0x0
-
-    .line 43
-    const/4 v4, 0x1
-
-    .line 44
-    const/4 v5, 0x0
-
-    .line 45
-    const/4 v6, 0x0
-
-    .line 46
-    const/16 v7, 0x18
-
-    .line 48
-    const/4 v8, 0x0
-
-    .line 49
-    invoke-static/range {v1 .. v8}, Lcom/mobile/brasiltv/utils/b0;->m0(Landroid/content/Context;Ljava/lang/String;ZZZZILjava/lang/Object;)V
-
-    .line 52
+    :catch_share
     return-void
 .end method
 
