@@ -47,14 +47,14 @@ content_type = "application/octet-stream"
 id = "6D1Z_NYlBVbumcFhXX53d"
 uri = "file://cinenova-crashfix.apk"
 type = "unspecified"
-title = "Xuper Nova — logo actualizado"
-description = "APK final con el logo Xuper Nova en la esquina superior izquierda de la pantalla principal, manteniendo el splash y el nombre de la app actualizados. Firma v1/v2/v3 verificada; solo queda este APK."
+title = "Xuper Nova — perfil simplificado"
+description = "APK actualizado ocultando Gestión, el banner superior ERROR 404 y el logo circular de Visitante. Conserva el icono, splash, nombre y logo Xuper Nova anteriores. Firma v1/v2/v3 verificada; solo queda este APK."
 logical_id = "863725ca-af39-4011-be5c-d811f7b6e016"
-content_hash = "sha256:d22da6f95d106b13081acc56d9f743434255b0928b268d68510c49ddb85d3a69"
+content_hash = "sha256:06b48255a8a4d68404c8531b507d3744648956fc6a9ab271b1f153aa0be1befa"
 size = 48266141
-mtime_ms = 1788579682000
-storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:89578c50-c2aa-4d3b-ba87-90755e06fef7/863725ca-af39-4011-be5c-d811f7b6e016/2aad8f9c-6829-4ba9-86f7-311da88db8a2"
-storage_version_token = "1788579688798354"
+mtime_ms = 1788580502792
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:89578c50-c2aa-4d3b-ba87-90755e06fef7/863725ca-af39-4011-be5c-d811f7b6e016/e643181d-aa6d-4b51-9665-0470f6e7b527"
+storage_version_token = "1788580510157705"
 content_type = "application/octet-stream"
 
 [[outputs]]
