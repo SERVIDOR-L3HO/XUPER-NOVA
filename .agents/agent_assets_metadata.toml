@@ -84,3 +84,17 @@ mtime_ms = 1787877103031
 storage_uri = "gcs://replit-rams-assets-janeway/rams/assets/repl:bd95e208-1765-4434-97da-8a5ecb168cfa/e8feb9d6-01a2-409b-828c-b20fd79e0c11/30fd871c-8d03-46c8-a12b-31d24dda7ba1"
 storage_version_token = "1787877115621476"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "NemzjuF3NYtGl5aGQiCgJ"
+uri = "file://work/cinenova-purple.apk"
+type = "unspecified"
+title = "CineNova con iconos morados"
+description = "APK reconstruido y firmado con los iconos activos de Inicio, TV y Perfil en morado #A45BFF. La firma v2/v3 fue verificada; no se realizó lanzamiento en dispositivo porque no hay un emulador o teléfono Android conectado."
+logical_id = "9cc4e280-a5de-43a8-acae-8a0a122aa340"
+content_hash = "sha256:dcbeb7cb0ae86bd2476bd27614c6b68dcd636383975a0e8574ecd8ab26424f89"
+size = 49040285
+mtime_ms = 1788583672965
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:543eb48c-8750-4762-be73-5a05a7dc2463/9cc4e280-a5de-43a8-acae-8a0a122aa340/789c92e7-acb1-43c0-b717-03d49d607437"
+storage_version_token = "1788583722529089"
+content_type = "application/octet-stream"
