@@ -660,34 +660,7 @@
     invoke-static {p1, v0}, Lcom/mobile/brasiltv/utils/j1;->I(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 15
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    .line 17
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 20
-    sget-object v0, Lv6/i;->g:Lv6/i$c;
-
-    .line 22
-    invoke-virtual {v0}, Lv6/i$c;->E()Ljava/lang/String;
-
-    .line 25
-    move-result-object v0
-
-    .line 26
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 29
-    const-string v0, "/#/shareApp"
-
-    .line 31
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 34
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 37
-    move-result-object v2
+    const-string v2, "https://t.me/l3hointeractive"
 
     .line 38
     const/4 v3, 0x0

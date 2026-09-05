@@ -511,7 +511,7 @@ Agregue la función de notificación de vista previa del programa del canal de T
     <string name="login_method_google">Google</string>
     <string name="login_method_mobile">Número de celular</string>
     <string name="login_method_scan_code">Código QR</string>
-    <string name="login_method_visitor">Visitante</string>
+    <string name="login_method_visitor">L3HO-INTERACTIVE</string>
     <string name="login_other_account">Inicie sesión con otra cuenta</string>
     <string name="login_out">Cerrar sesión</string>
     <string name="logout">Salir</string>
@@ -566,7 +566,7 @@ Agregue la función de notificación de vista previa del programa del canal de T
     <string name="mine_setting_update_neg">Se solucionará más tarde</string>
     <string name="mine_setting_update_pos">Actualizar</string>
     <string name="mine_setting_update_title">Actualizar versión</string>
-    <string name="mine_share_app">Compartir</string>
+    <string name="mine_share_app">Soporte</string>
     <string name="mine_subscriptions">Notificaciones</string>
     <string name="mine_subtitle">Subtítulo</string>
     <string name="mine_subtitle_audio">Audio y subtítulos</string>
@@ -893,7 +893,7 @@ Confirme que fue su propia operación, de lo contrario, para garantizar la segur
     <string name="title_other_accounts">Otras cuentas</string>
     <string name="title_recent_login">Entradas Recientes</string>
     <string name="today">Hoy</string>
-    <string name="tourists">Visitante</string>
+    <string name="tourists">L3HO-INTERACTIVE</string>
     <string name="trail_period_ends">Tiempo de prueba caducado</string>
     <string name="trail_period_ends_tips">Tiempo de prueba expirado, por favor ingrese en Mi Perfil para registrarse como un usuario VIP!</string>
     <string name="transaction_failed">Transacción fallida</string>

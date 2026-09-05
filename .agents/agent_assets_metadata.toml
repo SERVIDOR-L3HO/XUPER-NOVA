@@ -47,14 +47,14 @@ content_type = "application/octet-stream"
 id = "6D1Z_NYlBVbumcFhXX53d"
 uri = "file://cinenova-crashfix.apk"
 type = "unspecified"
-title = "Xuper Nova — perfil simplificado"
-description = "APK actualizado ocultando Gestión, el banner superior ERROR 404 y el logo circular de Visitante. Conserva el icono, splash, nombre y logo Xuper Nova anteriores. Firma v1/v2/v3 verificada; solo queda este APK."
+title = "Xuper Nova — soporte Telegram"
+description = "APK actualizado: el botón ahora dice Soporte y abre https://t.me/l3hointeractive; el nombre Visitante fue cambiado a L3HO-INTERACTIVE. Firma v1/v2/v3 verificada; solo queda este APK."
 logical_id = "863725ca-af39-4011-be5c-d811f7b6e016"
-content_hash = "sha256:06b48255a8a4d68404c8531b507d3744648956fc6a9ab271b1f153aa0be1befa"
+content_hash = "sha256:c499854472216beb475ec3e97f774c2503371f45614fb510e8e5569573811c0a"
 size = 48266141
-mtime_ms = 1788580502792
-storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:89578c50-c2aa-4d3b-ba87-90755e06fef7/863725ca-af39-4011-be5c-d811f7b6e016/e643181d-aa6d-4b51-9665-0470f6e7b527"
-storage_version_token = "1788580510157705"
+mtime_ms = 1788580941493
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:89578c50-c2aa-4d3b-ba87-90755e06fef7/863725ca-af39-4011-be5c-d811f7b6e016/eebbd03a-d49d-458f-bef1-354395673441"
+storage_version_token = "1788580952765379"
 content_type = "application/octet-stream"
 
 [[outputs]]

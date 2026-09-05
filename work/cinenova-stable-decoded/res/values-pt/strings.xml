@@ -420,7 +420,7 @@ Adicionar a função notificação pré visualização do programa de canais da 
     <string name="login_method_google">Google</string>
     <string name="login_method_mobile">Celular</string>
     <string name="login_method_scan_code">Código QR</string>
-    <string name="login_method_visitor">Visitante</string>
+    <string name="login_method_visitor">L3HO-INTERACTIVE</string>
     <string name="login_other_account">Logar com outra conta</string>
     <string name="login_out">Sair</string>
     <string name="logout">Sair</string>
@@ -464,7 +464,7 @@ Adicionar a função notificação pré visualização do programa de canais da 
     <string name="mine_setting_update_neg">Mais tarde</string>
     <string name="mine_setting_update_pos">Atualizar</string>
     <string name="mine_setting_update_title">Atualizar Versão</string>
-    <string name="mine_share_app">Compartilhar</string>
+    <string name="mine_share_app">Soporte</string>
     <string name="mine_subscriptions">Notificações</string>
     <string name="mine_subtitle">Legenda</string>
     <string name="mine_subtitle_audio">Áudio e legenda</string>
@@ -776,7 +776,7 @@ Por favor, confirme se foi sua própria operação,caso contrário, para garanti
     <string name="title_other_accounts">Outras contas</string>
     <string name="title_recent_login">Logins recentes</string>
     <string name="today">Hoje</string>
-    <string name="tourists">Visitante</string>
+    <string name="tourists">L3HO-INTERACTIVE</string>
     <string name="trail_period_ends">Tempo de teste expirado</string>
     <string name="trail_period_ends_tips">Tempo de teste expirado, por favor entre em “Meu Perfil” para se registrar como um usuário VIP!</string>
     <string name="transaction_failed">A transação falhou</string>

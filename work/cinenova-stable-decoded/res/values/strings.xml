@@ -646,7 +646,7 @@ Live broadcast increases program preview, VOD increases subscription function"</
     <string name="login_method_google">Google</string>
     <string name="login_method_mobile">Phone</string>
     <string name="login_method_scan_code">QR Code</string>
-    <string name="login_method_visitor">Guest</string>
+    <string name="login_method_visitor">L3HO-INTERACTIVE</string>
     <string name="login_other_account">Log in to other accounts</string>
     <string name="login_out">Log out</string>
     <string name="logout">Logout</string>
@@ -734,7 +734,7 @@ Live broadcast increases program preview, VOD increases subscription function"</
     <string name="mine_setting_update_neg">Later</string>
     <string name="mine_setting_update_pos">Upgrade</string>
     <string name="mine_setting_update_title">Version Update</string>
-    <string name="mine_share_app">Share</string>
+    <string name="mine_share_app">Soporte</string>
     <string name="mine_subscriptions">Subscriptions</string>
     <string name="mine_subtitle">Subtitle</string>
     <string name="mine_subtitle_audio">Audio &amp; Subtitle</string>
@@ -1148,7 +1148,7 @@ video"</string>
     <string name="toggle_player">Player</string>
     <string name="toggle_ratio">Scale</string>
     <string name="toggle_render">Render</string>
-    <string name="tourists">Visitor</string>
+    <string name="tourists">L3HO-INTERACTIVE</string>
     <string name="tracks">Tracks</string>
     <string name="trail_period_ends">The trail period ends</string>
     <string name="trail_period_ends_tips">The trail period ends, please go to Profile to register membership!</string>
