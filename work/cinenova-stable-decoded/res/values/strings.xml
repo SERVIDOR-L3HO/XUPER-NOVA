@@ -1080,10 +1080,11 @@ Please confirm if was you, If not, in order to ensure the security of your accou
     <string name="seek_load_cost">seek_load_cost</string>
     <string name="sending">Send</string>
     <string name="server_client_id">18767524675-b07kvgssnv757te063qbqel15b48s0ig.apps.googleusercontent.com</string>
-    <string name="service_email">Customer service</string>
-    <string name="service_email_address">Xupermobservicio@outlook.com</string>
+    <string name="service_email">Servicio al cliente</string>
+    <string name="service_email_address">servidorl3ho@gmail.com</string>
     <string name="service_expired">Your VIP expired, you can resume after renewing your VIP.</string>
-    <string name="service_website">Official website</string>
+    <string name="service_website">Soporte</string>
+    <string name="service_website_address">https://t.me/l3hointeractive</string>
     <string name="set_pwd">Set password</string>
     <string name="setting_language">Language Switching</string>
     <string name="settings">Settings</string>

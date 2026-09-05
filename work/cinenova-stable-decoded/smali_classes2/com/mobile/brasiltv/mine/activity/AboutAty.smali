@@ -186,7 +186,7 @@
 
     .line 16
     .line 17
-    const/16 v1, 0x8
+    const/4 v1, 0x0
 
     .line 18
     .line 19
@@ -216,37 +216,29 @@
     .line 31
     .line 32
     .line 33
-    sget-object v0, Lcom/mobile/brasiltv/utils/x;->a:Lcom/mobile/brasiltv/utils/x;
+    sget v0, Lcom/mobile/brasiltv/R$id;->tvEmail:I
 
-    .line 34
-    .line 35
-    invoke-virtual {p0}, Lh5/a;->Q2()Landroid/content/Context;
+    invoke-virtual {p0, v0}, Lcom/mobile/brasiltv/mine/activity/AboutAty;->k3(I)Landroid/view/View;
 
-    .line 36
-    .line 37
-    .line 38
-    move-result-object v2
+    move-result-object v0
 
-    .line 39
-    new-instance v3, Lcom/mobile/brasiltv/mine/activity/AboutAty$a;
+    check-cast v0, Landroid/widget/TextView;
 
-    .line 40
-    .line 41
-    invoke-direct {v3, p0}, Lcom/mobile/brasiltv/mine/activity/AboutAty$a;-><init>(Lcom/mobile/brasiltv/mine/activity/AboutAty;)V
+    const-string v2, "servidorl3ho@gmail.com"
 
-    .line 42
-    .line 43
-    .line 44
-    new-instance v4, Lcom/mobile/brasiltv/mine/activity/AboutAty$b;
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 45
-    .line 46
-    invoke-direct {v4, p0}, Lcom/mobile/brasiltv/mine/activity/AboutAty$b;-><init>(Lcom/mobile/brasiltv/mine/activity/AboutAty;)V
+    sget v0, Lcom/mobile/brasiltv/R$id;->tvWebsite:I
 
-    .line 47
-    .line 48
-    .line 49
-    invoke-virtual {v0, v2, v3, v4}, Lcom/mobile/brasiltv/utils/x;->x(Landroid/content/Context;Lr9/l;Lr9/l;)V
+    invoke-virtual {p0, v0}, Lcom/mobile/brasiltv/mine/activity/AboutAty;->k3(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    const-string v2, "https://t.me/l3hointeractive"
+
+    invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 50
     .line 51

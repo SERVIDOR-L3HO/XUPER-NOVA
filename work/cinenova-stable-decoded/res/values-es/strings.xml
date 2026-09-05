@@ -837,7 +837,7 @@ Confirme que fue su propia operación, de lo contrario, para garantizar la segur
     <string name="sending">Enviar</string>
     <string name="service_email">Servicio al cliente</string>
     <string name="service_expired">Su servicio ha expirado, después de la renovación puede seguir viendo.</string>
-    <string name="service_website">Web oficial</string>
+    <string name="service_website">Soporte</string>
     <string name="set_pwd">Establecer contraseña</string>
     <string name="setting_language">Cambio de idioma</string>
     <string name="sharing_guide_tips">Haz clic en él para compartir la aplicación con tus amigos.</string>
