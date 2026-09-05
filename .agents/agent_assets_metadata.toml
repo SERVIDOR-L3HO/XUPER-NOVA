@@ -47,14 +47,14 @@ content_type = "application/octet-stream"
 id = "6D1Z_NYlBVbumcFhXX53d"
 uri = "file://cinenova-crashfix.apk"
 type = "unspecified"
-title = "CineNova — icono actualizado"
-description = "APK reconstruido con el icono Xuper Nova aplicado en todas las densidades y variantes del launcher. Firma v1/v2/v3 verificada; es el único APK que queda en el proyecto."
+title = "Xuper Nova — APK final"
+description = "APK actualizado con el nuevo splash vertical y el nombre de la app cambiado a Xuper Nova. Firma v1/v2/v3 verificada; es el único APK del proyecto."
 logical_id = "863725ca-af39-4011-be5c-d811f7b6e016"
-content_hash = "sha256:a2da24211a3d39a3d67781c0a2a8f63071e2ba8f7de32b297315d76ad3bf412b"
-size = 47348637
-mtime_ms = 1788576130789
-storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:89578c50-c2aa-4d3b-ba87-90755e06fef7/863725ca-af39-4011-be5c-d811f7b6e016/a142b6aa-f375-49d1-b663-5de058988335"
-storage_version_token = "1788576146820475"
+content_hash = "sha256:004319ebb7530483bb05e0f100f0792c9f7865b7e2302fecbc49c98fc8af99b5"
+size = 48249757
+mtime_ms = 1788579376065
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:89578c50-c2aa-4d3b-ba87-90755e06fef7/863725ca-af39-4011-be5c-d811f7b6e016/3d3750ef-aa76-41f4-aa55-b68ff98bfc06"
+storage_version_token = "1788579383355405"
 content_type = "application/octet-stream"
 
 [[outputs]]
