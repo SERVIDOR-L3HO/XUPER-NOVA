@@ -3,7 +3,7 @@
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <com.mobile.brasiltv.view.KoocanNestedScrollView android:id="@id/mScroller" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
         <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
-            <com.mobile.brasiltv.player.view.ProgramActorInfoView android:id="@id/mActorInfoView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.mobile.brasiltv.player.view.ProgramActorInfoView android:id="@id/mActorInfoView" android:background="@drawable/bg_program_info_panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0px" android:layout_marginRight="8.0px" android:paddingBottom="18.0px" />
             <com.mobile.brasiltv.view.DivisionLineView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="3.0px" android:layout_marginTop="25.0px" />
             <com.mobile.brasiltv.view.adView.SmallAdNativeContainer android:id="@id/adNativeView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="27.0px" app:container_sanv_isShowIdenti="true" />
             <com.mobile.brasiltv.view.DivisionLineView android:id="@id/mProgramInfoLine" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="25.0px" />

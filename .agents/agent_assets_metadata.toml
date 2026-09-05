@@ -98,3 +98,17 @@ mtime_ms = 1788583672965
 storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:543eb48c-8750-4762-be73-5a05a7dc2463/9cc4e280-a5de-43a8-acae-8a0a122aa340/789c92e7-acb1-43c0-b717-03d49d607437"
 storage_version_token = "1788583722529089"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "Sxt0ESRrZnQIr3YTQfIm0"
+uri = "file://work/cinenova-purple-v2.apk"
+type = "unspecified"
+title = "CineNova — reproductor rediseñado"
+description = "APK reconstruido con un detalle de película más profesional: panel de información con profundidad, acciones refinadas, jerarquía tipográfica mejorada, acentos morados, encabezado de recomendaciones y barra de progreso coherente. Firma v2/v3 verificada; no hay dispositivo Android conectado para una prueba visual en ejecución."
+logical_id = "63656083-6ebc-4306-8f86-d5667dbeec39"
+content_hash = "sha256:f213cafbc4a15483c00fde33ba0cf37cfaf3a6bf629dd360a0c824c1a06b81b9"
+size = 49044547
+mtime_ms = 1788584655489
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:543eb48c-8750-4762-be73-5a05a7dc2463/63656083-6ebc-4306-8f86-d5667dbeec39/d6ed8fb5-4b82-462d-aac8-b7bd77e17c3b"
+storage_version_token = "1788584679157068"
+content_type = "application/octet-stream"
