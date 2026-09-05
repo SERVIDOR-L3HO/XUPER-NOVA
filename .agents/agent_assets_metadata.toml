@@ -112,3 +112,17 @@ mtime_ms = 1788584655489
 storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:543eb48c-8750-4762-be73-5a05a7dc2463/63656083-6ebc-4306-8f86-d5667dbeec39/d6ed8fb5-4b82-462d-aac8-b7bd77e17c3b"
 storage_version_token = "1788584679157068"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "2_2ZuKRlsKZcOllTeDycW"
+uri = "file://work/cinenova-glass.apk"
+type = "unspecified"
+title = "CineNova — estilo glass y compartir por Telegram"
+description = "APK final con panel glassmorphism, superficies translúcidas, reflejos y bordes suaves en la ficha y los botones. El botón de compartir abre directamente https://t.me/l3hointeractive. Firma v2/v3 verificada; no hay dispositivo Android conectado para prueba visual en ejecución."
+logical_id = "78b0c762-f3ba-4616-862d-2aacb878aa88"
+content_hash = "sha256:7253512ec66005291453315676d7592985a4897ac8c625beb8b203178e5ad226"
+size = 49044547
+mtime_ms = 1788585073589
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:543eb48c-8750-4762-be73-5a05a7dc2463/78b0c762-f3ba-4616-862d-2aacb878aa88/206dd7ca-d269-4ab4-97c3-ca1bcbc73c21"
+storage_version_token = "1788585091469267"
+content_type = "application/octet-stream"

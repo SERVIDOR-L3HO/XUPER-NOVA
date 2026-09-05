@@ -538,31 +538,36 @@
 .end method
 
 .method private static final setShare$lambda$2(Landroid/view/View;)V
-    .locals 1
+    .locals 3
 
-    .line 1
-    invoke-static {}, Lwa/c;->c()Lwa/c;
+    :try_start_0
+    new-instance v0, Landroid/content/Intent;
 
-    .line 2
-    .line 3
-    .line 4
-    move-result-object p0
+    const-string v1, "android.intent.action.VIEW"
 
-    .line 5
-    new-instance v0, Lcom/mobile/brasiltv/bean/event/GoToSharingEvent;
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 6
-    .line 7
-    invoke-direct {v0}, Lcom/mobile/brasiltv/bean/event/GoToSharingEvent;-><init>()V
+    const-string v1, "https://t.me/l3hointeractive"
 
-    .line 8
-    .line 9
-    .line 10
-    invoke-virtual {p0, v0}, Lwa/c;->j(Ljava/lang/Object;)V
+    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-    .line 11
-    .line 12
-    .line 13
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+
+    const/high16 v1, 0x10000000
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
+
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
     return-void
 .end method
 
