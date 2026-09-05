@@ -91,315 +91,34 @@
 .end method
 
 .method private static final onCreate$lambda$2(Lcom/mobile/brasiltv/view/dialog/HomeImportantAdDialog;Landroid/view/View;)V
-    .locals 13
+    .locals 3
 
-    .line 1
     const-string p1, "this$0"
 
-    .line 2
-    .line 3
     invoke-static {p0, p1}, Ls9/i;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 4
-    .line 5
-    .line 6
-    iget-object p1, p0, Lcom/mobile/brasiltv/view/dialog/HomeImportantAdDialog;->adInfo:Lcom/advertlib/bean/AdInfo;
+    new-instance v0, Landroid/content/Intent;
 
-    .line 7
-    .line 8
-    invoke-virtual {p1}, Lcom/advertlib/bean/AdInfo;->getAction_type()Ljava/lang/String;
+    const-string v1, "android.intent.action.VIEW"
 
-    .line 9
-    .line 10
-    .line 11
-    move-result-object p1
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 12
-    const-string v0, "1"
+    const-string v1, "https://t.me/l3hointeractive"
 
-    .line 13
-    .line 14
-    invoke-static {p1, v0}, Ls9/i;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-    .line 15
-    .line 16
-    .line 17
-    move-result p1
+    move-result-object v1
 
-    .line 18
-    const-string v0, "context"
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 19
-    .line 20
-    if-eqz p1, :cond_2
-
-    .line 21
-    .line 22
-    iget-object p1, p0, Lcom/mobile/brasiltv/view/dialog/HomeImportantAdDialog;->adInfo:Lcom/advertlib/bean/AdInfo;
-
-    .line 23
-    .line 24
-    invoke-virtual {p1}, Lcom/advertlib/bean/AdInfo;->getAction()Ljava/lang/String;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object p1
-
-    .line 28
-    const/4 v1, 0x0
-
-    .line 29
-    if-eqz p1, :cond_1
-
-    .line 30
-    .line 31
-    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
-
-    .line 32
-    .line 33
-    .line 34
-    move-result p1
-
-    .line 35
-    const/4 v2, 0x1
-
-    .line 36
-    if-lez p1, :cond_0
-
-    .line 37
-    .line 38
-    const/4 p1, 0x1
-
-    .line 39
-    goto :goto_0
-
-    .line 40
-    :cond_0
-    const/4 p1, 0x0
-
-    .line 41
-    :goto_0
-    if-ne p1, v2, :cond_1
-
-    .line 42
-    .line 43
-    goto :goto_1
-
-    .line 44
-    :cond_1
-    const/4 v2, 0x0
-
-    .line 45
-    :goto_1
-    if-eqz v2, :cond_2
-
-    .line 46
-    .line 47
-    sget-object p1, Lr1/q;->a:Lr1/q;
-
-    .line 48
-    .line 49
     invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
 
-    .line 50
-    .line 51
-    .line 52
     move-result-object v2
 
-    .line 53
-    invoke-static {v2, v0}, Ls9/i;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 54
-    .line 55
-    .line 56
-    sget-object v3, Lc6/b;->a:Lc6/b;
-
-    .line 57
-    .line 58
-    invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
-
-    .line 59
-    .line 60
-    .line 61
-    move-result-object v4
-
-    .line 62
-    invoke-static {v4, v0}, Ls9/i;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 63
-    .line 64
-    .line 65
-    invoke-virtual {v3, v4}, Lc6/b;->o(Landroid/content/Context;)Ljava/lang/String;
-
-    .line 66
-    .line 67
-    .line 68
-    move-result-object v3
-
-    .line 69
-    sget-object v4, Lz5/a;->a:Lz5/a;
-
-    .line 70
-    .line 71
-    invoke-virtual {v4}, Lz5/a;->i()Ljava/lang/String;
-
-    .line 72
-    .line 73
-    .line 74
-    move-result-object v4
-
-    .line 75
-    iget-object v5, p0, Lcom/mobile/brasiltv/view/dialog/HomeImportantAdDialog;->adInfo:Lcom/advertlib/bean/AdInfo;
-
-    .line 76
-    .line 77
-    invoke-virtual {p1, v2, v3, v4, v5}, Lr1/q;->h(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lcom/advertlib/bean/AdInfo;)V
-
-    .line 78
-    .line 79
-    .line 80
-    invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
-
-    .line 81
-    .line 82
-    .line 83
-    move-result-object p1
-
-    .line 84
-    const-string v2, "EVENT_AD_CLICK_HOME_IMPORTANT"
-
-    .line 85
-    .line 86
-    invoke-static {p1, v2}, Lcom/mobile/brasiltv/utils/j1;->e(Landroid/content/Context;Ljava/lang/String;)V
-
-    .line 87
-    .line 88
-    .line 89
-    sget-object p1, Lcom/mobile/brasiltv/utils/s0;->a:Lcom/mobile/brasiltv/utils/s0;
-
-    .line 90
-    .line 91
-    iget-object v2, p0, Lcom/mobile/brasiltv/view/dialog/HomeImportantAdDialog;->adInfo:Lcom/advertlib/bean/AdInfo;
-
-    .line 92
-    .line 93
-    invoke-virtual {v2}, Lcom/advertlib/bean/AdInfo;->getAction()Ljava/lang/String;
-
-    .line 94
-    .line 95
-    .line 96
-    move-result-object v2
-
-    .line 97
-    const/4 v3, 0x2
-
-    .line 98
-    const/4 v4, 0x0
-
-    .line 99
-    invoke-static {p1, v2, v1, v3, v4}, Lcom/mobile/brasiltv/utils/s0;->c(Lcom/mobile/brasiltv/utils/s0;Ljava/lang/String;ZILjava/lang/Object;)Ljava/lang/String;
-
-    .line 100
-    .line 101
-    .line 102
-    move-result-object v6
-
-    .line 103
-    invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
-
-    .line 104
-    .line 105
-    .line 106
-    move-result-object v5
-
-    .line 107
-    invoke-static {v5, v0}, Ls9/i;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 108
-    .line 109
-    .line 110
-    const/4 v7, 0x0
-
-    .line 111
-    const/4 v8, 0x1
-
-    .line 112
-    const/4 v9, 0x0
-
-    .line 113
-    const/4 v10, 0x0
-
-    .line 114
-    const/16 v11, 0x18
-
-    .line 115
-    .line 116
-    const/4 v12, 0x0
-
-    .line 117
-    invoke-static/range {v5 .. v12}, Lcom/mobile/brasiltv/utils/b0;->m0(Landroid/content/Context;Ljava/lang/String;ZZZZILjava/lang/Object;)V
-
-    .line 118
-    .line 119
-    .line 120
     invoke-static {p0}, Lcom/mobile/brasiltv/utils/b0;->l(Landroid/app/Dialog;)V
 
-    .line 121
-    .line 122
-    .line 123
-    goto :goto_2
+    invoke-virtual {v2, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    .line 124
-    :cond_2
-    iget-object p1, p0, Lcom/mobile/brasiltv/view/dialog/HomeImportantAdDialog;->adInfo:Lcom/advertlib/bean/AdInfo;
-
-    .line 125
-    .line 126
-    invoke-virtual {p1}, Lcom/advertlib/bean/AdInfo;->getAction_type()Ljava/lang/String;
-
-    .line 127
-    .line 128
-    .line 129
-    move-result-object p1
-
-    .line 130
-    const-string v1, "5"
-
-    .line 131
-    .line 132
-    invoke-static {p1, v1}, Ls9/i;->b(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    .line 133
-    .line 134
-    .line 135
-    move-result p1
-
-    .line 136
-    if-eqz p1, :cond_3
-
-    .line 137
-    .line 138
-    invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
-
-    .line 139
-    .line 140
-    .line 141
-    move-result-object p0
-
-    .line 142
-    invoke-static {p0, v0}, Ls9/i;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 143
-    .line 144
-    .line 145
-    invoke-static {p0}, Lcom/mobile/brasiltv/utils/b0;->o(Landroid/content/Context;)V
-
-    .line 146
-    .line 147
-    .line 148
-    :cond_3
-    :goto_2
     return-void
 .end method
 
@@ -717,74 +436,15 @@
     .line 131
     sget v3, Lcom/mobile/brasiltv/R$id;->mIvAd:I
 
-    .line 132
-    .line 133
     invoke-virtual {v0, v3}, Landroidx/appcompat/app/j;->findViewById(I)Landroid/view/View;
 
-    .line 134
-    .line 135
-    .line 136
-    move-result-object v4
+    move-result-object v6
 
-    .line 137
-    move-object v6, v4
-
-    .line 138
     check-cast v6, Landroid/widget/ImageView;
 
-    .line 139
-    .line 140
-    const-string v4, "mIvAd"
+    const v7, 0x7f08031f
 
-    .line 141
-    .line 142
-    invoke-static {v6, v4}, Ls9/i;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 143
-    .line 144
-    .line 145
-    sget-object v16, Lz5/a;->a:Lz5/a;
-
-    .line 146
-    .line 147
-    invoke-virtual/range {v16 .. v16}, Lz5/a;->i()Ljava/lang/String;
-
-    .line 148
-    .line 149
-    .line 150
-    move-result-object v7
-
-    .line 151
-    iget-object v8, v0, Lcom/mobile/brasiltv/view/dialog/HomeImportantAdDialog;->adInfo:Lcom/advertlib/bean/AdInfo;
-
-    .line 152
-    .line 153
-    const/4 v9, 0x0
-
-    .line 154
-    const/4 v10, 0x0
-
-    .line 155
-    const/4 v11, 0x0
-
-    .line 156
-    const/4 v12, 0x0
-
-    .line 157
-    const/4 v13, 0x1
-
-    .line 158
-    const/16 v14, 0xf0
-
-    .line 159
-    .line 160
-    const/4 v15, 0x0
-
-    .line 161
-    move-object v4, v1
-
-    .line 162
-    invoke-static/range {v4 .. v15}, Lr1/m;->h0(Lr1/m;Landroid/content/Context;Landroid/widget/ImageView;Ljava/lang/String;Lcom/advertlib/bean/AdInfo;Ljava/lang/Integer;Lr9/l;Ljava/lang/Integer;ZIILjava/lang/Object;)V
+    invoke-virtual {v6, v7}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 163
     .line 164

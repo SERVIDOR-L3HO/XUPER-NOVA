@@ -660,30 +660,22 @@
     invoke-static {p1, v0}, Lcom/mobile/brasiltv/utils/j1;->I(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 15
-    const-string v2, "https://t.me/l3hointeractive"
+    new-instance v0, Landroid/content/Intent;
 
-    .line 38
-    const/4 v3, 0x0
+    const-string v1, "android.intent.action.VIEW"
 
-    .line 39
-    const/4 v4, 0x1
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 40
-    const/4 v5, 0x0
+    const-string v1, "https://t.me/l3hointeractive"
 
-    .line 41
-    const/16 v6, 0x8
+    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-    .line 43
-    const/4 v7, 0x0
+    move-result-object v1
 
-    .line 44
-    move-object v1, p0
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 45
-    invoke-static/range {v1 .. v7}, Lcom/mobile/brasiltv/utils/b0;->l0(La6/f;Ljava/lang/String;ZZZILjava/lang/Object;)V
+    invoke-virtual {p1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
-    .line 48
     return-void
 .end method
 

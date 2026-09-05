@@ -47,14 +47,14 @@ content_type = "application/octet-stream"
 id = "6D1Z_NYlBVbumcFhXX53d"
 uri = "file://cinenova-crashfix.apk"
 type = "unspecified"
-title = "Xuper Nova — soporte Telegram"
-description = "APK actualizado: el botón ahora dice Soporte y abre https://t.me/l3hointeractive; el nombre Visitante fue cambiado a L3HO-INTERACTIVE. Firma v1/v2/v3 verificada; solo queda este APK."
+title = "Xuper Nova — APK final"
+description = "APK reconstruido y firmado. Soporte y el modal de bienvenida abren https://t.me/l3hointeractive externamente; incluye la imagen adjunta."
 logical_id = "863725ca-af39-4011-be5c-d811f7b6e016"
-content_hash = "sha256:c499854472216beb475ec3e97f774c2503371f45614fb510e8e5569573811c0a"
-size = 48266141
-mtime_ms = 1788580941493
-storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:89578c50-c2aa-4d3b-ba87-90755e06fef7/863725ca-af39-4011-be5c-d811f7b6e016/eebbd03a-d49d-458f-bef1-354395673441"
-storage_version_token = "1788580952765379"
+content_hash = "sha256:c3fc7128508e00b3564efed8f57b7cae1500819d5c2a406682eefdc14fef2756"
+size = 49044381
+mtime_ms = 1788581657336
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:89578c50-c2aa-4d3b-ba87-90755e06fef7/863725ca-af39-4011-be5c-d811f7b6e016/1e794c3a-e0f6-4279-b7a4-136ea365e67c"
+storage_version_token = "1788581702473400"
 content_type = "application/octet-stream"
 
 [[outputs]]
