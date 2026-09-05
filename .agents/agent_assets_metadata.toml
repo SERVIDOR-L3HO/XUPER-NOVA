@@ -47,14 +47,14 @@ content_type = "application/octet-stream"
 id = "6D1Z_NYlBVbumcFhXX53d"
 uri = "file://cinenova-crashfix.apk"
 type = "unspecified"
-title = "Xuper Nova — APK final"
-description = "APK reconstruido y firmado. Soporte y el modal de bienvenida abren https://t.me/l3hointeractive externamente; incluye la imagen adjunta."
+title = "Xuper Nova — APK con acentos morados"
+description = "APK final reconstruido y firmado con textos, pestañas, indicadores, iconos y botones principales en morado."
 logical_id = "863725ca-af39-4011-be5c-d811f7b6e016"
-content_hash = "sha256:c3fc7128508e00b3564efed8f57b7cae1500819d5c2a406682eefdc14fef2756"
+content_hash = "sha256:6f7cb38a088a5f1994a20fdb1c691fd2463669939975afb7a06744107a24241c"
 size = 49044381
-mtime_ms = 1788581657336
-storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:89578c50-c2aa-4d3b-ba87-90755e06fef7/863725ca-af39-4011-be5c-d811f7b6e016/1e794c3a-e0f6-4279-b7a4-136ea365e67c"
-storage_version_token = "1788581702473400"
+mtime_ms = 1788582572648
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:89578c50-c2aa-4d3b-ba87-90755e06fef7/863725ca-af39-4011-be5c-d811f7b6e016/6a3df72f-72ca-4997-b844-aba29134cea9"
+storage_version_token = "1788582579948649"
 content_type = "application/octet-stream"
 
 [[outputs]]

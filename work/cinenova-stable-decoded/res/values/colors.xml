@@ -52,8 +52,8 @@
     <color name="cast_seekbar_tooltip_background_color">#e6616161</color>
     <color name="cast_seekbar_unseekable_progress_color">#4dffffff</color>
     <color name="colorAccent">#ffff4081</color>
-    <color name="colorPrimary">#ff3f51b5</color>
-    <color name="colorPrimaryDark">#ff303f9f</color>
+    <color name="colorPrimary">#ff6f3fb5</color>
+    <color name="colorPrimaryDark">#ff4b277f</color>
     <color name="color_000000">#ff000000</color>
     <color name="color_009c3b">#ff009c3b</color>
     <color name="color_00aaff">#ff00aaff</color>
@@ -104,7 +104,7 @@
     <color name="color_3e3f4b">#ff3e3f4b</color>
     <color name="color_3e5996">#ff3e5996</color>
     <color name="color_40000000">#40000000</color>
-    <color name="color_4050b5">#ff4050b5</color>
+    <color name="color_4050b5">#ff6f3fb5</color>
     <color name="color_424242">#ff424242</color>
     <color name="color_434348">#ff434348</color>
     <color name="color_444444">#ff444444</color>
@@ -275,7 +275,7 @@
     <color name="color_fffefe">#fffffefe</color>
     <color name="color_ffff00">#ffffff00</color>
     <color name="color_ffffff">#ffffffff</color>
-    <color name="color_important">#ff3a66fe</color>
+    <color name="color_important">#ffa45bff</color>
     <color name="color_important_white">#ffffffff</color>
     <color name="color_main_title">#ff303030</color>
     <color name="color_normal">#ff969696</color>
