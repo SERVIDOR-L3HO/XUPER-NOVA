@@ -5173,6 +5173,38 @@
     return-object v1
 .end method
 
+.method public openSports(Landroid/view/View;)V
+    .locals 3
+
+    new-instance v0, Landroid/content/Intent;
+
+    const-class v1, Lcom/mobile/brasiltv/activity/WebViewAty;
+
+    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    sget-object v1, Lcom/mobile/brasiltv/activity/WebViewAty;->F:Ljava/lang/String;
+
+    const-string v2, "file:///android_asset/sports.html"
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+    sget-object v1, Lcom/mobile/brasiltv/activity/WebViewAty;->G:Ljava/lang/String;
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    sget-object v1, Lcom/mobile/brasiltv/activity/WebViewAty;->I:Ljava/lang/String;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    return-void
+.end method
+
 .method public w0()V
     .locals 4
 

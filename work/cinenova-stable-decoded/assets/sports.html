@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Deportes</title>
+<style>
+:root{--bg:#191a23;--panel:#242532;--muted:#a9a9b2;--accent:#a44cff;--line:#393a49}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:#fff;font-family:Arial,sans-serif}
+body{padding-bottom:28px}.top{position:sticky;top:0;z-index:3;background:#191a23;padding:18px 16px 14px;border-bottom:1px solid var(--line)}
+h1{font-size:24px;margin:0 0 5px}.sub{font-size:12px;color:var(--muted)}
+#status{padding:16px;color:var(--muted);text-align:center}
+.filters{display:flex;gap:8px;overflow:auto;padding:12px 14px 2px}.filter{border:1px solid var(--line);border-radius:18px;background:var(--panel);color:#ddd;padding:8px 13px;white-space:nowrap}.filter.active{border-color:var(--accent);color:#fff}
+.event{margin:12px 14px;background:var(--panel);border:1px solid #30313e;border-radius:12px;overflow:hidden}
+.event-head{padding:13px 14px 8px}.title{font-weight:bold;font-size:16px;line-height:1.25}.meta{color:var(--muted);font-size:12px;margin-top:6px}.live{color:#ff607f;font-weight:bold}
+.channels{display:flex;gap:8px;flex-wrap:wrap;padding:0 14px 14px}.channel{background:#333446;border:0;border-radius:8px;color:#fff;padding:10px 11px;font-size:12px}.channel:active{background:var(--accent)}
+#player{display:none;position:fixed;inset:0;background:#000;z-index:10;padding-top:24px}#video{width:100%;height:auto;max-height:68vh;background:#000}.playerbar{display:flex;align-items:center;gap:10px;padding:12px}.back{border:0;border-radius:7px;background:#333;color:#fff;padding:10px 14px}.now{font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.hint{padding:0 14px;color:var(--muted);font-size:12px}
+.empty{padding:35px 18px;text-align:center;color:var(--muted)}
+</style>
+</head>
+<body>
+<section class="top"><h1>Deportes</h1><div class="sub">Eventos en vivo y próximos</div></section>
+<div id="filters"></div><main id="events"><div id="status">Cargando transmisiones…</div></main>
+<section id="player"><video id="video" controls playsinline></video><div class="playerbar"><button class="back" onclick="closePlayer()">Volver</button><div class="now" id="now"></div></div><div class="hint" id="playerHint"></div></section>
+<script>
+const API="https://ultrago-xi.vercel.app/gol-3";
+let all=[], selected="Todas";
+const $=id=>document.getElementById(id);
+function esc(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function timeLabel(e){return [e.fecha,e.hora].filter(Boolean).join(" · ")}
+function renderFilters(){let names=[...new Set(all.map(e=>e.liga).filter(Boolean))].slice(0,12);$("filters").innerHTML='<div class="filters"><button class="filter active" onclick="chooseFilter(this,\'Todas\')">Todas</button>'+names.map(n=>'<button class="filter" onclick="chooseFilter(this,\''+esc(n).replace(/'/g,"&#39;")+'\')">'+esc(n)+'</button>').join("")+'</div>'}
+function chooseFilter(btn,name){selected=name;document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));btn.classList.add("active");render()}
+function render(){let list=selected==="Todas"?all:all.filter(e=>e.liga===selected);if(!list.length){$("events").innerHTML='<div class="empty">No hay eventos disponibles.</div>';return}
+ $("events").innerHTML=list.map((e,i)=>{let channels=Array.isArray(e.canales)?e.canales:[];let key=all.indexOf(e);return '<article class="event"><div class="event-head"><div class="title">'+esc(e.titulo||[e.equipo1,e.equipo2].filter(Boolean).join(" vs "))+'</div><div class="meta">'+esc(e.liga||"Deportes")+' · '+esc(timeLabel(e))+' · <span class="'+(e.estado==="EN VIVO"?"live":"")+'">'+esc(e.estado||"")+'</span></div></div><div class="channels">'+(channels.length?channels.map((c,j)=>'<button class="channel" onclick="openChannel('+key+','+j+')">'+esc(c.nombre||("Transmisión "+(j+1)))+'</button>').join(""):'<span class="meta">Sin enlaces disponibles</span>')+'</div></article>'}).join("")}
+async function load(){try{let r=await fetch(API,{cache:"no-store"});if(!r.ok)throw Error("HTTP "+r.status);let data=await r.json();all=Array.isArray(data.transmisiones)?data.transmisiones:[];if(!all.length)throw Error("La API no devolvió transmisiones");renderFilters();render()}catch(e){$("status").innerHTML='<div class="empty">No se pudieron cargar los deportes.<br><small>'+esc(e.message)+'</small><br><button class="channel" onclick="load()">Reintentar</button></div>'}}
+async function openChannel(eventIndex,channelIndex){let e=all[eventIndex],c=e&&e.canales&&e.canales[channelIndex];if(!c||!c.link)return; $("player").style.display="block";$("now").textContent=e.titulo||"Deportes";$("playerHint").textContent="Resolviendo transmisión…";let url="";try{let r=await fetch(c.link,{redirect:"follow"});let text=await r.text();let direct=r.url&&/\.m3u8([?#]|$)/i.test(r.url)?r.url:"";let m=text.match(/https?:[^"'\s<>]+\.m3u8(?:[?#][^"'\s<>]*)?/i);url=direct|| (m?m[0]:"");if(!url&&/#EXTM3U/i.test(text))url=c.link;if(!url)throw Error("No se encontró un enlace m3u8");$("playerHint").textContent="Canal: "+(c.nombre||"Transmisión");let v=$("video");v.src=url;await v.play().catch(()=>{});if(!v.paused)$("playerHint").textContent="Reproduciendo · "+(c.nombre||"Transmisión")}catch(err){$("playerHint").textContent="No se pudo resolver este canal: "+err.message}}
+function closePlayer(){let v=$("video");v.pause();v.removeAttribute("src");v.load();$("player").style.display="none"}
+load();
+</script>
+</body>
+</html>

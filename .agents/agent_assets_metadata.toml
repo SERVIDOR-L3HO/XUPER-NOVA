@@ -126,3 +126,17 @@ mtime_ms = 1788589935898
 storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:543eb48c-8750-4762-be73-5a05a7dc2463/78b0c762-f3ba-4616-862d-2aacb878aa88/c516203b-8966-4858-a255-730d1ce2b2ba"
 storage_version_token = "1788589944108080"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "Z40Ku4zoknscz3ZjrAEA5"
+uri = "file://work/cinenova-sports.apk"
+type = "unspecified"
+title = "CineNova Glass con Deportes"
+description = "APK modificado con botón Deportes junto a la barra inferior, eventos desde ultrago-xi.vercel.app/gol-3, selector de canales alternativos y extracción de enlaces m3u8."
+logical_id = "afc8de4e-b7fe-4be4-af6f-a19969487b30"
+content_hash = "sha256:c5ec2bd7745b0cfa1a0e7d4451bab00cd70c519901b8637b91a6baea9c79a54f"
+size = 49053373
+mtime_ms = 1788714211536
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:df15687f-1726-433e-9218-981325fd5cce/afc8de4e-b7fe-4be4-af6f-a19969487b30/4b5617f3-f99e-4728-89d5-23df1a1c6070"
+storage_version_token = "1788714229589766"
+content_type = "application/octet-stream"
