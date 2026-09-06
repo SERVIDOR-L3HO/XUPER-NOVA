@@ -1,1 +1,2 @@
 - [APK repair validation](apk-repair-validation.md) — distinguish structural APK checks from runtime testing when no Android device is attached.
+- [Floating navigation controls](floating-navigation-controls.md) — Android elevation changes layering, but a visibly floating control also needs a different vertical layout position.

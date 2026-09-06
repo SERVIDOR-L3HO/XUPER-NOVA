@@ -182,3 +182,17 @@ mtime_ms = 1788730240569
 storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:df15687f-1726-433e-9218-981325fd5cce/53dd3869-49ac-4293-af2d-781ab3fe1efa/dde5e028-9ae8-4feb-a633-3ca4e6dc90c0"
 storage_version_token = "1788730246489691"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "0ZmFeuWzdIdL-5Nw6C2If"
+uri = "file://work/cinenova-sports-glass-floating.apk"
+type = "unspecified"
+title = "CineNova Glass — botón Deportes flotante real"
+description = "Versión corregida: Deportes queda separado verticalmente de la barra, sobresale por encima como botón flotante y conserva un glass transparente y discreto."
+logical_id = "85943c52-1c90-4561-9e46-ad6049b1d913"
+content_hash = "sha256:b39fbeb667bf13abfbcb7d76fca27d24a532c6d38b69ee17bf9399480bc074fd"
+size = 49053602
+mtime_ms = 1788731644649
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:df15687f-1726-433e-9218-981325fd5cce/85943c52-1c90-4561-9e46-ad6049b1d913/15ae95b8-8b43-4ab8-b726-be0ca12eac78"
+storage_version_token = "1788731651063173"
+content_type = "application/octet-stream"
