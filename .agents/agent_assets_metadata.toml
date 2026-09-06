@@ -154,3 +154,17 @@ mtime_ms = 1788717830319
 storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:df15687f-1726-433e-9218-981325fd5cce/a39cb9a0-7481-4e30-bd13-49f506a4def7/07d804c2-972a-45dd-8a29-b054d98a29b5"
 storage_version_token = "1788717843380140"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "1gNURUbDsaTDLTR5B25iT"
+uri = "file://work/cinenova-sports-glass-fixed.apk"
+type = "unspecified"
+title = "CineNova Glass — barra corregida"
+description = "Corrección del solapamiento: una sola barra inferior glass; Deportes queda integrado como botón transparente dentro de la barra, sin tapar TV ni Perfil."
+logical_id = "15a317be-5aa8-4079-8e03-40b673d7158c"
+content_hash = "sha256:90e26e1cdfec1e9fd60b201438da41756ec846e615f655e7d22585ef79b0179d"
+size = 49053602
+mtime_ms = 1788729323749
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:df15687f-1726-433e-9218-981325fd5cce/15a317be-5aa8-4079-8e03-40b673d7158c/74f04990-0ec2-4ed5-8468-9532d44242af"
+storage_version_token = "1788729333355280"
+content_type = "application/octet-stream"
