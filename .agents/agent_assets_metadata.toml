@@ -140,3 +140,17 @@ mtime_ms = 1788714915271
 storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:df15687f-1726-433e-9218-981325fd5cce/afc8de4e-b7fe-4be4-af6f-a19969487b30/225ac9b3-8c81-4329-b533-91ca5bcfbe08"
 storage_version_token = "1788714924279152"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "KGHgiOu_nL_Lme0IF0Cff"
+uri = "file://work/cinenova-sports-glass.apk"
+type = "unspecified"
+title = "CineNova Glass — barra inferior profesional"
+description = "APK actualizado con barra inferior flotante estilo glass, cápsula de selección, colores más elegantes, separación del contenido y Deportes integrado sin cubrir Perfil."
+logical_id = "a39cb9a0-7481-4e30-bd13-49f506a4def7"
+content_hash = "sha256:235a8f8f933b53461a287b1e580861f28fc1b525ae178fff6cfa35db28b8c749"
+size = 49053602
+mtime_ms = 1788717830319
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:df15687f-1726-433e-9218-981325fd5cce/a39cb9a0-7481-4e30-bd13-49f506a4def7/07d804c2-972a-45dd-8a29-b054d98a29b5"
+storage_version_token = "1788717843380140"
+content_type = "application/octet-stream"
