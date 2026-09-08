@@ -196,3 +196,17 @@ mtime_ms = 1788893201767
 storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:df15687f-1726-433e-9218-981325fd5cce/85943c52-1c90-4561-9e46-ad6049b1d913/1acc095b-0369-4296-a9b7-f9994efa9f67"
 storage_version_token = "1788893209576887"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "YXCMj9ftPE3wv8Bu-d7fO"
+uri = "file://work/cinenova-sports-glass-floating-xuper.apk"
+type = "unspecified"
+title = "CineNova Sports — Xuper Nova"
+description = "APK reconstruido con la pantalla de deportes rediseñada, logo Xuper Nova, identidad visual premium, estados EN VIVO y reproductor con tarjeta de transmisión. Firma local de prueba; el APK original no fue modificado."
+logical_id = "d793ca1e-bce1-4cea-b272-95daa0d45d5b"
+content_hash = "sha256:cfeccaea1ecf17ae5f6a7568c676578e408287f9696ead46ac1b53b2ad20c74f"
+size = 49467370
+mtime_ms = 1788909135199
+storage_uri = "gcs://replit-rams-assets-kirk/rams/assets/repl:22cd48f6-cc42-407e-80ee-e2311b7a74b4/d793ca1e-bce1-4cea-b272-95daa0d45d5b/7b3b48a3-a2f1-4e34-9ad8-f2e14921ba7e"
+storage_version_token = "1788909151799837"
+content_type = "application/octet-stream"
