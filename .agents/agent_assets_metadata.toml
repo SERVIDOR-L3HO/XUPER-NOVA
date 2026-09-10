@@ -224,3 +224,17 @@ mtime_ms = 1788909958043
 storage_uri = "gcs://replit-rams-assets-kirk/rams/assets/repl:22cd48f6-cc42-407e-80ee-e2311b7a74b4/cafeb39e-f76c-4ac5-ad6c-d26b52084ca8/85c0401e-6450-4eeb-ac50-f2a0fc6dccb0"
 storage_version_token = "1788909965584971"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "3cE9o7kkKQR_gFF1mcHJm"
+uri = "file://work/cinenova-sports-deportes.apk"
+type = "unspecified"
+title = "APK Xuper Nova con botón Deportes"
+description = "Versión editada con el botón visible “Deportes” junto al buscador. Está firmada y lista para instalar; si Android rechaza la actualización sobre la versión anterior, desinstala primero la app original porque esta compilación usa una firma nueva."
+logical_id = "682c72f0-b71d-43bb-a7ed-015b9255ef79"
+content_hash = "sha256:65991f6efb948912c0708a4136b9405281974d260b3b5e1bfaa81e7e060a2eb7"
+size = 49643570
+mtime_ms = 1789075938004
+storage_uri = "gcs://replit-rams-assets-kirk/rams/assets/repl:db16fdbe-3257-42f3-9e7d-10fba050ed66/682c72f0-b71d-43bb-a7ed-015b9255ef79/0eb70c43-a0ed-435f-8b1e-4ed3930bf675"
+storage_version_token = "1789075980828461"
+content_type = "application/octet-stream"
