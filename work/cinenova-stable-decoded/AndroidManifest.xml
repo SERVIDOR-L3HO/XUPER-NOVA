@@ -58,7 +58,7 @@
             </intent-filter>
         </activity>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mobile.brasiltv.activity.RecordsAty" android:screenOrientation="portrait"/>
-        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mobile.brasiltv.activity.WebViewAty" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mobile.brasiltv.activity.WebViewAty" android:screenOrientation="unspecified"/>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.mobile.brasiltv.activity.ScanLoginActivity" android:screenOrientation="portrait"/>
         <activity android:configChanges="keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:launchMode="singleTop" android:name="com.mobile.brasiltv.activity.PlayAty" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
         <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.mobile.brasiltv.mine.activity.OrderAty" android:screenOrientation="portrait"/>

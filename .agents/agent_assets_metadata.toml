@@ -252,3 +252,17 @@ mtime_ms = 1789077195694
 storage_uri = "gcs://replit-rams-assets-kirk/rams/assets/repl:db16fdbe-3257-42f3-9e7d-10fba050ed66/10011e66-3561-41e0-83b3-fa0724ff1974/cbfba1a9-4627-442e-9812-7125a38ed3c1"
 storage_version_token = "1789077211777258"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "OJmr6dzU95Z92j8dxDKoT"
+uri = "file://work/cinenova-sports-landscape.apk"
+type = "unspecified"
+title = "APK Xuper Nova horizontal en pantalla completa"
+description = "Versión actualizada: al tocar el botón ⛶ del reproductor, el teléfono solicita orientación horizontal y el video ocupa la pantalla completa. Al salir, se libera el bloqueo de orientación. Está firmada y lista para instalar; si Android rechaza la actualización, desinstala primero la versión anterior porque esta compilación usa una firma nueva."
+logical_id = "fc82bf86-b964-4702-9e87-75fc47ca9aea"
+content_hash = "sha256:6c0f9739065b7c7515ad30cfd13958ccd6fab7292772b6f60f16dfccf2e40883"
+size = 49643570
+mtime_ms = 1789078301082
+storage_uri = "gcs://replit-rams-assets-kirk/rams/assets/repl:db16fdbe-3257-42f3-9e7d-10fba050ed66/fc82bf86-b964-4702-9e87-75fc47ca9aea/b4a7a449-a2db-494b-8bfd-a16d3ac8cca4"
+storage_version_token = "1789078317752242"
+content_type = "application/octet-stream"
