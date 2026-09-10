@@ -238,3 +238,17 @@ mtime_ms = 1789075938004
 storage_uri = "gcs://replit-rams-assets-kirk/rams/assets/repl:db16fdbe-3257-42f3-9e7d-10fba050ed66/682c72f0-b71d-43bb-a7ed-015b9255ef79/0eb70c43-a0ed-435f-8b1e-4ed3930bf675"
 storage_version_token = "1789075980828461"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "fxmXCM9yYYp6aCvExe0w3"
+uri = "file://work/cinenova-sports-fullscreen.apk"
+type = "unspecified"
+title = "APK Xuper Nova con pantalla completa"
+description = "Versión actualizada con un botón ⛶ sobre el reproductor de partidos. Al tocarlo, el video intenta entrar en pantalla completa y, si el WebView del teléfono no lo permite, ocupa toda la pantalla disponible dentro de la app. Está firmado y listo para instalar; si Android rechaza la actualización, desinstala primero la versión anterior porque esta compilación usa una firma nueva."
+logical_id = "10011e66-3561-41e0-83b3-fa0724ff1974"
+content_hash = "sha256:579a4ba4a45aab441def33450248c48fdcf5667309e743415cde905640886b0e"
+size = 49643570
+mtime_ms = 1789077195694
+storage_uri = "gcs://replit-rams-assets-kirk/rams/assets/repl:db16fdbe-3257-42f3-9e7d-10fba050ed66/10011e66-3561-41e0-83b3-fa0724ff1974/cbfba1a9-4627-442e-9812-7125a38ed3c1"
+storage_version_token = "1789077211777258"
+content_type = "application/octet-stream"
