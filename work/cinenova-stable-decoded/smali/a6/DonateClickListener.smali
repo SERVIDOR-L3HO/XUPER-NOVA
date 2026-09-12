@@ -31,7 +31,7 @@
 
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    const-string v2, "https://paypal.me/TU_USUARIO_PAYPAL"
+    const-string v2, "https://www.paypal.com/donate/?hosted_button_id=S85TASS4CFFTE"
 
     invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
