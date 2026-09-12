@@ -735,6 +735,7 @@ Live broadcast increases program preview, VOD increases subscription function"</
     <string name="mine_setting_update_pos">Upgrade</string>
     <string name="mine_setting_update_title">Version Update</string>
     <string name="mine_share_app">Soporte</string>
+    <string name="mine_donate">Donaciones</string>
     <string name="mine_subscriptions">Subscriptions</string>
     <string name="mine_subtitle">Subtitle</string>
     <string name="mine_subtitle_audio">Audio &amp; Subtitle</string>

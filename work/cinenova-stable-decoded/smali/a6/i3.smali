@@ -1715,6 +1715,38 @@
     .line 271
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const-string v2, "mLayoutDonate"
+
+    const-string v3, "id"
+
+    invoke-virtual {v0, v2, v3, v1}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v0
+
+    invoke-virtual {p0, v0}, La6/i3;->D3(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/zhy/autolayout/AutoLinearLayout;
+
+    new-instance v1, La6/DonateClickListener;
+
+    invoke-direct {v1}, La6/DonateClickListener;-><init>()V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
     .line 274
     return-void
 .end method

@@ -465,6 +465,7 @@ Adicionar a função notificação pré visualização do programa de canais da 
     <string name="mine_setting_update_pos">Atualizar</string>
     <string name="mine_setting_update_title">Atualizar Versão</string>
     <string name="mine_share_app">Soporte</string>
+    <string name="mine_donate">Doações</string>
     <string name="mine_subscriptions">Notificações</string>
     <string name="mine_subtitle">Legenda</string>
     <string name="mine_subtitle_audio">Áudio e legenda</string>

@@ -567,6 +567,7 @@ Agregue la función de notificación de vista previa del programa del canal de T
     <string name="mine_setting_update_pos">Actualizar</string>
     <string name="mine_setting_update_title">Actualizar versión</string>
     <string name="mine_share_app">Soporte</string>
+    <string name="mine_donate">Donaciones</string>
     <string name="mine_subscriptions">Notificaciones</string>
     <string name="mine_subtitle">Subtítulo</string>
     <string name="mine_subtitle_audio">Audio y subtítulos</string>
