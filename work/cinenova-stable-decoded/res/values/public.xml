@@ -7174,4 +7174,5 @@
     <public type="xml" name="standalone_badge_gravity_bottom_end" id="0x7f140003" />
     <public type="xml" name="standalone_badge_gravity_bottom_start" id="0x7f140004" />
     <public type="xml" name="standalone_badge_gravity_top_start" id="0x7f140005" />
+    <public type="id" name="mLlSupport" id="0x7f0a0648" />
 </resources>

@@ -1,2 +1,3 @@
 - [APK repair validation](apk-repair-validation.md) — distinguish structural APK checks from runtime testing when no Android device is attached.
 - [Floating navigation controls](floating-navigation-controls.md) — Android elevation changes layering, but a visibly floating control also needs a different vertical layout position.
+- [Decompiled APK resource IDs](decompiled-apk-resource-ids.md) — new resource IDs must stay synchronized across the resource table and the decompiled R$id class.
