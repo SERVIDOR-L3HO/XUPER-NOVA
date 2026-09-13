@@ -284,17 +284,33 @@
     if-eqz v1, :cond_0
 
     .line 22
-    invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
+    sget-object v1, Lcom/mobile/brasiltv/activity/MainAty;->E:Lcom/mobile/brasiltv/activity/MainAty$a;
 
-    move-result-object v0
+    const/4 v4, 0x1
 
-    if-eqz v0, :cond_1
+    invoke-virtual {v1, v4}, Lcom/mobile/brasiltv/activity/MainAty$a;->o(Z)V
 
-    new-instance v1, Lf6/d;
+    invoke-static {}, Lwa/c;->c()Lwa/c;
 
-    invoke-direct {v1, v0}, Lf6/d;-><init>(Landroid/content/Context;)V
+    move-result-object v1
 
-    invoke-virtual {v1}, Landroid/app/Dialog;->show()V
+    new-instance v3, Lcom/mobile/brasiltv/bean/event/CheckPwdSuccessEvent;
+
+    invoke-direct {v3}, Lcom/mobile/brasiltv/bean/event/CheckPwdSuccessEvent;-><init>()V
+
+    invoke-virtual {v1, v3}, Lwa/c;->j(Ljava/lang/Object;)V
+
+    invoke-static {}, Lwa/c;->c()Lwa/c;
+
+    move-result-object v1
+
+    new-instance v3, Lcom/mobile/brasiltv/bean/event/UpdateRestrictEvent;
+
+    const-string v2, "1"
+
+    invoke-direct {v3, v2, v4}, Lcom/mobile/brasiltv/bean/event/UpdateRestrictEvent;-><init>(Ljava/lang/String;Z)V
+
+    invoke-virtual {v1, v3}, Lwa/c;->m(Ljava/lang/Object;)V
 
     goto :goto_0
 
