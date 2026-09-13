@@ -738,6 +738,9 @@ Live broadcast increases program preview, VOD increases subscription function"</
     <string name="mine_subscriptions">Subscriptions</string>
     <string name="mine_subtitle">Subtitle</string>
     <string name="mine_subtitle_audio">Audio &amp; Subtitle</string>
+    <string name="support_apps_title">Support the development</string>
+    <string name="support_apps_subtitle">Help us improve this and other apps</string>
+    <string name="support_apps_button">SUPPORT</string>
     <string name="mine_valid_until_date">Expiration date: %1$s</string>
     <string name="mine_valid_vip_until_date">VIP is valid until: %1$s</string>
     <string name="mine_vip_expired">VIP expired</string>

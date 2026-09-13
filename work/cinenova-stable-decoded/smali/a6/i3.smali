@@ -432,6 +432,39 @@
     return-void
 .end method
 
+.method public static final Donate3(La6/i3;Landroid/view/View;)V
+    .locals 3
+
+    const-string v0, "this$0"
+
+    invoke-static {p0, v0}, Ls9/i;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    new-instance v1, Landroid/content/Intent;
+
+    const-string v2, "android.intent.action.VIEW"
+
+    invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    const-string v2, "https://www.paypal.com/donate/?hosted_button_id=S85TASS4CFFTE"
+
+    invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
+
+    invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    :cond_0
+    return-void
+.end method
+
 .method public static final M3(La6/i3;Landroid/view/View;)V
     .locals 9
 
@@ -1648,6 +1681,21 @@
     invoke-static {v0, v1}, Lcom/mobile/brasiltv/utils/b0;->Q(Landroid/view/View;Landroid/view/View$OnClickListener;)V
 
     .line 210
+    sget v0, Lcom/mobile/brasiltv/R$id;->mLlSupport:I
+
+    invoke-virtual {p0, v0}, La6/i3;->D3(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/zhy/autolayout/AutoLinearLayout;
+
+    new-instance v1, La6/DonateClick;
+
+    invoke-direct {v1, p0}, La6/DonateClick;-><init>(La6/i3;)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 220
     sget v0, Lcom/mobile/brasiltv/R$id;->mLlHelp:I
 
     .line 212

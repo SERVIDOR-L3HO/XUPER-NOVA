@@ -690,6 +690,7 @@
     <item type="id" name="mLlSearchEmpty" />
     <item type="id" name="mLlSeason" />
     <item type="id" name="mLlSubtitle" />
+    <item type="id" name="mLlSupport" />
     <item type="id" name="mLlTab" />
     <item type="id" name="mLlVolumeController" />
     <item type="id" name="mLoadingPb" />

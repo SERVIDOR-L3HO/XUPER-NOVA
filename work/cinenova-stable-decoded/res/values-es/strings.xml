@@ -570,6 +570,9 @@ Agregue la función de notificación de vista previa del programa del canal de T
     <string name="mine_subscriptions">Notificaciones</string>
     <string name="mine_subtitle">Subtítulo</string>
     <string name="mine_subtitle_audio">Audio y subtítulos</string>
+    <string name="support_apps_title">Apoya el desarrollo</string>
+    <string name="support_apps_subtitle">Ayúdanos a mejorar esta y otras aplicaciones</string>
+    <string name="support_apps_button">APOYAR</string>
     <string name="mine_valid_until_date">Period de pobar se termina: %1$s</string>
     <string name="mine_valid_vip_until_date">Servicio válido hasta e %1$s</string>
     <string name="mine_vip_expired">Servicio caducado</string>

@@ -468,6 +468,9 @@ Adicionar a função notificação pré visualização do programa de canais da 
     <string name="mine_subscriptions">Notificações</string>
     <string name="mine_subtitle">Legenda</string>
     <string name="mine_subtitle_audio">Áudio e legenda</string>
+    <string name="support_apps_title">Apoie o desenvolvimento</string>
+    <string name="support_apps_subtitle">Ajude a melhorar este e outros aplicativos</string>
+    <string name="support_apps_button">APOIAR</string>
     <string name="mine_valid_until_date">Expira em: %1$s</string>
     <string name="mine_valid_vip_until_date">VIP válido até %1$s</string>
     <string name="mine_vip_expired">O VIP expirou</string>
