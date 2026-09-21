@@ -1026,6 +1026,14 @@
 
 .field public static final mLlSupport:I = 0x7f0a0648
 
+.field public static final mLlVpn:I = 0x7f0a0649
+
+.field public static final mIvVpn:I = 0x7f0a064c
+
+.field public static final mVpnStatus:I = 0x7f0a064a
+
+.field public static final mVpnSwitch:I = 0x7f0a064b
+
 .field public static final mLlTab:I = 0x7f0a030e
 
 .field public static final mLlVolumeController:I = 0x7f0a030f

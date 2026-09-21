@@ -280,3 +280,17 @@ mtime_ms = 1789964169850
 storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:0efef50a-2be0-4b93-895c-970a1ce0a0bc/43336eb6-60a5-43b9-bb65-0c6dd5411bc6/50a0c56b-f94f-483c-a4f9-7d04e149eed0"
 storage_version_token = "1789964253584717"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "vKQkA-plCIFqrkP-FbYbT"
+uri = "file://work/cinenova-sports-landscape-eventos-vpn.apk"
+type = "unspecified"
+title = "CineNova Sports Eventos — VPN"
+description = "APK firmado con botón VPN en el menú, estado Activada/Desactivada y control del servicio VPN existente."
+logical_id = "298e8593-439e-44cc-8ec0-2c861d342549"
+content_hash = "sha256:31adc8143fa2ab2332610ad3b1996a43177703d62417ec2ddb7c9ce9388fcd61"
+size = 49647904
+mtime_ms = 1790004734185
+storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:2de859b8-932f-4019-ba62-2c7029ffc170/298e8593-439e-44cc-8ec0-2c861d342549/74f557d9-f7d6-4ca7-a92c-cfc75819f859"
+storage_version_token = "1790004753474509"
+content_type = "application/octet-stream"

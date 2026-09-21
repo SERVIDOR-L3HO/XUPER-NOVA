@@ -120,6 +120,146 @@
     return-void
 .end method
 
+.method public static final Vpn3(La6/i3;Landroid/view/View;)V
+    .locals 5
+
+    const-string p1, "this$0"
+
+    invoke-static {p0, p1}, Ls9/i;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    const-string v1, "nf_v"
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v1
+
+    const-string v3, "on"
+
+    invoke-interface {v1, v3, v2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v3
+
+    const-string v4, "on"
+
+    const/4 v2, 0x0
+
+    invoke-interface {v3, v4, v2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v3
+
+    invoke-interface {v3}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    invoke-static {v0}, Lzx/t;->cut(Landroid/content/Context;)V
+
+    sput-boolean v2, Lzx/t;->vpnStarted:Z
+
+    goto :goto_0
+
+    :cond_0
+    invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v3
+
+    const-string v4, "on"
+
+    const/4 v2, 0x1
+
+    invoke-interface {v3, v4, v2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v3
+
+    invoke-interface {v3}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    invoke-static {v0}, Lzx/t;->kick(Landroid/content/Context;)V
+
+    sput-boolean v2, Lzx/t;->vpnStarted:Z
+
+    :goto_0
+    invoke-static {p0}, La6/i3;->refreshVpn(La6/i3;)V
+
+    :cond_2
+    return-void
+.end method
+
+.method public static final refreshVpn(La6/i3;)V
+    .locals 5
+
+    const-string v0, "this$0"
+
+    invoke-static {p0, v0}, Ls9/i;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    const-string v1, "nf_v"
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v1
+
+    const-string v3, "on"
+
+    invoke-interface {v1, v3, v2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    move-result v2
+
+    sget v3, Lcom/mobile/brasiltv/R$id;->mVpnSwitch:I
+
+    invoke-virtual {p0, v3}, La6/i3;->D3(I)Landroid/view/View;
+
+    move-result-object v3
+
+    check-cast v3, Landroid/widget/Switch;
+
+    invoke-virtual {v3, v2}, Landroid/widget/Switch;->setChecked(Z)V
+
+    sget v3, Lcom/mobile/brasiltv/R$id;->mVpnStatus:I
+
+    invoke-virtual {p0, v3}, La6/i3;->D3(I)Landroid/view/View;
+
+    move-result-object v3
+
+    check-cast v3, Landroid/widget/TextView;
+
+    if-eqz v2, :cond_0
+
+    const v4, 0x7f1104d1
+
+    goto :goto_0
+
+    :cond_0
+    const v4, 0x7f1104d2
+
+    :goto_0
+    invoke-virtual {p0, v4}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    :cond_2
+    return-void
+.end method
+
 .method public static final Donate3(La6/i3;Landroid/view/View;)V
     .locals 3
 
@@ -1756,6 +1896,22 @@
 
     .line 255
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    sget v0, Lcom/mobile/brasiltv/R$id;->mLlVpn:I
+
+    invoke-virtual {p0, v0}, La6/i3;->D3(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/zhy/autolayout/AutoLinearLayout;
+
+    new-instance v1, La6/VpnClick;
+
+    invoke-direct {v1, p0}, La6/VpnClick;-><init>(La6/i3;)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    invoke-static {p0}, La6/i3;->refreshVpn(La6/i3;)V
 
     .line 258
     sget v0, Lcom/mobile/brasiltv/R$id;->mLayoutShare:I

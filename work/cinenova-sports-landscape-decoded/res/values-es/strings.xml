@@ -987,4 +987,7 @@ Confirme que fue su propia operación, de lo contrario, para garantizar la segur
     <string name="support_apps_button">APOYAR</string>
     <string name="support_apps_subtitle">Ayúdanos a mejorar esta y otras aplicaciones</string>
     <string name="support_apps_title">Apoya el desarrollo</string>
+    <string name="vpn_title">VPN segura</string>
+    <string name="vpn_status_on">Activada</string>
+    <string name="vpn_status_off">Desactivada</string>
 </resources>

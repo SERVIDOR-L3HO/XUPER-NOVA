@@ -692,6 +692,8 @@
     <item type="id" name="mLlSubtitle" />
     <item type="id" name="mLlTab" />
     <item type="id" name="mLlVolumeController" />
+    <item type="id" name="mLlVpn" />
+    <item type="id" name="mIvVpn" />
     <item type="id" name="mLoadingPb" />
     <item type="id" name="mLoadingPbar" />
     <item type="id" name="mLoadingView" />
@@ -1025,6 +1027,8 @@
     <item type="id" name="mTvValidUntil" />
     <item type="id" name="mTvVersion" />
     <item type="id" name="mTvWithdraw" />
+    <item type="id" name="mVpnStatus" />
+    <item type="id" name="mVpnSwitch" />
     <item type="id" name="mUpvProgress" />
     <item type="id" name="mVCompatBg" />
     <item type="id" name="mVLine" />

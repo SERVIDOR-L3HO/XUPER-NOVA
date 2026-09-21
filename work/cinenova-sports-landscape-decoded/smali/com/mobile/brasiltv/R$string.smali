@@ -1851,3 +1851,13 @@
 .field public static final your_person_new_email:I = 0x7f1104cb
 
 .field public static final your_service_has_expired:I = 0x7f1104cc
+
+.field public static final vpn_title:I = 0x7f1104d0
+
+.field public static final vpn_status_on:I = 0x7f1104d1
+
+.field public static final vpn_status_off:I = 0x7f1104d2
+
+.field public static final vpn_status_on:I = 0x7f1104d1
+
+.field public static final vpn_status_off:I = 0x7f1104d2

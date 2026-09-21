@@ -4587,6 +4587,15 @@
     <public type="id" name="zoomFade" id="0x7f0a0646" />
     <public type="id" name="zoomStack" id="0x7f0a0647" />
     <public type="id" name="mLlSupport" id="0x7f0a0648" />
+    <public type="id" name="mLlVpn" id="0x7f0a0649" />
+    <public type="id" name="mVpnStatus" id="0x7f0a064a" />
+    <public type="id" name="mVpnSwitch" id="0x7f0a064b" />
+    <public type="id" name="mIvVpn" id="0x7f0a064c" />
+    <public type="string" name="vpn_title" id="0x7f1104d0" />
+    <public type="string" name="vpn_status_on" id="0x7f1104d1" />
+    <public type="string" name="vpn_status_off" id="0x7f1104d2" />
+    <public type="string" name="vpn_status_on" id="0x7f1104d1" />
+    <public type="string" name="vpn_status_off" id="0x7f1104d2" />
     <public type="integer" name="abc_config_activityDefaultDur" id="0x7f0b0000" />
     <public type="integer" name="abc_config_activityShortDur" id="0x7f0b0001" />
     <public type="integer" name="animation_default_duration" id="0x7f0b0002" />

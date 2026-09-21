@@ -1253,4 +1253,7 @@ video"</string>
     <string name="support_apps_button">SUPPORT</string>
     <string name="support_apps_subtitle">Help us improve this and other apps</string>
     <string name="support_apps_title">Support the development</string>
+    <string name="vpn_title">Secure VPN</string>
+    <string name="vpn_status_on">Connected</string>
+    <string name="vpn_status_off">Disconnected</string>
 </resources>
