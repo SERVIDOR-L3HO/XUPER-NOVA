@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:background="@drawable/bg_dialog_restrict" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mImageClose" android:paddingLeft="46.0px" android:paddingTop="10.0px" android:paddingRight="10.0px" android:paddingBottom="46.0px" android:layout_width="100.0px" android:layout_height="100.0px" android:src="@drawable/icon_search_clear" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="30.0px" android:textColor="@color/color_important" android:gravity="center" android:id="@id/mTextTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="37.0px" android:text="@string/trail_period_ends" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="24.0px" android:textColor="@color/color_666666" android:gravity="center" android:id="@id/mTextTips" android:paddingLeft="15.0px" android:paddingRight="15.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0px" android:text="@string/model_change_tips" android:layout_below="@id/mTextTitle" android:layout_centerHorizontal="true" />
+</com.zhy.autolayout.AutoRelativeLayout>

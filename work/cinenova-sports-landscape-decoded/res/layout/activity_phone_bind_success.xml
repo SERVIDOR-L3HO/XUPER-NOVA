@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@color/color_1f202a" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mobile.brasiltv.view.TitleView android:id="@id/titleView" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleViewTitle="@string/binding_success" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="285.0px" android:src="@mipmap/ic_phone_bind_success" />
+    <TextView android:textSize="30.0px" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/bindStatus" android:paddingLeft="20.0px" android:paddingRight="20.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="98.0px" android:text="@string/phone_bind_success_notice1" />
+    <TextView android:textSize="30.0px" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/noticeText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0px" android:text="@string/phone_bind_success_notice2" />
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/mLoadingPb" android:layout_width="114.0px" android:layout_height="114.0px" android:layout_marginTop="50.0px" android:layout_centerInParent="true" style="?android:progressBarStyleSmall" />
+</com.zhy.autolayout.AutoLinearLayout>

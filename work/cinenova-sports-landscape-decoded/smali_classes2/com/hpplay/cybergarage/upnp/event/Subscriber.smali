@@ -1,0 +1,464 @@
+.class public Lcom/hpplay/cybergarage/upnp/event/Subscriber;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field private SID:Ljava/lang/String;
+
+.field private deliveryHost:Ljava/lang/String;
+
+.field private deliveryPath:Ljava/lang/String;
+
+.field private deliveryPort:I
+
+.field private deliveryURL:Ljava/lang/String;
+
+.field private ifAddr:Ljava/lang/String;
+
+.field private notifyCount:J
+
+.field private subscriptionTime:J
+
+.field private timeOut:J
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    iput-object v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->SID:Ljava/lang/String;
+
+    .line 6
+    .line 7
+    const-string v0, ""
+
+    .line 8
+    .line 9
+    iput-object v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->ifAddr:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    iput-object v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->deliveryURL:Ljava/lang/String;
+
+    .line 12
+    .line 13
+    iput-object v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->deliveryHost:Ljava/lang/String;
+
+    .line 14
+    .line 15
+    iput-object v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->deliveryPath:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    const/4 v0, 0x0
+
+    .line 18
+    iput v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->deliveryPort:I
+
+    .line 19
+    .line 20
+    const-wide/16 v0, 0x0
+
+    .line 21
+    .line 22
+    iput-wide v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->timeOut:J
+
+    .line 23
+    .line 24
+    iput-wide v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->subscriptionTime:J
+
+    .line 25
+    .line 26
+    iput-wide v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->notifyCount:J
+
+    .line 27
+    .line 28
+    invoke-virtual {p0}, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->renew()V
+
+    .line 29
+    .line 30
+    .line 31
+    return-void
+.end method
+
+
+# virtual methods
+.method public getDeliveryHost()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->deliveryHost:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getDeliveryPath()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->deliveryPath:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getDeliveryPort()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->deliveryPort:I
+
+    .line 2
+    .line 3
+    return v0
+.end method
+
+.method public getDeliveryURL()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->deliveryURL:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getInterfaceAddress()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->ifAddr:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getNotifyCount()J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->notifyCount:J
+
+    .line 2
+    .line 3
+    return-wide v0
+.end method
+
+.method public getSID()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->SID:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getSubscriptionTime()J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->subscriptionTime:J
+
+    .line 2
+    .line 3
+    return-wide v0
+.end method
+
+.method public getTimeOut()J
+    .locals 2
+
+    .line 1
+    iget-wide v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->timeOut:J
+
+    .line 2
+    .line 3
+    return-wide v0
+.end method
+
+.method public incrementNotifyCount()V
+    .locals 7
+
+    .line 1
+    iget-wide v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->notifyCount:J
+
+    .line 2
+    .line 3
+    const-wide v2, 0x7fffffffffffffffL
+
+    .line 4
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    const-wide/16 v4, 0x1
+
+    .line 9
+    .line 10
+    cmp-long v6, v0, v2
+
+    .line 11
+    .line 12
+    if-nez v6, :cond_0
+
+    .line 13
+    .line 14
+    iput-wide v4, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->notifyCount:J
+
+    .line 15
+    .line 16
+    return-void
+
+    .line 17
+    :cond_0
+    add-long/2addr v0, v4
+
+    .line 18
+    iput-wide v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->notifyCount:J
+
+    .line 19
+    .line 20
+    return-void
+.end method
+
+.method public isExpired()Z
+    .locals 9
+
+    .line 1
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    iget-wide v2, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->timeOut:J
+
+    .line 6
+    .line 7
+    const-wide/16 v4, -0x1
+
+    .line 8
+    .line 9
+    const/4 v6, 0x0
+
+    .line 10
+    cmp-long v7, v2, v4
+
+    .line 11
+    .line 12
+    if-nez v7, :cond_0
+
+    .line 13
+    .line 14
+    return v6
+
+    .line 15
+    :cond_0
+    invoke-virtual {p0}, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->getSubscriptionTime()J
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-wide v2
+
+    .line 19
+    invoke-virtual {p0}, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->getTimeOut()J
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-wide v4
+
+    .line 23
+    const-wide/16 v7, 0x3e8
+
+    .line 24
+    .line 25
+    mul-long v4, v4, v7
+
+    .line 26
+    .line 27
+    add-long/2addr v2, v4
+
+    .line 28
+    cmp-long v4, v2, v0
+
+    .line 29
+    .line 30
+    if-gez v4, :cond_1
+
+    .line 31
+    .line 32
+    const/4 v0, 0x1
+
+    .line 33
+    return v0
+
+    .line 34
+    :cond_1
+    return v6
+.end method
+
+.method public renew()V
+    .locals 2
+
+    .line 1
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    invoke-virtual {p0, v0, v1}, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->setSubscriptionTime(J)V
+
+    .line 6
+    .line 7
+    .line 8
+    const/4 v0, 0x0
+
+    .line 9
+    invoke-virtual {p0, v0}, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->setNotifyCount(I)V
+
+    .line 10
+    .line 11
+    .line 12
+    return-void
+.end method
+
+.method public setDeliveryURL(Ljava/lang/String;)V
+    .locals 1
+
+    .line 1
+    iput-object p1, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->deliveryURL:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    :try_start_0
+    new-instance v0, Ljava/net/URL;
+
+    .line 4
+    .line 5
+    invoke-direct {v0, p1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {v0}, Ljava/net/URL;->getHost()Ljava/lang/String;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    iput-object p1, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->deliveryHost:Ljava/lang/String;
+
+    .line 13
+    .line 14
+    invoke-virtual {v0}, Ljava/net/URL;->getPath()Ljava/lang/String;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p1
+
+    .line 18
+    iput-object p1, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->deliveryPath:Ljava/lang/String;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0}, Ljava/net/URL;->getPort()I
+
+    .line 21
+    .line 22
+    .line 23
+    move-result p1
+
+    .line 24
+    iput p1, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->deliveryPort:I
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 25
+    .line 26
+    :catch_0
+    return-void
+.end method
+
+.method public setInterfaceAddress(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->ifAddr:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setNotifyCount(I)V
+    .locals 2
+
+    .line 1
+    int-to-long v0, p1
+
+    .line 2
+    iput-wide v0, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->notifyCount:J
+
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public setSID(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->SID:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setSubscriptionTime(J)V
+    .locals 0
+
+    .line 1
+    iput-wide p1, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->subscriptionTime:J
+
+    .line 2
+    .line 3
+    return-void
+.end method
+
+.method public setTimeOut(J)V
+    .locals 0
+
+    .line 1
+    iput-wide p1, p0, Lcom/hpplay/cybergarage/upnp/event/Subscriber;->timeOut:J
+
+    .line 2
+    .line 3
+    return-void
+.end method

@@ -1,0 +1,84 @@
+.class Lcom/hpplay/glide/load/engine/bitmap_recycle/SizeStrategy$KeyPool;
+.super Lcom/hpplay/glide/load/engine/bitmap_recycle/BaseKeyPool;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/hpplay/glide/load/engine/bitmap_recycle/SizeStrategy;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "KeyPool"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/hpplay/glide/load/engine/bitmap_recycle/BaseKeyPool<",
+        "Lcom/hpplay/glide/load/engine/bitmap_recycle/SizeStrategy$Key;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/hpplay/glide/load/engine/bitmap_recycle/BaseKeyPool;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method public bridge synthetic create()Lcom/hpplay/glide/load/engine/bitmap_recycle/Poolable;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/hpplay/glide/load/engine/bitmap_recycle/SizeStrategy$KeyPool;->create()Lcom/hpplay/glide/load/engine/bitmap_recycle/SizeStrategy$Key;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public create()Lcom/hpplay/glide/load/engine/bitmap_recycle/SizeStrategy$Key;
+    .locals 1
+
+    .line 2
+    new-instance v0, Lcom/hpplay/glide/load/engine/bitmap_recycle/SizeStrategy$Key;
+
+    invoke-direct {v0, p0}, Lcom/hpplay/glide/load/engine/bitmap_recycle/SizeStrategy$Key;-><init>(Lcom/hpplay/glide/load/engine/bitmap_recycle/SizeStrategy$KeyPool;)V
+
+    return-object v0
+.end method
+
+.method public get(I)Lcom/hpplay/glide/load/engine/bitmap_recycle/SizeStrategy$Key;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/hpplay/glide/load/engine/bitmap_recycle/BaseKeyPool;->get()Lcom/hpplay/glide/load/engine/bitmap_recycle/Poolable;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    check-cast v0, Lcom/hpplay/glide/load/engine/bitmap_recycle/SizeStrategy$Key;
+
+    .line 6
+    .line 7
+    invoke-virtual {v0, p1}, Lcom/hpplay/glide/load/engine/bitmap_recycle/SizeStrategy$Key;->init(I)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-object v0
+.end method

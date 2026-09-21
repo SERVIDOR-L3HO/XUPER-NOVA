@@ -1,0 +1,163 @@
+.class public final Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Builder"
+.end annotation
+
+
+# instance fields
+.field private app_namespace_:Ljava/lang/String;
+
+.field private global_metrics_:Lcom/google/android/datatransport/runtime/firebase/transport/GlobalMetrics;
+
+.field private log_source_metrics_:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lcom/google/android/datatransport/runtime/firebase/transport/LogSourceMetrics;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private window_:Lcom/google/android/datatransport/runtime/firebase/transport/TimeWindow;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    iput-object v0, p0, Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;->window_:Lcom/google/android/datatransport/runtime/firebase/transport/TimeWindow;
+
+    .line 7
+    new-instance v1, Ljava/util/ArrayList;
+
+    .line 9
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    .line 12
+    iput-object v1, p0, Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;->log_source_metrics_:Ljava/util/List;
+
+    .line 14
+    iput-object v0, p0, Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;->global_metrics_:Lcom/google/android/datatransport/runtime/firebase/transport/GlobalMetrics;
+
+    .line 16
+    const-string v0, ""
+
+    .line 18
+    iput-object v0, p0, Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;->app_namespace_:Ljava/lang/String;
+
+    .line 20
+    return-void
+.end method
+
+
+# virtual methods
+.method public addLogSourceMetrics(Lcom/google/android/datatransport/runtime/firebase/transport/LogSourceMetrics;)Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;->log_source_metrics_:Ljava/util/List;
+
+    .line 3
+    invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 6
+    return-object p0
+.end method
+
+.method public build()Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics;
+    .locals 5
+
+    .line 1
+    new-instance v0, Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics;
+
+    .line 3
+    iget-object v1, p0, Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;->window_:Lcom/google/android/datatransport/runtime/firebase/transport/TimeWindow;
+
+    .line 5
+    iget-object v2, p0, Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;->log_source_metrics_:Ljava/util/List;
+
+    .line 7
+    invoke-static {v2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    .line 10
+    move-result-object v2
+
+    .line 11
+    iget-object v3, p0, Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;->global_metrics_:Lcom/google/android/datatransport/runtime/firebase/transport/GlobalMetrics;
+
+    .line 13
+    iget-object v4, p0, Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;->app_namespace_:Ljava/lang/String;
+
+    .line 15
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics;-><init>(Lcom/google/android/datatransport/runtime/firebase/transport/TimeWindow;Ljava/util/List;Lcom/google/android/datatransport/runtime/firebase/transport/GlobalMetrics;Ljava/lang/String;)V
+
+    .line 18
+    return-object v0
+.end method
+
+.method public setAppNamespace(Ljava/lang/String;)Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;->app_namespace_:Ljava/lang/String;
+
+    .line 3
+    return-object p0
+.end method
+
+.method public setGlobalMetrics(Lcom/google/android/datatransport/runtime/firebase/transport/GlobalMetrics;)Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;->global_metrics_:Lcom/google/android/datatransport/runtime/firebase/transport/GlobalMetrics;
+
+    .line 3
+    return-object p0
+.end method
+
+.method public setLogSourceMetricsList(Ljava/util/List;)Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/google/android/datatransport/runtime/firebase/transport/LogSourceMetrics;",
+            ">;)",
+            "Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;"
+        }
+    .end annotation
+
+    .line 1
+    iput-object p1, p0, Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;->log_source_metrics_:Ljava/util/List;
+
+    .line 3
+    return-object p0
+.end method
+
+.method public setWindow(Lcom/google/android/datatransport/runtime/firebase/transport/TimeWindow;)Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/google/android/datatransport/runtime/firebase/transport/ClientMetrics$Builder;->window_:Lcom/google/android/datatransport/runtime/firebase/transport/TimeWindow;
+
+    .line 3
+    return-object p0
+.end method

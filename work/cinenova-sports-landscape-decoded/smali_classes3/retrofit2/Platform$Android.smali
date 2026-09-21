@@ -1,0 +1,75 @@
+.class final Lretrofit2/Platform$Android;
+.super Lretrofit2/Platform;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lretrofit2/Platform;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Android"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lretrofit2/Platform$Android$MainThreadExecutor;
+    }
+.end annotation
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 2
+    .line 3
+    const/16 v1, 0x18
+
+    .line 4
+    .line 5
+    if-lt v0, v1, :cond_0
+
+    .line 6
+    .line 7
+    const/4 v0, 0x1
+
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 10
+    :goto_0
+    invoke-direct {p0, v0}, Lretrofit2/Platform;-><init>(Z)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+.end method
+
+
+# virtual methods
+.method public defaultCallbackExecutor()Ljava/util/concurrent/Executor;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lretrofit2/Platform$Android$MainThreadExecutor;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lretrofit2/Platform$Android$MainThreadExecutor;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method

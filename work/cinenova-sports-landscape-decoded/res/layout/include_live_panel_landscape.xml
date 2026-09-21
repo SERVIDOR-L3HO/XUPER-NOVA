@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:id="@id/mLiveControl" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mobile.brasiltv.view.AutoHideRelativeLayout android:id="@id/mLiveControlPanelLandscape" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:background="@drawable/bg_play_fullscreen_shadow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/mIconBack" android:paddingLeft="10.0dip" android:paddingTop="16.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="37.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_play_back" android:scaleType="centerInside" />
+        <TextView android:textColor="@color/white" android:id="@id/mTextTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_toRightOf="@id/mIconBack" style="@style/PingFang_26" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/color_ffffff" android:id="@id/tvProgramName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginRight="22.0px" android:layout_marginBottom="2.0dip" android:singleLine="true" android:layout_toLeftOf="@id/llMenu" android:layout_toRightOf="@id/mTextTitle" android:layout_alignBottom="@id/mTextTitle" />
+        <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:id="@id/llMenu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/mDebugSwitch_lands" android:visibility="gone" android:layout_width="40.0px" android:layout_height="40.0px" android:layout_marginTop="30.0px" android:layout_marginRight="15.0px" android:src="@mipmap/close" android:scaleType="fitCenter" />
+            <ImageView android:id="@id/mImageLandShare" android:padding="25.0px" android:layout_width="94.0px" android:layout_height="94.0px" android:layout_marginTop="15.0px" android:src="@mipmap/icon_share_live" />
+            <ImageView android:id="@id/mImageLandFeedback" android:padding="25.0px" android:layout_width="94.0px" android:layout_height="94.0px" android:layout_marginTop="15.0px" android:src="@drawable/ic_feedback" />
+            <ImageView android:id="@id/mIconSave" android:padding="25.0px" android:visibility="gone" android:layout_width="95.0px" android:layout_height="88.0px" android:layout_marginTop="18.0px" android:src="@drawable/ic_live_not_fav" />
+            <ImageView android:id="@id/mIconCast" android:padding="25.0px" android:visibility="gone" android:layout_width="94.0px" android:layout_height="86.0px" android:layout_marginTop="19.0px" android:src="@drawable/icon_cast" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="82.0px" android:layout_marginBottom="20.0px" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mLlChannelList" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <ImageView android:layout_width="40.0px" android:layout_height="38.0px" android:src="@drawable/ic_live_channel_list" />
+                <TextView android:textSize="28.0px" android:textColor="@color/color_important_white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:text="@string/live_channel" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mLlPrevious" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="120.0px">
+                <ImageView android:layout_width="40.0px" android:layout_height="40.0px" android:src="@drawable/ic_live_previous" />
+                <TextView android:textSize="28.0px" android:textColor="@color/color_important_white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:text="@string/live_previous" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mLlQuality" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="120.0px">
+                <ImageView android:id="@id/mIvLandQuality" android:layout_width="53.0px" android:layout_height="47.0px" android:src="@drawable/ic_quality_480p" />
+                <TextView android:textSize="28.0px" android:textColor="@color/color_important_white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:text="@string/live_quality" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            <com.zhy.autolayout.AutoLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/mLlLock" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="120.0px">
+                <ImageView android:layout_width="wrap_content" android:layout_height="42.0px" android:src="@drawable/ic_unlock" />
+                <TextView android:textSize="28.0px" android:textColor="@color/color_important_white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:text="@string/live_lock" />
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+        <include layout="@layout/layout_brightness_controller" />
+        <include layout="@layout/layout_volume_controller" />
+    </com.mobile.brasiltv.view.AutoHideRelativeLayout>
+    <com.zhy.autolayout.AutoFrameLayout android:id="@id/mFlLocked" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="120.0px" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="100.0px" android:layout_height="100.0px" android:src="@drawable/ic_locked" />
+        <TextView android:textSize="28.0px" android:textColor="@color/color_important_white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="116.0px" android:text="@string/live_unlock" />
+    </com.zhy.autolayout.AutoFrameLayout>
+    <com.mobile.brasiltv.view.AnimatorFrameLayout android:id="@id/mLayoutChannelList" android:background="@color/transparent" android:visibility="gone" android:layout_width="880.0px" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+        <com.mobile.brasiltv.view.KoocanRecyclerView android:id="@id/mRecyclerSort" android:background="@color/color_99000000" android:scrollbars="none" android:layout_width="280.0px" android:layout_height="fill_parent" android:overScrollMode="never" />
+        <com.mobile.brasiltv.view.KoocanRecyclerView android:id="@id/mRecyclerChannel" android:background="@color/color_33000000" android:scrollbars="none" android:layout_width="600.0px" android:layout_height="fill_parent" android:layout_marginLeft="280.0px" android:overScrollMode="never" />
+    </com.mobile.brasiltv.view.AnimatorFrameLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

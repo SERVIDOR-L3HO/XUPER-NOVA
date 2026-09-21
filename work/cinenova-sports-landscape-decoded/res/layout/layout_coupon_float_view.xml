@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:layout_width="246.0px" android:layout_height="208.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imCoupon" android:background="@color/transparent" android:layout_width="246.0px" android:layout_height="208.0px" android:src="@mipmap/floating_button_coupon" />
+    <ImageView android:id="@id/imCouponClose" android:layout_width="48.0px" android:layout_height="48.0px" android:layout_marginRight="10.0px" android:src="@mipmap/floating_button_coupon_close" android:layout_alignParentRight="true" />
+</com.zhy.autolayout.AutoRelativeLayout>

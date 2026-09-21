@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0px" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="32.0px" android:layout_height="33.0px" android:src="@drawable/ic_brightness_controller" />
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/mPbBrightness" android:layout_width="12.0px" android:layout_height="280.0px" android:layout_marginTop="20.0px" android:max="100" android:progress="0" android:indeterminateOnly="false" android:progressDrawable="@drawable/progressbar_vertical_gesture_controller" />
+</com.zhy.autolayout.AutoLinearLayout>

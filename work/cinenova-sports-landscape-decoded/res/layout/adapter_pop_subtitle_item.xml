@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="90.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/color_ebebeb" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="24.0px" android:layout_marginRight="24.0px" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/color_666666" android:id="@id/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0px" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/image_icon" android:visibility="gone" android:layout_width="29.0px" android:layout_height="19.0px" android:layout_marginRight="32.0px" android:src="@drawable/ic_green_gou" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</com.zhy.autolayout.AutoRelativeLayout>

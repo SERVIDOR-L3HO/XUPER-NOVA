@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@drawable/bg_standard_dialog" android:layout_width="600.0px" android:layout_height="440.0px">
+        <TextView android:textSize="28.0px" android:textColor="@color/color_333333" android:gravity="center" android:id="@id/mLimitTip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="41.0px" android:layout_marginTop="112.0px" android:layout_marginRight="41.0px" android:text="@string/number_limit_tips" />
+        <TextView android:textSize="32.0px" android:textColor="@color/color_ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/mReLogin" android:background="@drawable/shape_green_radius_solid" android:layout_width="480.0px" android:layout_height="90.0px" android:layout_marginTop="80.0px" android:text="@string/relogin" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoFrameLayout>

@@ -266,3 +266,17 @@ mtime_ms = 1789332253841
 storage_uri = "gcs://replit-rams-assets-kirk/rams/assets/repl:db16fdbe-3257-42f3-9e7d-10fba050ed66/fc82bf86-b964-4702-9e87-75fc47ca9aea/ebdd2fed-f9d0-40f9-89c5-4a0b2495997b"
 storage_version_token = "1789332271315553"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "-xHZp8SqjdiPxewxuBFi6"
+uri = "file://work/cinenova-sports-landscape-eventos.apk"
+type = "unspecified"
+title = "APK Cinenova Sports — botón Eventos"
+description = "APK firmado de cinenova-sports-landscape.apk. El botón superior ahora dice Eventos y tiene fondo blanco. Firma v1/v2/v3 verificada; no se ejecutó en un dispositivo Android dentro de Replit."
+logical_id = "43336eb6-60a5-43b9-bb65-0c6dd5411bc6"
+content_hash = "sha256:e2937efd62512666ed2b449f0420062ee365051ce8fdd746e82005dd2ec7af2d"
+size = 49647833
+mtime_ms = 1789964169850
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:0efef50a-2be0-4b93-895c-970a1ce0a0bc/43336eb6-60a5-43b9-bb65-0c6dd5411bc6/50a0c56b-f94f-483c-a4f9-7d04e149eed0"
+storage_version_token = "1789964253584717"
+content_type = "application/octet-stream"

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:background="@color/color_191a23" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mobile.brasiltv.view.TitleView android:id="@id/title_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleViewTitle="@string/playlist_title" />
+    <TextView android:textSize="21.0sp" android:textColor="@color/color_ffffff" android:id="@id/mTvPlaylistTip" android:layout_width="669.0px" android:layout_height="wrap_content" android:layout_marginTop="27.0dip" android:text="@string/playlist_content" android:layout_below="@id/title_view" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="19.0sp" android:textColor="@color/color_ffffff" android:id="@id/mTvPlaylistUrl" android:layout_width="673.0px" android:layout_height="wrap_content" android:layout_marginTop="100.0px" android:layout_below="@id/mTvPlaylistTip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="21.0sp" android:textStyle="bold" android:textColor="@color/color_ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/mButtonCopy" android:background="@drawable/bg_restrict_confirm" android:clickable="true" android:layout_width="702.0px" android:layout_height="90.0px" android:layout_marginTop="55.0px" android:text="@string/playlist_copy" android:layout_below="@id/mTvPlaylistUrl" android:layout_centerHorizontal="true" />
+</com.zhy.autolayout.AutoRelativeLayout>

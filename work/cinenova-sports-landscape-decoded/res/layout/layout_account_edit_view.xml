@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mIvType" android:layout_width="28.0px" android:layout_height="32.0px" android:layout_marginLeft="22.0px" android:layout_marginTop="36.0px" android:layout_marginRight="18.0px" android:layout_marginBottom="36.0px" android:scaleType="fitXY" />
+    <EditText android:textSize="32.0px" android:textColor="@color/color_ffffff" android:textColorHint="@color/color_66ffffff" android:gravity="center|left" android:id="@id/mEtInput" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+    <ImageView android:id="@id/mIvClear" android:visibility="gone" android:layout_width="32.0px" android:layout_height="32.0px" android:layout_marginLeft="20.0px" android:layout_marginTop="30.0px" android:layout_marginRight="20.0px" android:layout_marginBottom="30.0px" android:scaleType="fitXY" />
+</merge>

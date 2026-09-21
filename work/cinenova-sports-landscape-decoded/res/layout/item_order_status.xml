@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/color_191a23" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mImageNoLogin" android:layout_width="482.0px" android:layout_height="418.0px" android:src="@drawable/ic_default_order" />
+    <TextView android:textSize="24.0px" android:textColor="@color/ffffff" android:gravity="center" android:id="@id/mTvStatusInfo" android:layout_width="644.0px" android:layout_height="wrap_content" android:layout_marginTop="40.0px" android:text="@string/please_login_first" />
+</com.zhy.autolayout.AutoLinearLayout>

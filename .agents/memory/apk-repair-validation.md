@@ -14,3 +14,9 @@ For decompiled APK repairs, a successful apktool rebuild plus `apksigner verify`
 **Why:** A later rebuild completed successfully but signing failed only because the prior session's temporary keystore was no longer present.
 
 **How to apply:** Treat the keystore as disposable session state; check for it and generate a local temporary key before every final signing step.
+
+APK archives can contain legacy or malformed extra-field metadata that makes `unzip -t` print warnings even when Android signature verification and apktool decoding succeed.
+
+**Why:** Rebuilt APKs inherited such metadata warnings during validation, while `apksigner verify` passed and apktool successfully recovered the edited resources.
+
+**How to apply:** Prefer `apksigner verify` plus a decode/reinspection pass over treating `unzip -t` warnings alone as a build failure.

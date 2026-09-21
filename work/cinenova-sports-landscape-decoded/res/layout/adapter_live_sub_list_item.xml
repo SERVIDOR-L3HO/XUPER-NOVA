@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:id="@id/mLayoutSubItem" android:background="@color/color_1f202a" android:layout_width="fill_parent" android:layout_height="101.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_live_sub" android:layout_width="44.0px" android:layout_height="44.0px" android:layout_marginLeft="23.0px" android:layout_marginRight="23.0px" android:src="@drawable/ic_live_sub" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/ffffff" android:ellipsize="marquee" android:gravity="center|left" android:id="@id/mTvEPG" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0px" android:layout_marginTop="8.0px" android:singleLine="true" android:layout_toLeftOf="@id/iv_live_sub" android:marqueeRepeatLimit="marquee_forever" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/color_cccccc" android:ellipsize="end" android:gravity="center|left|top" android:id="@id/mEpgInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-5.0px" android:text="C.S.I\nC.S.I" android:maxLines="2" android:layout_toLeftOf="@id/iv_live_sub" android:layout_below="@id/mTvEPG" android:layout_alignLeft="@id/mTvEPG" android:layout_alignParentBottom="true" android:lineSpacingExtra="0.0px" />
+</com.zhy.autolayout.AutoRelativeLayout>

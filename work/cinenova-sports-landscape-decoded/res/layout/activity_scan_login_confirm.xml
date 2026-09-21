@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@color/color_191a23" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mobile.brasiltv.view.TitleView android:id="@id/title_view" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleViewTitle="@string/login" />
+    <TextView android:textSize="24.0px" android:textColor="@color/ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/mTextNotify" android:layout_width="400.0px" android:layout_height="wrap_content" android:layout_marginTop="292.0px" android:text="@string/try_to_login" />
+    <TextView android:textSize="30.0px" android:textColor="@color/ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/mTextConfirm" android:background="@drawable/icon_mine_button" android:layout_width="690.0px" android:layout_height="80.0px" android:layout_marginTop="242.0px" android:text="@string/confirm" />
+    <TextView android:textSize="30.0px" android:textColor="@color/ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/mTextCancel" android:background="@drawable/icon_mine_button_normal" android:layout_width="690.0px" android:layout_height="80.0px" android:layout_marginTop="41.0px" android:text="@string/cancel" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/mPbLoading" android:visibility="gone" android:layout_width="130.0px" android:layout_height="130.0px" android:layout_marginTop="-380.0px" style="?android:progressBarStyleSmall" />
+</com.zhy.autolayout.AutoLinearLayout>

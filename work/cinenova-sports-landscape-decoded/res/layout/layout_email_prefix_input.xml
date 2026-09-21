@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoFrameLayout android:background="@drawable/selector_bg_login_edit" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0">
+        <EditText android:textSize="16.0sp" android:textColorHint="@color/color_999999" android:gravity="center|left" android:id="@id/mEtInput" android:background="@null" android:paddingLeft="23.0px" android:paddingRight="80.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/mIvClearInput" android:padding="22.0px" android:visibility="gone" android:layout_width="80.0px" android:layout_height="80.0px" android:scaleType="fitXY" />
+    </com.zhy.autolayout.AutoFrameLayout>
+    <com.zhy.autolayout.AutoFrameLayout android:background="@drawable/selector_bg_login_edit" android:layout_width="292.0px" android:layout_height="fill_parent" android:layout_marginLeft="10.0px">
+        <TextView android:textSize="16.0sp" android:textColor="@color/color_ffffff" android:ellipsize="end" android:gravity="center|left" android:id="@id/mTvEmailSuffix" android:paddingLeft="10.0px" android:paddingRight="62.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/mIvEmailSelector" android:layout_width="32.0px" android:layout_height="20.0px" android:layout_marginRight="20.0px" android:src="@drawable/selector_email_arrow" android:scaleType="fitXY" />
+    </com.zhy.autolayout.AutoFrameLayout>
+</merge>

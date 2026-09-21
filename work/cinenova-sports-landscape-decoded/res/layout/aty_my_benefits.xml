@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@color/color_1f2029" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mobile.brasiltv.view.TitleView android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleViewTitle="@string/mine_menu_benefit" />
+    <FrameLayout android:id="@id/mFlContent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.zhy.autolayout.AutoLinearLayout>

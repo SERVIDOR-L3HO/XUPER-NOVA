@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>NoFace Security</title>
+<style>
+  :root{
+    --bg:#08080b; --panel:#0d0d11; --red:#ff2f2f; --red2:#ff5a5a;
+    --line:#3a0f12; --mut:#9aa0a8; --mut2:#6c727b; --white:#f2f3f5;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background:
+      radial-gradient(1200px 600px at 50% -10%, rgba(255,47,47,.10), transparent 60%),
+      var(--bg);
+    color:var(--white);
+    font-family:"Bahnschrift","DIN Alternate","Roboto Condensed","Segoe UI",system-ui,Arial,sans-serif;
+    letter-spacing:.3px;
+    padding:26px clamp(18px,4vw,64px);
+    min-height:100%;
+    position:relative;
+    overflow-x:hidden;
+  }
+  /* esquinas rojas */
+  .corner{position:fixed;width:52px;height:52px;border:2px solid var(--red);z-index:5;opacity:.9}
+  .corner.tl{top:14px;left:14px;border-right:none;border-bottom:none}
+  .corner.tr{top:14px;right:14px;border-left:none;border-bottom:none}
+  .corner.bl{bottom:14px;left:14px;border-right:none;border-top:none}
+  .corner.br{bottom:14px;right:14px;border-left:none;border-top:none}
+
+  .top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+  .top .l .t1{color:var(--red);font-weight:800;letter-spacing:3px;font-size:15px}
+  .top .l .t2{color:var(--mut);letter-spacing:5px;font-size:13px;margin-top:3px}
+  .top .l .t3{color:var(--mut2);letter-spacing:2px;font-size:12px;margin-top:3px}
+  .top .r{text-align:right}
+  .top .r .s1{color:var(--red);font-weight:800;letter-spacing:2px;font-size:14px}
+  .top .r .s2{color:var(--red);font-weight:800;letter-spacing:2px;font-size:14px;margin-top:2px}
+  .top .r .s3{color:var(--mut2);letter-spacing:2px;font-size:12px;margin-top:2px}
+
+  .hero{text-align:center;margin:26px 0 6px}
+  .hex{width:96px;height:104px;margin:0 auto 10px;filter:drop-shadow(0 0 18px rgba(255,47,47,.55))}
+  h1.deny{
+    font-size:clamp(44px,9vw,120px);font-weight:900;color:var(--red);letter-spacing:6px;line-height:.98;
+    text-shadow:0 0 24px rgba(255,47,47,.75),0 0 60px rgba(255,47,47,.35);
+  }
+  .sub{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:12px;color:var(--mut);letter-spacing:6px;font-size:clamp(12px,2vw,17px)}
+  .sub::before,.sub::after{content:"";height:1px;width:min(22vw,240px);background:linear-gradient(90deg,transparent,var(--red))}
+  .sub::after{background:linear-gradient(90deg,var(--red),transparent)}
+
+  .lead{text-align:center;margin:26px auto 0;max-width:1000px}
+  .lead p{font-size:clamp(15px,1.7vw,19px);line-height:1.6}
+  .lead .muted{color:var(--mut);margin-top:6px}
+  .lead .em{color:var(--red);font-weight:800}
+
+  .banrow{display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap;margin:26px auto 0;max-width:1150px}
+  .banrow .txt{font-size:clamp(15px,1.7vw,19px)}
+  .banrow .txt b{color:var(--red)}
+  .rats{border:1px solid var(--line);background:#120a0c;border-radius:8px;padding:16px 26px;font-size:clamp(16px,2vw,22px);white-space:nowrap}
+  .rats b{color:var(--red)}
+
+  .grid{display:flex;gap:clamp(20px,4vw,60px);flex-wrap:wrap;margin:34px auto 0;max-width:1500px;border-top:1px solid #1b1b20;padding-top:24px}
+  .col{flex:1 1 280px;min-width:250px}
+  .col h3{color:var(--red);font-weight:800;letter-spacing:2px;font-size:14px;margin-bottom:14px}
+  .kv{display:flex;flex-direction:column;gap:12px}
+  .kv .row .k{color:var(--mut2);font-size:12px;letter-spacing:1.5px}
+  .kv .row .v{color:var(--white);font-size:15px;font-weight:700;margin-top:2px}
+  .kv .row .v.bad{color:var(--red)}
+  .cons{list-style:none;display:flex;flex-direction:column;gap:12px}
+  .cons li{color:var(--mut);font-size:15px;position:relative;padding-left:24px}
+  .cons li::before{content:"\2717";color:var(--red);position:absolute;left:0;top:0;font-weight:800}
+  .why p{color:var(--mut);font-size:15px;line-height:1.6}
+  .why .warn{color:var(--red);font-weight:800;margin-top:14px}
+
+  .foot{display:flex;gap:clamp(20px,6vw,90px);flex-wrap:wrap;margin:30px auto 0;max-width:1500px;border-top:1px solid #1b1b20;padding-top:22px}
+  .foot .fc{flex:1 1 320px}
+  .foot h4{color:var(--white);font-weight:800;letter-spacing:1px;font-size:16px;margin-bottom:8px}
+  .foot p{color:var(--mut2);font-size:14px;line-height:1.55}
+  .tg{font-size:20px;margin:2px 0 6px}
+  .tg a{color:var(--red);text-decoration:none;font-weight:800}
+
+  .finalwarn{text-align:center;margin:26px auto 0;max-width:1100px}
+  .finalwarn .h{color:var(--red);font-weight:800;letter-spacing:2px;font-size:15px}
+  .finalwarn p{color:var(--mut);font-size:14px;margin-top:6px}
+
+  .bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin:30px 0 6px;border-top:1px solid #1b1b20;padding-top:16px}
+  .bottom .b{color:var(--mut2);font-size:12px;letter-spacing:1px}
+  .bottom .mid{color:var(--white);font-weight:800;letter-spacing:3px;font-size:13px}
+  .bottom .mid span{color:var(--red)}
+
+  @media (max-width:720px){
+    body{padding:22px 16px}
+    .corner{width:34px;height:34px}
+    .sub{letter-spacing:3px}
+    .sub::before,.sub::after{width:16vw}
+    .banrow .rats{white-space:normal;text-align:center}
+    h1.deny{letter-spacing:3px}
+  }
+</style>
+</head>
+<body>
+  <div class="corner tl"></div><div class="corner tr"></div>
+  <div class="corner bl"></div><div class="corner br"></div>
+
+  <div class="top">
+    <div class="l">
+      <div class="t1">SYSTEM SECURITY</div>
+      <div class="t2">INTEGRITY PROTOCOL</div>
+      <div class="t3">v__VERSION__ &mdash; NoFace Engine</div>
+    </div>
+    <div class="r">
+      <div class="s1">STATUS: LOCKED</div>
+      <div class="s2">THREAT LEVEL: CRITICAL</div>
+      <div class="s3">CODE: NF-LOCK-403</div>
+    </div>
+  </div>
+
+  <div class="hero">
+    <svg class="hex" viewBox="0 0 100 108" xmlns="http://www.w3.org/2000/svg" fill="none">
+      <path d="M50 3 L94 28 L94 80 L50 105 L6 80 L6 28 Z" stroke="#ff2f2f" stroke-width="2.5"/>
+      <path d="M50 12 L86 33 L86 75 L50 96 L14 75 L14 33 Z" stroke="#7a1418" stroke-width="1.5"/>
+      <rect x="38" y="50" width="24" height="20" rx="3" stroke="#ff2f2f" stroke-width="2.5"/>
+      <path d="M42 50 V44 a8 8 0 0 1 16 0 V50" stroke="#ff2f2f" stroke-width="2.5"/>
+      <circle cx="50" cy="59" r="2.6" fill="#ff2f2f"/>
+    </svg>
+    <h1 class="deny">ACCESO DENEGADO</h1>
+    <div class="sub">INTEGRIDAD DEL SISTEMA COMPROMETIDA</div>
+  </div>
+
+  <div class="lead">
+    <p>Se ha detectado una <span class="em">modificaci&oacute;n no autorizada</span> en la aplicaci&oacute;n.</p>
+    <p class="muted">Este comportamiento viola los t&eacute;rminos de uso y compromete la seguridad e integridad del sistema.</p>
+  </div>
+
+  <div class="banrow">
+    <div class="txt">El acceso desde este dispositivo ha sido <b>RESTRINGIDO Y BLOQUEADO PERMANENTEMENTE.</b></div>
+    <div class="rats">Aqui las <b>ratas</b> no comen.</div>
+  </div>
+
+  <div class="grid">
+    <div class="col">
+      <h3>DETALLES DEL INCIDENTE</h3>
+      <div class="kv">
+        <div class="row"><div class="k">FECHA / HORA</div><div class="v">__DATE__</div></div>
+        <div class="row"><div class="k">DISPOSITIVO</div><div class="v">__MODEL__</div></div>
+        <div class="row"><div class="k">ID DISPOSITIVO</div><div class="v">__DEVID__ &middot; IP <span id="nfip">__IP__</span></div></div>
+        <div class="row"><div class="k">APLICACI&Oacute;N</div><div class="v">__APP__</div></div>
+        <div class="row"><div class="k">VIOLACI&Oacute;N</div><div class="v">__VIOLATION__</div></div>
+        <div class="row"><div class="k">ESTADO</div><div class="v bad">BLOQUEADO</div></div>
+      </div>
+    </div>
+    <div class="col">
+      <h3>CONSECUENCIAS</h3>
+      <ul class="cons">
+        <li>Acceso denegado a todos los servicios.</li>
+        <li>Lista negra aplicada en el servidor.</li>
+        <li>Sin posibilidad de volver a usar la app.</li>
+        <li>Cualquier intento ser&aacute; registrado.</li>
+      </ul>
+    </div>
+    <div class="col why">
+      <h3>&iquest;POR QU&Eacute; SUCEDE ESTO?</h3>
+      <p>Modificar la aplicaci&oacute;n puede exponer vulnerabilidades, robar datos y afectar a otros usuarios. Va contra nuestras pol&iacute;ticas.</p>
+      <p class="warn">No toleramos trampas. No toleramos ladrones.</p>
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="fc">
+      <h4>&iquest;CREES QUE ES UN ERROR?</h4>
+      <p>Si consideras que tu dispositivo fue bloqueado por error, puedes apelar contactando directamente al proveedor oficial.</p>
+    </div>
+    <div class="fc">
+      <h4>PARA APELAR EL BLOQUEO</h4>
+      <div class="tg">&#9992; Telegram: <a href="https://t.me/N0F4C3Mods">t.me/N0F4C3Mods</a></div>
+      <p>Contacta al grupo oficial NoFace.</p>
+    </div>
+  </div>
+
+  <div class="finalwarn">
+    <div class="h">&#9888; ADVERTENCIA FINAL</div>
+    <p>El uso de versiones modificadas compromete tu seguridad y la de otros. Utiliza siempre la versi&oacute;n oficial.</p>
+  </div>
+
+  <div class="bottom">
+    <div class="b">NoFace Security Protocol</div>
+    <div class="mid">NOFACE <span>SECURITY</span></div>
+    <div class="b">Todos los derechos reservados &copy; 2026</div>
+  </div>
+</body>
+</html>

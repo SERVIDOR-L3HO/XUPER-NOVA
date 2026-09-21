@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoLinearLayout android:id="@id/mAflPickArea" android:background="@drawable/selector_bg_login_edit" android:layout_width="fill_parent" android:layout_height="100.0px">
+        <com.zhy.autolayout.AutoLinearLayout android:background="@drawable/bg_pick_area_view_left" android:layout_width="122.0px" android:layout_height="fill_parent">
+            <TextView android:textSize="15.0sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/mTvAreaCode" android:layout_width="82.0px" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16.0px" android:src="@drawable/icon_mobile_login_pick_area" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <EditText android:textSize="14.0sp" android:textColor="@color/color_ffffff" android:textColorHint="@color/color_999999" android:id="@id/mEtInput" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="24.0px" android:hint="@string/enter_your_phone_notice" android:singleLine="true" android:maxLength="17" android:layout_weight="1.0" android:inputType="number" />
+        <ImageView android:id="@id/mIvClear" android:padding="29.0px" android:visibility="gone" android:layout_width="90.0px" android:layout_height="90.0px" android:src="@drawable/ic_edit_clear" android:scaleType="fitXY" />
+    </com.zhy.autolayout.AutoLinearLayout>
+</merge>

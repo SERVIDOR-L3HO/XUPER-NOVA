@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:id="@id/mAccountBindRoot" android:background="@color/color_0c0c0f" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mobile.brasiltv.view.TitleBarView android:id="@id/mTbvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" app:titleBgColor="@color/color_121214" app:titleText="@string/binding_account" app:titleTextColor="@color/color_ffffff" />
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="190.0px">
+        <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:id="@id/mLbGoogleBind" android:background="@color/color_28282C" android:layout_width="fill_parent" android:layout_height="110.0px">
+            <View android:layout_gravity="center_vertical" android:background="@drawable/ic_login_google" android:layout_width="50.0px" android:layout_height="50.0px" android:layout_marginLeft="40.0px" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0px" android:text="@string/account_bind_google" android:layout_weight="1.0" />
+            <View android:layout_gravity="center_vertical" android:background="@mipmap/ic_account_bind_back" android:layout_width="32.0px" android:layout_height="32.0px" android:layout_marginRight="18.0px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:id="@id/mLbEmailBind" android:background="@color/color_28282C" android:layout_width="fill_parent" android:layout_height="110.0px" android:layout_marginTop="1.0px">
+            <View android:layout_gravity="center_vertical" android:background="@mipmap/ic_account_email" android:layout_width="50.0px" android:layout_height="50.0px" android:layout_marginLeft="40.0px" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0px" android:text="@string/account_bind_mail" android:layout_weight="1.0" />
+            <View android:layout_gravity="center_vertical" android:background="@mipmap/ic_account_bind_back" android:layout_width="32.0px" android:layout_height="32.0px" android:layout_marginRight="18.0px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout android:orientation="horizontal" android:id="@id/mLbMobileBind" android:background="@color/color_28282C" android:layout_width="fill_parent" android:layout_height="110.0px" android:layout_marginTop="1.0px">
+            <View android:layout_gravity="center_vertical" android:background="@mipmap/ic_account_phone" android:layout_width="50.0px" android:layout_height="50.0px" android:layout_marginLeft="40.0px" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0px" android:text="@string/account_bind_phone" android:layout_weight="1.0" />
+            <View android:layout_gravity="center_vertical" android:background="@mipmap/ic_account_bind_back" android:layout_width="32.0px" android:layout_height="32.0px" android:layout_marginRight="18.0px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_e6e6e6" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/mTvPrivacyPolicy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="55.0px" />
+</com.zhy.autolayout.AutoFrameLayout>

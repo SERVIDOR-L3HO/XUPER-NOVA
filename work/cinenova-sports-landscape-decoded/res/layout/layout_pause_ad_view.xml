@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/mFlAdmob" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/mIvOwnerAd2" android:visibility="gone" android:layout_width="228.0dip" android:layout_height="190.0dip" android:scaleType="fitXY" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/mTvLandFlag" android:background="@color/color_99000000" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="23.0dip" android:text="@string/ads" />
+        <ImageView android:layout_gravity="end" android:id="@id/mIvLandClose" android:visibility="gone" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/fullscreen_ad_close" android:scaleType="fitXY" android:layout_marginEnd="6.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/mTvPortFlag" android:background="@color/color_99000000" android:visibility="gone" android:layout_width="47.0dip" android:layout_height="15.0dip" android:layout_marginTop="3.0dip" android:text="@string/ads" android:layout_marginStart="3.0dip" />
+        <ImageView android:layout_gravity="end" android:id="@id/mIvPortClose" android:visibility="gone" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/fullscreen_ad_close" android:scaleType="fitXY" android:layout_marginEnd="3.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/mFlOwner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="4.0dip">
+        <ImageView android:id="@id/mIvOwnerAd" android:layout_width="228.0dip" android:layout_height="190.0dip" android:scaleType="fitXY" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/mTvOwnerFlag" android:background="@color/color_99000000" android:layout_width="60.0dip" android:layout_height="23.0dip" android:text="@string/ads" />
+        <ImageView android:layout_gravity="end" android:id="@id/mIvOwnerAdClose" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/fullscreen_ad_close" android:scaleType="fitXY" android:layout_marginEnd="6.0dip" />
+    </FrameLayout>
+</merge>

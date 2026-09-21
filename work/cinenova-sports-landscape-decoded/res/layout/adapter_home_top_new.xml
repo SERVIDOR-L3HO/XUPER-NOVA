@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0px" android:layout_marginTop="30.0px">
+        <TextView android:textSize="36.0px" android:textStyle="bold" android:textColor="@color/color_fffefe" android:id="@id/mTvColumnName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Top10" android:layout_toLeftOf="@id/mIvMore" />
+        <ImageView android:id="@id/mIvMore" android:paddingLeft="30.0px" android:paddingTop="3.0px" android:paddingRight="30.0px" android:paddingBottom="3.0px" android:layout_width="100.0px" android:layout_height="40.0px" android:src="@drawable/icon_more" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/mRvContent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0px" android:layout_marginTop="21.0px" />
+</com.zhy.autolayout.AutoLinearLayout>

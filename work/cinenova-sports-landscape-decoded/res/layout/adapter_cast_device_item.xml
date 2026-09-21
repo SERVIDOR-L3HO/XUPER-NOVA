@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:id="@id/mLayoutDevice" android:layout_width="fill_parent" android:layout_height="95.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mIvConnectLoad" android:visibility="gone" android:layout_width="42.0px" android:layout_height="42.0px" android:layout_marginLeft="30.0px" android:layout_marginTop="15.0px" android:src="@drawable/icon_cast_connect_load" android:layout_centerVertical="true" />
+    <TextView android:textSize="28.0px" android:textColor="@color/ffffff" android:ellipsize="end" android:gravity="center" android:id="@id/mTvDeviceName" android:background="@drawable/bg_cast_device" android:layout_width="wrap_content" android:layout_height="80.0px" android:layout_marginTop="15.0px" android:maxWidth="500.0px" android:singleLine="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="18.0px" android:textColor="@color/ffffff" android:gravity="center" android:id="@id/mTvLastTime" android:background="@drawable/bg_cast_last_time" android:layout_width="wrap_content" android:layout_height="28.0px" android:layout_marginRight="-34.0px" android:text="@string/cast_last_device" android:layout_alignRight="@id/mTvDeviceName" />
+</com.zhy.autolayout.AutoRelativeLayout>

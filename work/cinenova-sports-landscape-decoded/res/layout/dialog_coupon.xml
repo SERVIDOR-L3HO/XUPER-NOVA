@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout android:background="@drawable/bg_dialog_restrict" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0px" android:textColor="@color/color_666666" android:gravity="center" android:id="@id/mTextNotify" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0px" android:layout_marginTop="55.0px" android:text="@string/coupon_will_expired" />
+    <TextView android:textSize="24.0px" android:textColor="@color/ffffff" android:gravity="center" android:id="@id/mTvUse" android:background="@drawable/bg_restrict_confirm" android:layout_width="360.0px" android:layout_height="60.0px" android:layout_marginTop="54.0px" android:text="@string/immediate_use" android:layout_below="@id/mTextNotify" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="24.0px" android:textColor="@color/color_important" android:gravity="center" android:id="@id/mTvOff" android:background="@drawable/bg_restrict_cancel" android:layout_width="360.0px" android:layout_height="60.0px" android:layout_marginTop="30.0px" android:text="@string/off_the_table" android:layout_below="@id/mTvUse" android:layout_centerHorizontal="true" />
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.mobile.brasiltv.view.adView.SmallAdNativeView android:id="@id/mSanvNativeAd" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.mobile.brasiltv.view.AutoCardView android:id="@id/autoCardView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0px" android:layout_marginTop="30.0px" android:layout_marginRight="30.0px" app:cardCornerRadius="5.0px">
+        <com.mobile.brasiltv.view.adView.AdvertImageView android:id="@id/mIvAd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_fefefe" android:gravity="center" android:layout_gravity="end" android:id="@id/mTvFlag" android:background="@drawable/bg_black_bottom_radius" android:layout_width="wrap_content" android:layout_height="50.0px" android:minWidth="120.0px" android:text="@string/ads" android:paddingStart="10.0px" android:paddingEnd="10.0px" />
+    </com.mobile.brasiltv.view.AutoCardView>
+</merge>

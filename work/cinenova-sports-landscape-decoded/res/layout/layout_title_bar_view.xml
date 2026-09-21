@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhy.autolayout.AutoFrameLayout android:id="@id/mAflTitleWrapper" android:layout_width="fill_parent" android:layout_height="88.0px">
+        <ImageView android:id="@id/mIvBack" android:paddingLeft="24.0px" android:paddingRight="24.0px" android:layout_width="66.0px" android:layout_height="fill_parent" android:src="@drawable/icon_title_back" android:scaleType="fitCenter" />
+        <ImageView android:id="@id/mIvClose" android:paddingLeft="18.0px" android:paddingRight="18.0px" android:visibility="gone" android:layout_width="70.0px" android:layout_height="fill_parent" android:layout_marginLeft="66.0px" android:scaleType="fitCenter" />
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:layout_gravity="center" android:id="@id/mTvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/mIvMenu" android:layout_width="33.0px" android:layout_height="33.0px" android:layout_marginRight="24.0px" android:scaleType="fitCenter" />
+    </com.zhy.autolayout.AutoFrameLayout>
+</merge>

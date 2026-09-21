@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:layout_gravity="center" android:id="@id/mLoadingView" android:layout_width="30.0dip" android:layout_height="30.0dip" android:indeterminateDrawable="@drawable/progress_loading" style="?android:progressBarStyleLarge" />
+    <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.zhy.autolayout.AutoRelativeLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/mCouponAvailableLayout" android:background="@drawable/bg_gray_radius" android:visibility="gone" android:layout_width="702.0px" android:layout_height="90.0px" android:layout_marginBottom="20.0px">
+            <ImageView android:layout_width="38.0px" android:layout_height="25.0px" android:layout_marginLeft="16.0px" android:src="@mipmap/icon_coupon_available" />
+            <TextView android:textSize="28.0px" android:textColor="@color/white" android:gravity="bottom" android:layout_width="wrap_content" android:layout_height="30.0px" android:layout_marginLeft="70.0px" android:text="@string/coupons_available" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="26.0px" android:layout_marginRight="16.0px" android:src="@mipmap/ic_more_white" android:layout_alignParentRight="true" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/mList" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:id="@id/mLLEmpty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="361.0px" android:src="@mipmap/icon_coupons_empty" />
+            <TextView android:textSize="24.0px" android:textColor="@color/ffffff" android:layout_gravity="center_horizontal" android:id="@id/tvEmpty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0px" android:layout_marginTop="91.0px" android:layout_marginRight="30.0px" android:text="@string/coupons_empty" />
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoFrameLayout>

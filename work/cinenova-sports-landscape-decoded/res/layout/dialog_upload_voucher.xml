@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@drawable/bg_common_alert" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="right" android:id="@id/mIvClose" android:layout_width="82.0px" android:layout_height="82.0px" android:src="@drawable/playdetail_popup_close" />
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/color_1a1a1a" android:gravity="center" android:id="@id/mTvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/order_dialog_upload_voucher_title" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_333333" android:gravity="center" android:id="@id/mTvContent" android:paddingLeft="40.0px" android:paddingRight="40.0px" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/order_dialog_upload_voucher_content" android:layout_weight="1.0" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/mKbUpload" android:background="@drawable/bg_btn_medium_green" android:layout_width="fill_parent" android:layout_height="90.0px" android:layout_marginLeft="60.0px" android:layout_marginRight="60.0px" android:text="@string/order_dialog_continue_upload" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_999999" android:gravity="center" android:id="@id/mKbCancel" android:background="@drawable/bg_btn_medium_gray" android:layout_width="fill_parent" android:layout_height="90.0px" android:layout_marginLeft="60.0px" android:layout_marginTop="20.0px" android:layout_marginRight="60.0px" android:layout_marginBottom="40.0px" android:text="@string/cancel" />
+</com.zhy.autolayout.AutoLinearLayout>

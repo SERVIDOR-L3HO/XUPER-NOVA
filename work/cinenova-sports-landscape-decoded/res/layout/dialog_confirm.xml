@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@drawable/bg_common_alert" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_595959" android:gravity="center" android:id="@id/mTvContent" android:padding="10.0px" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/color_ffffff" android:gravity="center" android:id="@id/mTvConfirm" android:background="@drawable/selector_btn_login" android:layout_width="fill_parent" android:layout_height="80.0px" android:layout_marginLeft="56.0px" android:layout_marginRight="56.0px" android:layout_marginBottom="40.0px" android:text="@string/confirm" />
+</com.zhy.autolayout.AutoLinearLayout>

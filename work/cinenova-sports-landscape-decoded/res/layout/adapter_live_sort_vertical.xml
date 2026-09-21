@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout android:orientation="vertical" android:background="@drawable/bg_live_sort_selector" android:layout_width="fill_parent" android:layout_height="100.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="30.0px" android:textColor="@color/ffffff" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/mTextSortName" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="26.0px" android:text="Lista de Canais" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" />
+</com.zhy.autolayout.AutoLinearLayout>
