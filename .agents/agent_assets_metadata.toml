@@ -308,3 +308,17 @@ mtime_ms = 1790042743303
 storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:152b01ff-94c9-4140-a96a-c0ae7b3e54cf/33af02bd-7955-48d2-a412-10f2a8b070df/7ee0b696-3699-41a3-890c-3a2100a20059"
 storage_version_token = "1790042788053709"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "BzRr26iwIMpAFNP3lRipA"
+uri = "file://work/cinenova-sports-search-nova.apk"
+type = "unspecified"
+title = "CineNova con canales Nova"
+description = "APK firmado con 75 canales adicionales de ultrago-xi.vercel.app/nova, integrados en la lista y el reproductor nativo existentes."
+logical_id = "202e19dc-c058-44f3-86fa-a12b09ff9ab8"
+content_hash = "sha256:2fd7bdc2a0d4c4ba9799fec085a455071f67e2d462cbfc1b5285ddacd854a72a"
+size = 49647904
+mtime_ms = 1790053926183
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:481c90d8-ee7c-44a4-8a88-449b291ae887/202e19dc-c058-44f3-86fa-a12b09ff9ab8/af04874c-b790-4d5e-9dc6-b3d9699bb048"
+storage_version_token = "1790053984550001"
+content_type = "application/octet-stream"
