@@ -294,3 +294,17 @@ mtime_ms = 1790004734185
 storage_uri = "gcs://replit-rams-assets-picard/rams/assets/repl:2de859b8-932f-4019-ba62-2c7029ffc170/298e8593-439e-44cc-8ec0-2c861d342549/74f557d9-f7d6-4ca7-a92c-cfc75819f859"
 storage_version_token = "1790004753474509"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "GW0k_t0eaw_TVbwIT0D8r"
+uri = "file://work/cinenova-sports-search.apk"
+type = "unspecified"
+title = "APK de Deportes con buscador"
+description = "Versión modificada con búsqueda por partido, liga, equipos y canal. La firma v1/v2/v3 fue verificada; requiere instalación como APK nuevo porque fue firmada con una clave local de compilación."
+logical_id = "33af02bd-7955-48d2-a412-10f2a8b070df"
+content_hash = "sha256:b0d77393a5bc0c1b3baf06ceccef43506a8ea612bb8847fbea66e003224a0f99"
+size = 49647904
+mtime_ms = 1790042743303
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:152b01ff-94c9-4140-a96a-c0ae7b3e54cf/33af02bd-7955-48d2-a412-10f2a8b070df/7ee0b696-3699-41a3-890c-3a2100a20059"
+storage_version_token = "1790042788053709"
+content_type = "application/octet-stream"
