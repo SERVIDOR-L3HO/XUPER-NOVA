@@ -1,0 +1,16 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "CUgmDXwGFHSLKR4IBJcEi"
+uri = "file://generated-artifacts/xupernova-ultragol.apk"
+type = "unspecified"
+title = "Xuper Nova Deportes — APK Android"
+description = "Instalación paralela de Xuper Nova con deportes dentro de la app y reproductor integrado para enlaces directos compatibles."
+logical_id = "71d81c89-63e4-4580-84dc-1303f3cc9304"
+content_hash = "sha256:92eee755f42612acd459ba2702935b2eada9a94318ef3592d736aa8e646b08bb"
+size = 49650889
+mtime_ms = 1793469985015
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:3c6f8095-139e-4b37-af07-01c004e33f19/71d81c89-63e4-4580-84dc-1303f3cc9304/5dac4886-b35d-473d-a899-9700e3252416"
+storage_version_token = "1793470119196004"
+content_type = "application/octet-stream"

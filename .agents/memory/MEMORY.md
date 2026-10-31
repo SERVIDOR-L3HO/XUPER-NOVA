@@ -1,0 +1,1 @@
+- [Android APK signing](android-apk-signing.md) — the original signing password is unavailable; preserve the installed app by using a separately signed package for future binary edits.
