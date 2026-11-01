@@ -42,3 +42,17 @@ mtime_ms = 1793570458888
 storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:3c6f8095-139e-4b37-af07-01c004e33f19/5aa8c122-6147-4e18-a7fb-d7679321d3d5/aa29ffaa-51c1-4f71-8b08-17c3ea7c0b56"
 storage_version_token = "1793570630939342"
 content_type = "application/octet-stream"
+
+[[outputs]]
+id = "Rp57QH-CqVPd-B0vTrOOb"
+uri = "file://generated-artifacts/xupernova-ultragol-6.5.8.apk"
+type = "unspecified"
+title = "Xuper Nova Deportes — actualización 6.5.8"
+description = "APK con versión incrementada a 6.5.8 y el mismo certificado de la copia paralela. Instálala como actualización sobre la copia existente; no desinstales la anterior."
+logical_id = "d8c86819-c2fb-4855-98ba-494564e4e318"
+content_hash = "sha256:855c07cbfe89a7c268e397ac943b683f5c85f56f1e1b08b30cfa87ca5117869b"
+size = 49650558
+mtime_ms = 1793573915449
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:3c6f8095-139e-4b37-af07-01c004e33f19/d8c86819-c2fb-4855-98ba-494564e4e318/3d4cc51b-872d-4ffe-befd-cad6e44d04df"
+storage_version_token = "1793573937600726"
+content_type = "application/octet-stream"
