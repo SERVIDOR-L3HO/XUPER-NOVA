@@ -1,1 +1,2 @@
 - [Android APK signing](android-apk-signing.md) — the original signing password is unavailable; preserve the installed app by using a separately signed package for future binary edits.
+- [Android runtime crashes](android-apk-runtime.md) — the restart toast lacks a stack trace; verify native WebView changes on-device instead of guessing.
